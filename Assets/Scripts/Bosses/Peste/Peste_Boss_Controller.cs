@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Peste_Boss_Controller : MonoBehaviour
@@ -28,9 +27,9 @@ public class Peste_Boss_Controller : MonoBehaviour
     [Header("Gas Ability")]
     [SerializeField] private float fallMultiplier = 2.5f;
     [SerializeField] private float duration;
-    [Header("Stun Settings")]    
+    [Header("Stun Settings")]
     [SerializeField] private bool stun;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +53,7 @@ public class Peste_Boss_Controller : MonoBehaviour
         {
             rb.mass = 1000f;
         }
-        else 
+        else
         {
             rb.mass = 1f;
         }
@@ -74,7 +73,7 @@ public class Peste_Boss_Controller : MonoBehaviour
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
-        else if(!facingRight)
+        else if (!facingRight)
         {
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
         }
@@ -162,7 +161,7 @@ public class Peste_Boss_Controller : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(attackController.position, attackRadius);      
+        Gizmos.DrawWireSphere(attackController.position, attackRadius);
         Gizmos.DrawWireCube(groundChecker.position, dimensionesCaja);
     }
 }

@@ -25,7 +25,7 @@ public class Peste_CaminarBehaviour : StateMachineBehaviour
         Vector2 moveDirection = bossPeste.facingRight ? Vector2.right : -Vector2.right;
 
         // Aplicar la velocidad de movimiento en la dirección adecuada
-        rb.velocity = moveDirection * speedMovement + Vector2.up * currentYVelocity;        
+        rb.velocity = moveDirection * speedMovement + Vector2.up * currentYVelocity;
     }
 
 

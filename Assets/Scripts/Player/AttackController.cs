@@ -23,7 +23,7 @@ public class AttackController : MonoBehaviour
         if (tiempoSiguienteAtaque > 0)
         {
             tiempoSiguienteAtaque -= Time.deltaTime;
-            
+
         }
 
         if (Input.GetButtonDown("Fire1") && tiempoSiguienteAtaque <= 0)

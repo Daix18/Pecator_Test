@@ -100,7 +100,7 @@ public class MovimientoJugador : MonoBehaviour
             _dashesLeft = maxDashes;
             //rb.gravityScale = 1;
             //jump = false;
-        }
+        }        
 
         //Si el jugador está cayendo, se multiplica la gravedad y se le resta 1, para que este proporcionada a la gravedad.
         if (rb.velocity.y < 0)

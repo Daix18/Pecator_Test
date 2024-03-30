@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
 public class Hambre_Boss_Controller : MonoBehaviour
 {
@@ -11,12 +9,13 @@ public class Hambre_Boss_Controller : MonoBehaviour
     [HideInInspector] public bool facingRight = true;
     public Transform player;
     [SerializeField] private Transform groundChecker;
-    [SerializeField] private Transform wallChecker;    
+    [SerializeField] private Transform wallChecker;
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private Vector3 wallBoxDimensions;
-    [SerializeField] private LayerMask queEsSuelo;    
+    [SerializeField] private LayerMask queEsSuelo;
+    [SerializeField] private LayerMask stopWall;
     [SerializeField] private bool onGround;
-    [SerializeField] private bool onWall;    
+    [SerializeField] private bool onWall;
     private Vector2 direccion;
 
     [Header("Vida")]
@@ -28,7 +27,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
     [SerializeField] private float attackDamage;
 
     [Header("Dash Settings")]
-    [SerializeField] private bool cooldown = false;    
+    [SerializeField] private bool cooldown = false;
     [SerializeField] private float dashingPower = 24f;
     [SerializeField] private float waitTime = 2f;
     [SerializeField] private float cooldownDuration = 4f;
@@ -48,7 +47,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();                 
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -61,7 +60,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
         animator.SetBool("Dashing", isDashing);
 
         onGround = Physics2D.OverlapBox(groundChecker.position, dimensionesCaja, 0f, queEsSuelo);
-        onWall = Physics2D.OverlapBox(wallChecker.position, wallBoxDimensions, 0f, queEsSuelo);        
+        onWall = Physics2D.OverlapBox(wallChecker.position, wallBoxDimensions, 0f, stopWall);
 
         if (onGround)
         {
@@ -69,24 +68,24 @@ public class Hambre_Boss_Controller : MonoBehaviour
         }
         else
         {
-            rb.mass = 1f;            
+            rb.mass = 1f;
         }
 
         if (onWall && wallHitCount <= maxWallHits && !stun && !cooldown)
-        {            
+        {
             rb.velocity *= 0.5f;
 
             rb.velocity = Vector2.zero;
 
             wallHitCount++;
 
-            StartCoroutine(WallCollisionSequence());
+            StartCoroutine(Sequence());
+        }
 
-            if (wallHitCount >= maxWallHits)
-            {
-                StopCoroutine(WallCollisionSequence());
-                StartCoroutine(Stun());
-            }
+        if (wallHitCount >= maxWallHits)
+        {
+            StartCoroutine(Stun());
+            StopCoroutine(Stun());
         }
 
         if (!stun)
@@ -130,11 +129,10 @@ public class Hambre_Boss_Controller : MonoBehaviour
 
     public void Dash()
     {
-
         if (canDash)
         {
             dashingDir = new Vector2(direccion.x, direccion.y);
-            isDashing = true;        
+            isDashing = true;
 
             if (dashingDir == Vector2.zero)
             {
@@ -145,7 +143,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
             {
                 // Establecer la velocidad basada en la escala local x del objeto y la potencia de dash
                 rb.velocity = dashingDir.normalized * dashingPower;
-            }        
+            }
         }
     }
 
@@ -173,28 +171,15 @@ public class Hambre_Boss_Controller : MonoBehaviour
         }
     }
 
-
-    IEnumerator WallCollisionSequence()
+    IEnumerator Sequence()
     {
-        Debug.Log("Secuencia");
         Flip();
         yield return new WaitForSeconds(waitTime);
-
-        if (wallHitCount <= maxWallHits)
-        {
-            Debug.Log("Dash Secuencia");
-            canDash = true;
-            Dash();
-        }
-        else if (wallHitCount == maxWallHits)
-        {
-            canDash = false;
-        }
+        Dash();
     }
 
     IEnumerator Stun()
-    {
-        Debug.Log("Stuneado");
+    {        
         rb.velocity = Vector2.zero;
         stun = true;
         cooldown = true;
