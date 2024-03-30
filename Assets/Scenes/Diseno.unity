@@ -461,9 +461,9 @@ GameObject:
   - component: {fileID: 99797413}
   - component: {fileID: 99797412}
   - component: {fileID: 99797411}
-  - component: {fileID: 99797414}
   - component: {fileID: 99797415}
   - component: {fileID: 99797416}
+  - component: {fileID: 99797414}
   m_Layer: 5
   m_Name: GamepadControlsCanva
   m_TagString: Untagged
@@ -2524,17 +2524,17 @@ MonoBehaviour:
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
+  m_PointAction: {fileID: -7617040781317220473, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
+  m_MoveAction: {fileID: 1038489439153522572, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
+  m_SubmitAction: {fileID: 5560337231127906247, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
+  m_CancelAction: {fileID: 2620658634949940066, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
+  m_LeftClickAction: {fileID: 931162419419176205, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
+  m_MiddleClickAction: {fileID: 6223020420665006777, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
+  m_RightClickAction: {fileID: 1748289190075872686, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
+  m_ScrollWheelAction: {fileID: -3461977530679188230, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
+  m_TrackedDevicePositionAction: {fileID: -4504514426417593514, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: -1978591248845079930, guid: 2c0d830c6e46df441ab681903850b4a8, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
@@ -5920,7 +5920,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1009624700688384294}
         m_TargetAssemblyTypeName: MovimientoJugador, Assembly-CSharp
         m_MethodName: StartMove
         m_Mode: 0
@@ -5936,7 +5936,7 @@ MonoBehaviour:
     m_ActionName: Player/Mover[/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1009624700688384294}
         m_TargetAssemblyTypeName: MovimientoJugador, Assembly-CSharp
         m_MethodName: StartJump
         m_Mode: 0
@@ -5952,7 +5952,7 @@ MonoBehaviour:
     m_ActionName: Player/Jump[/Keyboard/space,/XInputControllerWindows/buttonSouth]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1009624700688384294}
         m_TargetAssemblyTypeName: MovimientoJugador, Assembly-CSharp
         m_MethodName: StartDash
         m_Mode: 0
@@ -5967,7 +5967,19 @@ MonoBehaviour:
     m_ActionId: 612717d8-655b-4706-be94-654613cf0fbf
     m_ActionName: Player/Dash[/Keyboard/leftShift]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1009624700688384294}
+        m_TargetAssemblyTypeName: MovimientoJugador, Assembly-CSharp
+        m_MethodName: StartKnife
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 93f99d8f-d6c4-4ab9-9e40-fba7dc588ff7
     m_ActionName: Player/Knife[/Keyboard/q,/XInputControllerWindows/buttonWest,/XInputControllerWindows/rightShoulder]
   - m_PersistentCalls:
@@ -106211,7 +106223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: B
+  m_text: A
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -106300,7 +106312,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: D-Pad
+  m_text: LS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -106567,7 +106579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LMB
+  m_text: Mayusculas
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -106834,7 +106846,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Y
+  m_text: B
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -176,6 +176,7 @@ public class MovimientoJugador : MonoBehaviour
 
         if (direccion.x > 0 && !mirandoDerecha)
         {
+            Debug.Log("Flipeo");
             Flip();
         }
         else if (direccion.x < 0 && mirandoDerecha)
@@ -251,7 +252,7 @@ public class MovimientoJugador : MonoBehaviour
     {
         //Comprobación para saltar que incluye el coyote jump.
         if (context.performed && !wallSliding)
-        {
+        {            
             //Salto normal
             Jump();
         }
