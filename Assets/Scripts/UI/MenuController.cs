@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class MenuController : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class MenuController : MonoBehaviour
     [Header("Player Components")]
     [SerializeField] private MovimientoJugador _player;
     [SerializeField] private AttackController _playerAttack;
+    [SerializeField] private PlayerInput _playerInput;
     private bool isPaused;
 
     [Header("First Selected Options")]
@@ -50,8 +52,9 @@ public class MenuController : MonoBehaviour
         isPaused = true;
         Time.timeScale = 0f;
 
-        _player.enabled = false;
+        _player.enabled = false;        
         _playerAttack.enabled = false;
+        _playerInput.enabled = false;
 
         OpenMainMenu();
     }
@@ -63,6 +66,7 @@ public class MenuController : MonoBehaviour
 
         _player.enabled = true;
         _playerAttack.enabled = true;
+        _playerInput.enabled = true;
 
         CloseMenus();
     }

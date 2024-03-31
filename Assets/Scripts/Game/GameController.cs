@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    public static GameController THIS;    
+    public static GameController THIS;
 
-    [SerializeField] Animator transitionAnim;    
+    [SerializeField] Animator transitionAnim;
     [Header("Image Components.")]
     [SerializeField] private Image mapa;
     [SerializeField] private Image playerIcon;
