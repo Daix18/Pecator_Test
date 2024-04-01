@@ -1,25 +1,30 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AttackController : MonoBehaviour
 {
+    [Header("Components")]
     [SerializeField] private Transform controladorGolpe;
+    [SerializeField] private Image fillImage;
+
+    [Header("Attack Settings")]
     [SerializeField] private float health;
     [SerializeField] private float radioGolpe;
     [SerializeField] private float dañoGolpe;
     [SerializeField] private float tiempoEntreAtaques;
     [SerializeField] private float tiempoSiguienteAtaque;
     private Animator animator;
-    [SerializeField] private float initialHealth = 100f;
-    private float currentHealth;
+    [SerializeField] private float initialHealth = 100f;    
 
     private void Start()
     {
         animator = GetComponent<Animator>();
-        currentHealth = initialHealth;
+        health = initialHealth;
     }
 
     private void Update()
     {
+        Debug.Log(health);
         if (tiempoSiguienteAtaque > 0)
         {
             tiempoSiguienteAtaque -= Time.deltaTime;
@@ -35,11 +40,13 @@ public class AttackController : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
+        health -= damage;
+        fillImage.fillAmount = health / 100f;
 
-        if (currentHealth <= 0)
+
+        if (health <= 0)
         {
-            currentHealth = 0; // Asegurarse de que la vida no sea negativa
+            health = 0; // Asegurarse de que la vida no sea negativa
             RespawnPlayer();
         }
     }
@@ -49,12 +56,13 @@ public class AttackController : MonoBehaviour
         if (respawnSystem != null)
         {
             transform.position = respawnSystem.GetLastSpawnPoint();
-            currentHealth = initialHealth;
+            health = initialHealth;
+            fillImage.fillAmount = 1f;
         }
     }
     public float GetCurrentHealth()
     {
-        return currentHealth;
+        return health;
     }
     private void Golpe()
     {
@@ -72,7 +80,7 @@ public class AttackController : MonoBehaviour
     }
     public void ResetHealth()
     {
-        currentHealth = initialHealth;
+        health = initialHealth;
     }
 
     private void OnDrawGizmos()
