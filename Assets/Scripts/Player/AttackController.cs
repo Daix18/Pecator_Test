@@ -43,7 +43,6 @@ public class AttackController : MonoBehaviour
         health -= damage;
         fillImage.fillAmount = health / 100f;
 
-
         if (health <= 0)
         {
             health = 0; // Asegurarse de que la vida no sea negativa
