@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Peste_Boss_Controller : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Peste_Boss_Controller : MonoBehaviour
     [SerializeField] private Transform groundChecker;
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private LayerMask queEsSuelo;
+    [SerializeField] private Image fillImage;
     [SerializeField] private bool onGround;
     public bool facingRight = true;
 
@@ -85,6 +87,7 @@ public class Peste_Boss_Controller : MonoBehaviour
     public void TakeDamage(float damage)
     {
         life -= damage;
+        fillImage.fillAmount = life / 100f;
     }
 
     public void LookAtPlayer()
