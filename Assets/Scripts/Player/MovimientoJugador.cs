@@ -270,6 +270,14 @@ public class MovimientoJugador : MonoBehaviour
         }
     }
 
+    public void StartAttack(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            AttackController.THIS.Golpe();
+        }
+    }
+
     public void StartKnife(InputAction.CallbackContext context)
     {
         if (context.performed)

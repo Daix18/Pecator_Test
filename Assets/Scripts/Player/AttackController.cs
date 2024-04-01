@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class AttackController : MonoBehaviour
 {
+    public static AttackController THIS;
+
     [Header("Components")]
     [SerializeField] private Transform controladorGolpe;
     [SerializeField] private Image fillImage;
@@ -20,6 +22,14 @@ public class AttackController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         health = initialHealth;
+    }
+
+    private void Awake()
+    {
+        if (THIS == null)
+        {
+            THIS = this;
+        }
     }
 
     private void Update()
@@ -63,7 +73,7 @@ public class AttackController : MonoBehaviour
     {
         return health;
     }
-    private void Golpe()
+    public void Golpe()
     {
         //animator.SetTrigger("Golpe");
 

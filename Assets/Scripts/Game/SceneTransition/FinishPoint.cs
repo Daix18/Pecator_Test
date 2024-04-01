@@ -9,6 +9,10 @@ public class FinishPoint : TriggerInteraction
         Two,
         Three,
         Four,
+        Five,
+        Six,
+        Seven,
+        Eight,
     }
 
     [Header("Spawn To")]

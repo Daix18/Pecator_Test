@@ -71,6 +71,15 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""b30d6fbe-b92d-4431-9896-9e30cdb73978"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -249,6 +258,28 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""action"": ""MenuOpenClose"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b5b4117d-11e5-46e1-b35a-ff87c3323b3f"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d1767543-b19a-4dd2-879c-2a763b67d43a"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -313,6 +344,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_Knife = m_Player.FindAction("Knife", throwIfNotFound: true);
         m_Player_MenuOpenClose = m_Player.FindAction("MenuOpenClose", throwIfNotFound: true);
+        m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Newaction = m_UI.FindAction("New action", throwIfNotFound: true);
@@ -382,6 +414,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Dash;
     private readonly InputAction m_Player_Knife;
     private readonly InputAction m_Player_MenuOpenClose;
+    private readonly InputAction m_Player_Attack;
     public struct PlayerActions
     {
         private @Controls m_Wrapper;
@@ -391,6 +424,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @Dash => m_Wrapper.m_Player_Dash;
         public InputAction @Knife => m_Wrapper.m_Player_Knife;
         public InputAction @MenuOpenClose => m_Wrapper.m_Player_MenuOpenClose;
+        public InputAction @Attack => m_Wrapper.m_Player_Attack;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -415,6 +449,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @MenuOpenClose.started += instance.OnMenuOpenClose;
             @MenuOpenClose.performed += instance.OnMenuOpenClose;
             @MenuOpenClose.canceled += instance.OnMenuOpenClose;
+            @Attack.started += instance.OnAttack;
+            @Attack.performed += instance.OnAttack;
+            @Attack.canceled += instance.OnAttack;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -434,6 +471,9 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @MenuOpenClose.started -= instance.OnMenuOpenClose;
             @MenuOpenClose.performed -= instance.OnMenuOpenClose;
             @MenuOpenClose.canceled -= instance.OnMenuOpenClose;
+            @Attack.started -= instance.OnAttack;
+            @Attack.performed -= instance.OnAttack;
+            @Attack.canceled -= instance.OnAttack;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -522,6 +562,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnDash(InputAction.CallbackContext context);
         void OnKnife(InputAction.CallbackContext context);
         void OnMenuOpenClose(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
