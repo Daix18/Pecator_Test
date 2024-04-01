@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class FinishPoint : TriggerInteraction
@@ -16,7 +13,7 @@ public class FinishPoint : TriggerInteraction
 
     [Header("Spawn To")]
     [SerializeField] private SpawnPointAt spawnPointAt;
-    [SerializeField]private SceneField _sceneToLoad;
+    [SerializeField] private SceneField _sceneToLoad;
 
     [Space(10f)]
     [Header("This Finish Point")]

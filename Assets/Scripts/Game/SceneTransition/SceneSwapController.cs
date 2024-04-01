@@ -12,7 +12,7 @@ public class SceneSwapController : MonoBehaviour
     private Collider2D _interactiveCollider;
     private Vector3 _playerSpawnPosition;
 
-    private static bool _loadedFromInteractive;
+    public bool _loadedFromInteractive;
 
     private FinishPoint.SpawnPointAt _spawnPointTo;
 
@@ -39,8 +39,9 @@ public class SceneSwapController : MonoBehaviour
 
     public static void SwapScene(SceneField myScene, FinishPoint.SpawnPointAt spawnPointAt)
     {
-        _loadedFromInteractive = true;
+        THIS._loadedFromInteractive = true;
         THIS.StartCoroutine(THIS.FadeOutTheChangeScene(myScene, spawnPointAt));
+        Debug.Log("Cambio de Escena");
     }
 
     private IEnumerator FadeOutTheChangeScene(SceneField myScene, FinishPoint.SpawnPointAt spawnPointAt = FinishPoint.SpawnPointAt.None)

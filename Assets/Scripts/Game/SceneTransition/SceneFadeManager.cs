@@ -28,7 +28,7 @@ public class SceneFadeManager : MonoBehaviour
     }
 
     private void Update()
-    {
+    {        
         if (IsFadingOut)
         {
             if (_fadeOutImage.color.a < 1f)

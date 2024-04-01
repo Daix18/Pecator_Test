@@ -4,26 +4,30 @@ using UnityEngine;
 
 public class TriggerInteraction : MonoBehaviour
 {
-    public GameObject Player {  get; set; }
-
+    public GameObject Player { get; set; }
     public bool CanInteract { get; set; }
 
-    // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        Player = GameObject.FindGameObjectWithTag("Player");                
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject == Player)
+        if (collision.gameObject == Player && CanInteract)
         {
             Interact();
+            CanInteract = false; // Desactiva la interacción después de la primera vez
         }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        CanInteract = true;
+    }
+
     public virtual void Interact()
     {
-        
+        // Aquí puedes implementar la lógica específica de la interacción
     }
 }
