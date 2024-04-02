@@ -3423,19 +3423,7 @@ MonoBehaviour:
     m_ActionId: 612717d8-655b-4706-be94-654613cf0fbf
     m_ActionName: Player/Dash[/Keyboard/leftShift]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 803281374}
-        m_TargetAssemblyTypeName: MovimientoJugador, Assembly-CSharp
-        m_MethodName: StartKnife
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 93f99d8f-d6c4-4ab9-9e40-fba7dc588ff7
     m_ActionName: Player/Knife[/Keyboard/q,/XInputControllerWindows/buttonWest,/XInputControllerWindows/rightShoulder]
   - m_PersistentCalls:
@@ -30368,6 +30356,7 @@ MonoBehaviour:
   "da\xF1oGolpe": 20
   tiempoEntreAtaques: 0.3
   tiempoSiguienteAtaque: 0
+  attacking: 0
   initialHealth: 100
 --- !u!212 &803281380
 SpriteRenderer:

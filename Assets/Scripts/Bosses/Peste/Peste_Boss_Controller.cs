@@ -59,6 +59,11 @@ public class Peste_Boss_Controller : MonoBehaviour
         {
             rb.mass = 1f;
         }
+
+        if (life <= 0)
+        {
+            Death();
+        }
     }
     private void Death()
     {

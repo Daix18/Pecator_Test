@@ -16,11 +16,12 @@ public class AttackController : MonoBehaviour
     [SerializeField] private float tiempoEntreAtaques;
     [SerializeField] private float tiempoSiguienteAtaque;
     private Animator animator;
+    public bool attacking;
     [SerializeField] private float initialHealth = 100f;    
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();        
         health = initialHealth;
     }
 
@@ -33,8 +34,7 @@ public class AttackController : MonoBehaviour
     }
 
     private void Update()
-    {
-        Debug.Log(health);
+    {        
         if (tiempoSiguienteAtaque > 0)
         {
             tiempoSiguienteAtaque -= Time.deltaTime;
@@ -45,7 +45,7 @@ public class AttackController : MonoBehaviour
         {
             Golpe();
             tiempoSiguienteAtaque = tiempoEntreAtaques;
-        }
+        }        
     }
 
     public void TakeDamage(float damage)
@@ -75,7 +75,13 @@ public class AttackController : MonoBehaviour
     }
     public void Golpe()
     {
-        //animator.SetTrigger("Golpe");
+        // Comprobar si el golpe ya está activo, si no, activarlo
+        if (!attacking)
+        {
+            attacking = true;
+            animator.SetTrigger("Golpe");
+        }
+
 
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
 
@@ -87,6 +93,13 @@ public class AttackController : MonoBehaviour
             }
         }
     }
+
+    // Método llamado desde un evento del Animator al finalizar el golpe
+    public void FinalizarGolpe()
+    {
+        attacking = false;
+    }
+
     public void ResetHealth()
     {
         health = initialHealth;
