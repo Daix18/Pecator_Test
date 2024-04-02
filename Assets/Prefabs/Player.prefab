@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controladorGolpe: {fileID: 1521479064982583710}
+  fillImage: {fileID: 0}
   health: 100
   radioGolpe: 0.3
   "da\xF1oGolpe": 20
@@ -368,7 +369,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.20436865, y: 0.10092175}
+  m_Offset: {x: 0.33602583, y: 0.10092175}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -379,7 +380,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7472087, y: 2.120477}
+  m_Size: {x: 0.66641974, y: 2.120477}
   m_EdgeRadius: 0
 --- !u!50 &1521479066122396974
 Rigidbody2D:
@@ -479,6 +480,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 93f99d8f-d6c4-4ab9-9e40-fba7dc588ff7
     m_ActionName: Player/Knife[/Keyboard/q,/XInputControllerWindows/buttonWest,/XInputControllerWindows/rightShoulder]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 27c5b62c-8120-4a64-9878-9947bb9bf720
+    m_ActionName: Player/MenuOpenClose[/Keyboard/escape,/XInputControllerWindows/start]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b30d6fbe-b92d-4431-9896-9e30cdb73978
+    m_ActionName: Player/Attack[/Mouse/leftButton,/XInputControllerWindows/buttonWest]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4602d830-83fe-4f4f-b3d5-ec0a8cbf91ba
+    m_ActionName: UI/New action
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
