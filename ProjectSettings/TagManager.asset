@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - NPC
+  - Diana
+  - Enemigo
+  - Pinchos
+  - Spawnpoint
   layers:
   - Default
   - TransparentFX
@@ -13,9 +17,9 @@ TagManager:
   - Water
   - UI
   - Suelo
-  - Pared
-  - 
-  - 
+  - Jugador
+  - Diana
+  - Stop
   - 
   - 
   - 
@@ -41,4 +45,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1515748043
+    locked: 0
+  - name: Default XD
+    uniqueID: 986423171
+    locked: 0
+  - name: Foreground
+    uniqueID: 614956601
     locked: 0
