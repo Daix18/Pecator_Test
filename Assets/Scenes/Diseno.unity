@@ -226,9 +226,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cbd66def61b58aa478e1587399bcfffd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -958,10 +958,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSounds:
   - name: prueba
-    clip: {fileID: 8300000, guid: 99458dc41e69e1b42bc7f278057f7a8d, type: 3}
-  sfxSounds:
-  - name: running grass
-    clip: {fileID: 8300000, guid: cbd66def61b58aa478e1587399bcfffd, type: 3}
+    clip: {fileID: 8300000, guid: 5c5f5e01e9dec7541aece6a48d388238, type: 3}
+  sfxSounds: []
   musicSource: {fileID: 1794304398}
   sfxSource: {fileID: 343643616}
 --- !u!4 &1228625960
@@ -1181,9 +1179,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5c5f5e01e9dec7541aece6a48d388238, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.11
   m_Pitch: 1
   Loop: 1
   Mute: 0

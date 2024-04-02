@@ -102,6 +102,13 @@ public class MovimientoJugador : MonoBehaviour
             //jump = false;
         }
 
+        /*if (onGround && rb.velocity.x > 0)
+        {
+            AudioManager.Instance.PlaySFX("running grass");
+        }*/
+
+
+
         //Si el jugador está cayendo, se multiplica la gravedad y se le resta 1, para que este proporcionada a la gravedad.
         if (rb.velocity.y < 0)
         {

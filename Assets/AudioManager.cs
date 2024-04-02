@@ -27,6 +27,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         PlayMusic("prueba"/*aquí va la música de fondo*/);
+        
     }
 
 
