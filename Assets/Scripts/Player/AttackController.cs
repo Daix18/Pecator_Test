@@ -89,7 +89,7 @@ public class AttackController : MonoBehaviour
         {
             if (colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.GetComponent<Enemigo>().TomarDaño(dañoGolpe);
+                colisionador.transform.GetComponent<Peste_Boss_Controller>().TakeDamage(dañoGolpe);
             }
         }
     }

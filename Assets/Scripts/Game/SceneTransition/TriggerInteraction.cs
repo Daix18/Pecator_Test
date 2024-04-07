@@ -9,7 +9,7 @@ public class TriggerInteraction : MonoBehaviour
 
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");                
+        Player = GameObject.FindGameObjectWithTag("PlayerCollider");                
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

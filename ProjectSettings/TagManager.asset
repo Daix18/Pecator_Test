@@ -9,6 +9,7 @@ TagManager:
   - Enemigo
   - Pinchos
   - Spawnpoint
+  - PlayerCollider
   layers:
   - Default
   - TransparentFX

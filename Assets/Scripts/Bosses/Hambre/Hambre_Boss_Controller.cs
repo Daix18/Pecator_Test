@@ -84,9 +84,10 @@ public class Hambre_Boss_Controller : MonoBehaviour
 
         if (wallHitCount >= maxWallHits)
         {
-            StartCoroutine(Stun());
-            StopCoroutine(Stun());
+            StartCoroutine(Stun());          
         }
+
+
 
         if (!stun)
         {
@@ -179,7 +180,8 @@ public class Hambre_Boss_Controller : MonoBehaviour
     }
 
     IEnumerator Stun()
-    {        
+    {
+        Debug.Log("Stunned");
         rb.velocity = Vector2.zero;
         stun = true;
         cooldown = true;
