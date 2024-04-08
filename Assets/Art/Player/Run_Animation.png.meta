@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96065793e3b5b0b438c75bcf6a4dd031
+guid: e0d356ff2d7db7d4a80b1fe3026a4407
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: animacion_combate-0001_0
+      name: Run_Animation_0
       rect:
         serializedVersion: 2
-        x: 120
-        y: 1360
-        width: 320
-        height: 320
+        x: 0
+        y: 1152
+        width: 576
+        height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92058368289448c4888a8174ef161fcd
-      internalID: 95214265
+      spriteID: f0d2138a5723a5b418cb257101fe7f8c
+      internalID: -675298909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animacion_combate-0001_1
+      name: Run_Animation_1
       rect:
         serializedVersion: 2
-        x: 440
-        y: 1360
-        width: 320
-        height: 320
+        x: 576
+        y: 1152
+        width: 576
+        height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1170525a3026f64487fb99edd9e96b0
-      internalID: 649561216
+      spriteID: 72a47eccdeb1a4649bdba086b37a256e
+      internalID: -646265024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animacion_combate-0001_2
+      name: Run_Animation_2
       rect:
         serializedVersion: 2
-        x: 760
-        y: 1360
-        width: 320
-        height: 320
+        x: 1152
+        y: 1152
+        width: 576
+        height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19fde825359dced4490440b9391451d7
-      internalID: 1017127081
+      spriteID: 44c11f7c4645de648a787db5d609974e
+      internalID: -809999243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animacion_combate-0001_3
+      name: Run_Animation_3
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 1360
-        width: 320
-        height: 320
+        x: 0
+        y: 576
+        width: 576
+        height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fa3bbfc571426c49ae7b1df73cc3030
-      internalID: 2001954356
+      spriteID: d57836a1fd42c904bbd63552d5460cd9
+      internalID: 1500563148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animacion_combate-0001_4
+      name: Run_Animation_4
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 1360
-        width: 320
-        height: 320
+        x: 576
+        y: 576
+        width: 576
+        height: 576
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f30fc9b66142a949b802d7a0d02d0d4
-      internalID: -191453254
+      spriteID: c0914c323d44b7e4f80a29e9138b59ef
+      internalID: -683763795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 576
+        width: 576
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a75cfabbc6a5de468f3ccbe803dba4f
+      internalID: -806724774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 576
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4785fa3ad6d98b448fdbd97515b3a97
+      internalID: -298709406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 576
+        height: 576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c2215b304e6b0449b30e07a055bf66
+      internalID: 1005026191
       vertices: []
       indices: 
       edges: []
@@ -220,11 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      animacion_combate-0001_0: 95214265
-      animacion_combate-0001_1: 649561216
-      animacion_combate-0001_2: 1017127081
-      animacion_combate-0001_3: 2001954356
-      animacion_combate-0001_4: -191453254
+      Run_Animation_0: -675298909
+      Run_Animation_1: -646265024
+      Run_Animation_2: -809999243
+      Run_Animation_3: 1500563148
+      Run_Animation_4: -683763795
+      Run_Animation_5: -806724774
+      Run_Animation_6: -298709406
+      Run_Animation_7: 1005026191
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

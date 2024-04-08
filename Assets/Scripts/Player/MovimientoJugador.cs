@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -7,6 +8,7 @@ public class MovimientoJugador : MonoBehaviour
     private Controls controles;
     private Rigidbody2D rb;
     private TrailRenderer tr;
+    private Animator animator;
     [Range(0f, 2f)][SerializeField] private float timeScale;
 
     [Header("Movimiento")]
@@ -77,9 +79,10 @@ public class MovimientoJugador : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         tr = GetComponent<TrailRenderer>();
+        animator = GetComponent<Animator>();
         _jumpsLeft = maxJumps;
         _dashesLeft = maxDashes;
-        normalGravity = rb.gravityScale;
+        normalGravity = rb.gravityScale;        
     }
 
     private void Awake()
@@ -143,6 +146,8 @@ public class MovimientoJugador : MonoBehaviour
         onGround = Physics2D.OverlapBox(groundChecker.position, dimensionesCaja, 0f, queEsSuelo);
 
         onWall = Physics2D.OverlapBox(wallChecker.position, wallBoxDimensions, 0f, queEsSuelo);
+
+        animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
 
         if (onGround)
             speedMovement = speedGroundMovement;

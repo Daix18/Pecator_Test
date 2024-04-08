@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 933a595b4a85cc345b4fa001f46bd8c8
+guid: c14f740e787cb5849bf93c323dd67615
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_0
+      name: Idle_Animation_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c18e63d339022e847b7cfd9b3c6d2a96
-      internalID: -961141193
+      spriteID: 86714fc07e06ce64d8d1d1fb2833ccef
+      internalID: -1825112940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_1
+      name: Idle_Animation_1
       rect:
         serializedVersion: 2
         x: 384
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e21ea25c52c5da44af40f909244eb59
-      internalID: -590927563
+      spriteID: a46d8fe35e18f58479b52245a49df49b
+      internalID: -1187094858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_2
+      name: Idle_Animation_2
       rect:
         serializedVersion: 2
         x: 768
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62de828ba02390547a139e08085dec26
-      internalID: 69461911
+      spriteID: 3a092568d32c35240a448ea6b5b867c7
+      internalID: -1854079055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_3
+      name: Idle_Animation_3
       rect:
         serializedVersion: 2
         x: 1152
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1ec7ea623731f248847fb19b6769519
-      internalID: 577892509
+      spriteID: b8e388581b438fa459587f30c67a7d58
+      internalID: 2086978299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_4
+      name: Idle_Animation_4
       rect:
         serializedVersion: 2
         x: 1536
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8800acbb05f0b884f98c38081c8e98cd
-      internalID: 1853575770
+      spriteID: 859fe04f4d86c04408bce5fc42a617b5
+      internalID: -113576152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_5
+      name: Idle_Animation_5
       rect:
         serializedVersion: 2
         x: 0
@@ -224,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f687720bf353bfe49a5b378cf21d7658
-      internalID: -1439777874
+      spriteID: 5a6f80dce68109a45a8912fcde5030ff
+      internalID: -1026274877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_6
+      name: Idle_Animation_6
       rect:
         serializedVersion: 2
         x: 384
@@ -245,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48976625169cc354d88f4a0c73827043
-      internalID: -1912352997
+      spriteID: 10aa1b7954f36b5438ad95528f6e5e92
+      internalID: 1756383191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_7
+      name: Idle_Animation_7
       rect:
         serializedVersion: 2
         x: 768
@@ -266,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50133e1959153f541b9a52097bf1dbd8
-      internalID: -1003539898
+      spriteID: 28219890b087c6142ac1b4070d8ef581
+      internalID: -4803805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_8
+      name: Idle_Animation_8
       rect:
         serializedVersion: 2
         x: 1152
@@ -287,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bad8502ae9cacc46a907aadffefcb5f
-      internalID: -1614298895
+      spriteID: 1ddcb21ce547f3249960555aed9874be
+      internalID: 766028984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_9
+      name: Idle_Animation_9
       rect:
         serializedVersion: 2
         x: 1536
@@ -308,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a791ca90efae668419092aa736cb09dd
-      internalID: -1233257078
+      spriteID: 747b8d4687862064f97c1006c0f8021b
+      internalID: 835611956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_10
+      name: Idle_Animation_10
       rect:
         serializedVersion: 2
         x: 0
@@ -329,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f337b88ab8fd45645a6e467069cd3398
-      internalID: 1684213839
+      spriteID: 163a2a84217f86246a2f7e0cfefd4768
+      internalID: 939972670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_11
+      name: Idle_Animation_11
       rect:
         serializedVersion: 2
         x: 384
@@ -350,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 159749a849cefe04dbda5674dce4629f
-      internalID: -20673691
+      spriteID: 0884b36950353d145850aeabd63705a3
+      internalID: 838228633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_12
+      name: Idle_Animation_12
       rect:
         serializedVersion: 2
         x: 768
@@ -371,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33eea47858b09084f8844677c5683b21
-      internalID: 1321424253
+      spriteID: 179a1fa8f841aaa4293fc8e7dc7b0fca
+      internalID: 1526423925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_13
+      name: Idle_Animation_13
       rect:
         serializedVersion: 2
         x: 1152
@@ -392,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 451f2b62468f1464bacc2e0b1da268ae
-      internalID: -134136866
+      spriteID: 2083e348de5022241a30ee1a9e722423
+      internalID: -1263324597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_14
+      name: Idle_Animation_14
       rect:
         serializedVersion: 2
         x: 1536
@@ -413,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0dab79a3af93f542a0e304d745f8364
-      internalID: -1113331519
+      spriteID: fd0d41858b64b96439dfb611bbb0b25d
+      internalID: -464733449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_15
+      name: Idle_Animation_15
       rect:
         serializedVersion: 2
         x: 0
@@ -434,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cdfa9f6068c8a24ebf34b6fe015e886
-      internalID: -2002453501
+      spriteID: b743998378b807d41bbf1ffde711a190
+      internalID: 1261478827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_16
+      name: Idle_Animation_16
       rect:
         serializedVersion: 2
         x: 384
@@ -455,14 +455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e44cad2eac1d753458038ae9a30e9275
-      internalID: -1260748209
+      spriteID: 2f62de8884b33484b9ed004d319b63c5
+      internalID: -2109617634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_EXORCISTA_17
+      name: Idle_Animation_17
       rect:
         serializedVersion: 2
         x: 768
@@ -476,8 +476,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd933e9ed981dd3488c6837e367e89b7
-      internalID: 1466236050
+      spriteID: 443cc05b7bb22334f898b965a502127d
+      internalID: -1987912814
       vertices: []
       indices: 
       edges: []
@@ -493,24 +493,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      IDLE_EXORCISTA_0: -961141193
-      IDLE_EXORCISTA_1: -590927563
-      IDLE_EXORCISTA_10: 1684213839
-      IDLE_EXORCISTA_11: -20673691
-      IDLE_EXORCISTA_12: 1321424253
-      IDLE_EXORCISTA_13: -134136866
-      IDLE_EXORCISTA_14: -1113331519
-      IDLE_EXORCISTA_15: -2002453501
-      IDLE_EXORCISTA_16: -1260748209
-      IDLE_EXORCISTA_17: 1466236050
-      IDLE_EXORCISTA_2: 69461911
-      IDLE_EXORCISTA_3: 577892509
-      IDLE_EXORCISTA_4: 1853575770
-      IDLE_EXORCISTA_5: -1439777874
-      IDLE_EXORCISTA_6: -1912352997
-      IDLE_EXORCISTA_7: -1003539898
-      IDLE_EXORCISTA_8: -1614298895
-      IDLE_EXORCISTA_9: -1233257078
+      Idle_Animation_0: -1825112940
+      Idle_Animation_1: -1187094858
+      Idle_Animation_10: 939972670
+      Idle_Animation_11: 838228633
+      Idle_Animation_12: 1526423925
+      Idle_Animation_13: -1263324597
+      Idle_Animation_14: -464733449
+      Idle_Animation_15: 1261478827
+      Idle_Animation_16: -2109617634
+      Idle_Animation_17: -1987912814
+      Idle_Animation_2: -1854079055
+      Idle_Animation_3: 2086978299
+      Idle_Animation_4: -113576152
+      Idle_Animation_5: -1026274877
+      Idle_Animation_6: 1756383191
+      Idle_Animation_7: -4803805
+      Idle_Animation_8: 766028984
+      Idle_Animation_9: 835611956
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
