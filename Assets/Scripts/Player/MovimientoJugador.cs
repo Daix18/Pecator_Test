@@ -102,10 +102,7 @@ public class MovimientoJugador : MonoBehaviour
             //jump = false;
         }
 
-        /*if (onGround && rb.velocity.x > 0)
-        {
-            AudioManager.Instance.PlaySFX("running grass");
-        }*/
+        
 
 
 
@@ -118,6 +115,7 @@ public class MovimientoJugador : MonoBehaviour
         else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            
         }
 
 
@@ -200,6 +198,7 @@ public class MovimientoJugador : MonoBehaviour
             _jumpsLeft -= 1;
             //jump = true;
             Debug.Log("Salto");
+            AudioManager.Instance.PlaySFX("jump");
         }
     }
     private void Flip()
