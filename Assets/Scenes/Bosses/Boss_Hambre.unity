@@ -4245,7 +4245,7 @@ MonoBehaviour:
   canDash: 0
   wallHitCount: 0
   maxWallHits: 3
-  stunDuration: 2
+  stunDuration: 5
   stun: 0
 --- !u!1 &549783199
 GameObject:

@@ -20,10 +20,8 @@ public class Hambre_Boss_Controller : MonoBehaviour
     [SerializeField] private bool onGround;
     [SerializeField] private bool onWall;
     private Vector2 direccion;
-    private float moveSpeed = 20f;
-    GameObject[] stopWalls;
 
-   [Header("Vida")]
+     [Header("Vida")]
     [SerializeField] private float life;
 
     [Header("Attack Settings")]
@@ -53,9 +51,6 @@ public class Hambre_Boss_Controller : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-
-        // Encuentra todos los objetos con la etiqueta "StopWall"
-        stopWalls = GameObject.FindGameObjectsWithTag("StopWall");
     }
 
     // Update is called once per frame
@@ -96,12 +91,10 @@ public class Hambre_Boss_Controller : MonoBehaviour
         }
 
         if (wallHitCount == maxWallHits - 1 && !hasCalledMoveStopWalls)
-        {
-            Debug.Log("Se ha llamado a la corrutina.");
+        {          
             StartCoroutine(MoveStopWalls());
             hasCalledMoveStopWalls = true;
         }
-
 
         if (!stun)
         {
@@ -209,11 +202,23 @@ public class Hambre_Boss_Controller : MonoBehaviour
     }
 
     IEnumerator MoveStopWalls()
-    {
-        // Espera 2 segundos
+    {       
+        yield return new WaitForSeconds(1.3f);
+
+        // Guardamos las posiciones originales antes de mover los objetos
+        Vector2 originalLeftPosition = stopwallLeft.position;
+        Vector2 originalRightPosition = stopwallRight.position;
+
+        stopwallLeft.position = new Vector2(0f, stopwallLeft.position.y);
+
+        stopwallRight.position = new Vector2(23f, stopwallRight.position.y);
+
+        // Espera un momento para mantener las posiciones en sus nuevos lugares
         yield return new WaitForSeconds(1f);
 
-        stopwallLeft.position = new Vector2(0f, 0f);
+        // Restauramos las posiciones originales de stopwallLeft y stopwallRight
+        stopwallLeft.position = originalLeftPosition;
+        stopwallRight.position = originalRightPosition;
 
         hasCalledMoveStopWalls = false; // Restablece la bandera para permitir futuras llamadas        
     }
