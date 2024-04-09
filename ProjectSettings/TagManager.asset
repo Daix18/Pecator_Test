@@ -10,6 +10,7 @@ TagManager:
   - Pinchos
   - Spawnpoint
   - PlayerCollider
+  - StopWall
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Suelo
   - Jugador
   - Diana
-  - Stop
+  - StopWall
   - 
   - 
   - 

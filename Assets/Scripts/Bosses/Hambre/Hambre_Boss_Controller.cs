@@ -7,9 +7,12 @@ public class Hambre_Boss_Controller : MonoBehaviour
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public Animator animator;
     [HideInInspector] public bool facingRight = true;
+    bool hasCalledMoveStopWalls = false;
     public Transform player;
     [SerializeField] private Transform groundChecker;
     [SerializeField] private Transform wallChecker;
+    [SerializeField] private Transform stopwallRight;
+    [SerializeField] private Transform stopwallLeft;
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private Vector3 wallBoxDimensions;
     [SerializeField] private LayerMask queEsSuelo;
@@ -17,8 +20,10 @@ public class Hambre_Boss_Controller : MonoBehaviour
     [SerializeField] private bool onGround;
     [SerializeField] private bool onWall;
     private Vector2 direccion;
+    private float moveSpeed = 20f;
+    GameObject[] stopWalls;
 
-    [Header("Vida")]
+   [Header("Vida")]
     [SerializeField] private float life;
 
     [Header("Attack Settings")]
@@ -27,20 +32,20 @@ public class Hambre_Boss_Controller : MonoBehaviour
     [SerializeField] private float attackDamage;
 
     [Header("Dash Settings")]
-    [SerializeField] private bool cooldown = false;
     [SerializeField] private float dashingPower = 24f;
     [SerializeField] private float waitTime = 2f;
     [SerializeField] private float cooldownDuration = 4f;
     [SerializeField] private float throwMagnitude = 10f;
-    private Vector2 dashingDir;
+    [SerializeField] private bool cooldown = false;
     [SerializeField] private bool isDashing;
     [SerializeField] private bool canDash;
+    private Vector2 dashingDir;
 
     [Header("Stun settings")]
-    [SerializeField] private bool stun;
     [SerializeField] private int wallHitCount = 0;
     [SerializeField] private int maxWallHits = 3;
     [SerializeField] private float stunDuration = 2f;
+    [SerializeField] private bool stun;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +53,9 @@ public class Hambre_Boss_Controller : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+        // Encuentra todos los objetos con la etiqueta "StopWall"
+        stopWalls = GameObject.FindGameObjectsWithTag("StopWall");
     }
 
     // Update is called once per frame
@@ -87,15 +95,23 @@ public class Hambre_Boss_Controller : MonoBehaviour
             StartCoroutine(Stun());          
         }
 
+        if (wallHitCount == maxWallHits - 1 && !hasCalledMoveStopWalls)
+        {
+            Debug.Log("Se ha llamado a la corrutina.");
+            StartCoroutine(MoveStopWalls());
+            hasCalledMoveStopWalls = true;
+        }
 
 
         if (!stun)
         {
             canDash = true;
+            rb.bodyType = RigidbodyType2D.Kinematic;
         }
         else
         {
             canDash = false;
+            rb.bodyType = RigidbodyType2D.Dynamic;
         }
     }
 
@@ -190,5 +206,15 @@ public class Hambre_Boss_Controller : MonoBehaviour
         wallHitCount = 0;
         yield return new WaitForSeconds(cooldownDuration);
         cooldown = false;
+    }
+
+    IEnumerator MoveStopWalls()
+    {
+        // Espera 2 segundos
+        yield return new WaitForSeconds(1f);
+
+        stopwallLeft.position = new Vector2(0f, 0f);
+
+        hasCalledMoveStopWalls = false; // Restablece la bandera para permitir futuras llamadas        
     }
 }
