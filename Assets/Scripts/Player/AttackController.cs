@@ -17,11 +17,11 @@ public class AttackController : MonoBehaviour
     [SerializeField] private float tiempoSiguienteAtaque;
     private Animator animator;
     public bool attacking;
-    [SerializeField] private float initialHealth = 100f;    
+    [SerializeField] private float initialHealth = 100f;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();        
+        animator = GetComponent<Animator>();
         health = initialHealth;
     }
 
@@ -34,7 +34,7 @@ public class AttackController : MonoBehaviour
     }
 
     private void Update()
-    {        
+    {
         if (tiempoSiguienteAtaque > 0)
         {
             tiempoSiguienteAtaque -= Time.deltaTime;
@@ -45,7 +45,7 @@ public class AttackController : MonoBehaviour
         {
             Golpe();
             tiempoSiguienteAtaque = tiempoEntreAtaques;
-        }        
+        }
     }
 
     public void TakeDamage(float damage)

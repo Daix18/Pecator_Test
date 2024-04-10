@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,13 +6,13 @@ public class InputManager : MonoBehaviour
     public static InputManager THIS;
 
 
-    public Vector2 MoveInput {  get; private set; }
+    public Vector2 MoveInput { get; private set; }
     public bool JumpJustPressed { get; private set; }
-    public bool JumpBeingHeld {  get; private set; }
-    public bool JumpReleased {  get; private set; }
-    public bool AttackInput {  get; private set; }
+    public bool JumpBeingHeld { get; private set; }
+    public bool JumpReleased { get; private set; }
+    public bool AttackInput { get; private set; }
     public bool DashInput { get; private set; }
-    public bool MenuOpenCloseInput {  get; private set; }
+    public bool MenuOpenCloseInput { get; private set; }
 
 
     private PlayerInput _playerInput;
@@ -30,7 +28,7 @@ public class InputManager : MonoBehaviour
         if (THIS == null)
         {
             THIS = this;
-        }    
+        }
 
         _playerInput = GetComponent<PlayerInput>();
 
@@ -52,7 +50,7 @@ public class InputManager : MonoBehaviour
 
     private void UpdateInputs()
     {
-        MoveInput = _moveAction.ReadValue < Vector2>();
+        MoveInput = _moveAction.ReadValue<Vector2>();
         JumpJustPressed = _jumpAction.WasPressedThisFrame();
         JumpBeingHeld = _jumpAction.IsPressed();
         JumpReleased = _jumpAction.WasReleasedThisFrame();

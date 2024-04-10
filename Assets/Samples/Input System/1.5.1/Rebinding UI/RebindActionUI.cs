@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 ////TODO: localization support
 
@@ -530,14 +529,14 @@ namespace UnityEngine.InputSystem.Samples.RebindUI
 
         // We want the label for the action name to update in edit mode, too, so
         // we kick that off from here.
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         protected void OnValidate()
         {
             UpdateActionLabel();
             UpdateBindingDisplay();
         }
 
-        #endif
+#endif
 
         private void UpdateActionLabel()
         {

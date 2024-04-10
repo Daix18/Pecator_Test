@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,7 +17,7 @@ public class SceneSwapController : MonoBehaviour
 
     private void Awake()
     {
-        if (THIS == null) 
+        if (THIS == null)
         {
             THIS = this;
         }
@@ -48,9 +47,9 @@ public class SceneSwapController : MonoBehaviour
     {
         SceneFadeManager.THIS.StartFadeOut();
 
-        while (SceneFadeManager.THIS.IsFadingOut) 
+        while (SceneFadeManager.THIS.IsFadingOut)
         {
-            yield return null;   
+            yield return null;
         }
 
         _spawnPointTo = spawnPointAt;
@@ -60,7 +59,7 @@ public class SceneSwapController : MonoBehaviour
     private void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
         SceneFadeManager.THIS.StartFadeIn();
-    
+
         if (_loadedFromInteractive)
         {
             FindSpawnPoint(_spawnPointTo);
@@ -88,6 +87,6 @@ public class SceneSwapController : MonoBehaviour
     private void CalcualteSpawnPositon()
     {
         float colliderHeight = _playerCollider.bounds.extents.y;
-        _playerSpawnPosition  = _interactiveCollider.transform.position - new Vector3(0f, colliderHeight, 0f);
+        _playerSpawnPosition = _interactiveCollider.transform.position - new Vector3(0f, colliderHeight, 0f);
     }
 }

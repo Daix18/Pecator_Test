@@ -21,7 +21,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
     [SerializeField] private bool onWall;
     private Vector2 direccion;
 
-     [Header("Vida")]
+    [Header("Vida")]
     [SerializeField] private float life;
 
     [Header("Attack Settings")]
@@ -87,11 +87,11 @@ public class Hambre_Boss_Controller : MonoBehaviour
 
         if (wallHitCount >= maxWallHits)
         {
-            StartCoroutine(Stun());          
+            StartCoroutine(Stun());
         }
 
         if (wallHitCount == maxWallHits - 1 && !hasCalledMoveStopWalls)
-        {          
+        {
             StartCoroutine(MoveStopWalls());
             hasCalledMoveStopWalls = true;
         }
@@ -202,7 +202,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
     }
 
     IEnumerator MoveStopWalls()
-    {       
+    {
         yield return new WaitForSeconds(1.3f);
 
         // Guardamos las posiciones originales antes de mover los objetos

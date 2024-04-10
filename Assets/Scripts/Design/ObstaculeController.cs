@@ -1,7 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 using UnityEngine;
 
 public class ObstacleController : MonoBehaviour
@@ -33,11 +30,8 @@ public class ObstacleController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            
-            if (playerHealth != null)
-            {
-                AttackController.THIS.TakeDamage(damageAmount) // Aplica daño al jugador
-            }
+            AttackController.THIS.TakeDamage(damageAmount); // Aplica daño al jugador
+
             StartCoroutine(ResetObstacle()); // Resetea el obstáculo después de causar daño
         }
     }

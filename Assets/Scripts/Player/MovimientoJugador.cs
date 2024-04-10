@@ -82,7 +82,7 @@ public class MovimientoJugador : MonoBehaviour
         animator = GetComponent<Animator>();
         _jumpsLeft = maxJumps;
         _dashesLeft = maxDashes;
-        normalGravity = rb.gravityScale;        
+        normalGravity = rb.gravityScale;
     }
 
     private void Awake()
@@ -93,7 +93,7 @@ public class MovimientoJugador : MonoBehaviour
     private void Update()
     {
         waitTime += Time.deltaTime;
-        Time.timeScale = timeScale;        
+        Time.timeScale = timeScale;
 
         if (onGround && rb.velocity.y <= 0)
         {
@@ -101,7 +101,7 @@ public class MovimientoJugador : MonoBehaviour
             _dashesLeft = maxDashes;
             //rb.gravityScale = 1;
             //jump = false;
-        }        
+        }
 
         //Si el jugador está cayendo, se multiplica la gravedad y se le resta 1, para que este proporcionada a la gravedad.
         if (rb.velocity.y < 0)
@@ -132,7 +132,7 @@ public class MovimientoJugador : MonoBehaviour
 
         //Si no ha hecho un wall jump, está pegado en una pared y está haciendo un wall Slide, se hace un wall Jump.
         if (!wallJumping && onWall && wallSliding)
-        {           
+        {
             if (Input.GetButtonDown("Jump"))
             {
                 //Salto en pared
@@ -191,12 +191,12 @@ public class MovimientoJugador : MonoBehaviour
     private void Jump()
     {
         if (_jumpsLeft > 0)
-        {            
+        {
             rb.velocity = new Vector2(0f, jumpingForce);
             _jumpsLeft -= 1;
             //jump = true;
             Debug.Log("Salto");
-        }        
+        }
     }
     private void Flip()
     {
@@ -207,9 +207,9 @@ public class MovimientoJugador : MonoBehaviour
     }
 
     private void WallJump()
-    {        
+    {
         onWall = false;
-        rb.velocity = new Vector2(-direccion.x * jumpForceWallX, jumpForceWallY);        
+        rb.velocity = new Vector2(-direccion.x * jumpForceWallX, jumpForceWallY);
         StartCoroutine(WallJumpChange());
     }
 
@@ -253,7 +253,7 @@ public class MovimientoJugador : MonoBehaviour
     {
         //Comprobación para saltar que incluye el coyote jump.
         if (context.performed && !wallSliding)
-        {            
+        {
             //Salto normal
             Jump();
         }
