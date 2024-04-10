@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Hambre_Boss_Controller : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
     [SerializeField] private Transform wallChecker;
     [SerializeField] private Transform stopwallRight;
     [SerializeField] private Transform stopwallLeft;
+    [SerializeField] private Image fillImage;
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private Vector3 wallBoxDimensions;
     [SerializeField] private LayerMask queEsSuelo;
@@ -21,7 +23,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
     [SerializeField] private bool onWall;
     private Vector2 direccion;
 
-     [Header("Vida")]
+    [Header("Vida")]
     [SerializeField] private float life;
 
     [Header("Attack Settings")]
@@ -106,6 +108,11 @@ public class Hambre_Boss_Controller : MonoBehaviour
             canDash = false;
             rb.bodyType = RigidbodyType2D.Dynamic;
         }
+
+        if (life <= 0)
+        {
+            Death();
+        }
     }
 
     private void Flip()
@@ -126,6 +133,11 @@ public class Hambre_Boss_Controller : MonoBehaviour
 
         // Invertir la dirección de movimiento
         rb.velocity = new Vector2(rb.velocity.x * -1, rb.velocity.y);
+    }
+
+    private void Death()
+    {
+        Destroy(gameObject);
     }
 
     public void LookAtPlayer()
@@ -155,6 +167,25 @@ public class Hambre_Boss_Controller : MonoBehaviour
                 rb.velocity = dashingDir.normalized * dashingPower;
             }
         }
+    }
+
+    public void Attack()
+    {
+        Collider2D[] objects = Physics2D.OverlapCircleAll(attackController.position, attackRadius);
+
+        foreach (Collider2D collision in objects)
+        {
+            if (collision.CompareTag("Player"))
+            {
+                collision.GetComponent<AttackController>().TakeDamage(attackDamage);
+            }
+        }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        life -= damage;
+        fillImage.fillAmount = life / 100f;
     }
 
     private void OnDrawGizmos()
