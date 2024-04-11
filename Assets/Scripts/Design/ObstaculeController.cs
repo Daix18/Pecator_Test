@@ -1,10 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
-public class ObstacleController : MonoBehaviour
+public class ObstaculeController : MonoBehaviour
 {
-    public int damageAmount = 100; // Cantidad de daño que causa al jugador
-    public LayerMask playerLayer; // Capa que identifica al jugador
+    public int damageAmount = 1; // Cantidad de daño que causa al jugador
+    public string playerTag = "Player"; // Etiqueta del jugador
+    private bool playerDetected = false; // Variable para almacenar si el jugador ha sido detectado
     private Vector2 initialPosition; // Posición inicial del obstáculo
     private Rigidbody2D rb;
 
@@ -12,37 +13,42 @@ public class ObstacleController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         initialPosition = transform.position;
+        rb.gravityScale = 0f; // Desactiva la gravedad inicialmente
     }
 
-    void Update()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        // Lanza un rayo hacia abajo desde la posición del obstáculo
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, Mathf.Infinity, playerLayer);
-
-        // Si el rayo golpea al jugador, activa la caída del obstáculo
-        if (hit.collider != null && hit.collider.CompareTag("Player"))
+        // Si el objeto es el jugador, activa la gravedad del objeto
+        if (other.CompareTag(playerTag))
         {
-            rb.gravityScale = 1f; // Activa la gravedad para que el obstáculo caiga
+            playerDetected = true;
+            rb.gravityScale = 1f; // Activa la gravedad del objeto
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        // Si colisiona con el jugador, aplica daño y resetea el obstáculo
+        if (collision.gameObject.CompareTag(playerTag))
         {
             AttackController.THIS.TakeDamage(damageAmount); // Aplica daño al jugador
-
             StartCoroutine(ResetObstacle()); // Resetea el obstáculo después de causar daño
+        }
+        // Si colisiona con el suelo, resetea el obstáculo
+        else if (collision.gameObject.CompareTag("Ground"))
+        {
+            StartCoroutine(ResetObstacle()); // Resetea el obstáculo si colisiona con el suelo
         }
     }
 
     IEnumerator ResetObstacle()
     {
-        rb.velocity = Vector2.zero; // Detiene cualquier movimiento del obstáculo
+        rb.velocity = Vector2.zero; // Detiene el movimiento del obstáculo
         rb.gravityScale = 0f; // Desactiva la gravedad
-        GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f); // Cambia la transparencia para un efecto de "fade"
+        gameObject.SetActive(false); // Desactiva el obstáculo
         yield return new WaitForSeconds(5f); // Espera 5 segundos
         transform.position = initialPosition; // Devuelve el obstáculo a su posición inicial
-        GetComponent<SpriteRenderer>().color = Color.white; // Restaura la transparencia
+        gameObject.SetActive(true); // Activa el obstáculo nuevamente
+        playerDetected = false; // Reinicia la detección del jugador
     }
 }

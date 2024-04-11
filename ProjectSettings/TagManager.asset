@@ -11,6 +11,8 @@ TagManager:
   - Spawnpoint
   - PlayerCollider
   - StopWall
+  - Obstacle
+  - Ground
   layers:
   - Default
   - TransparentFX
