@@ -1,0 +1,3841 @@
+fileFormatVersion: 2
+guid: b45ae3035dd76f343a7a0481cd1ebd4b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TILE SET BASALTO _0
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44748b2ba4d380b45846e0b8bbff210a
+      internalID: -1685989764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _1
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16715108a29ba7741a5ce1372781c532
+      internalID: -2057462016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053c2bc0bd06e2b43a5ba8f4b8f6aaa0
+      internalID: -8190729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd9f347d68e7a640ae771ccdc4fbbd5
+      internalID: 879953628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcae34bf2d59e24ba62efabb49ce335
+      internalID: 2023039384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4580763c1cbfbb1469f32203d8c27af4
+      internalID: -1786348058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _6
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a64488313c40c745a8e140f712af681
+      internalID: -1329854833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b35e4ed3d49d9d40b65bdeee63eeb9b
+      internalID: -2034852507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _8
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18057f21c94052f4c821eaef9898a0c7
+      internalID: 408914452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _9
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c166649d8ff9846b4222b71614d85b
+      internalID: -821388451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62f101f5c281e045a281db42d71d69a
+      internalID: 131222036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _11
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d7ad3e59c307e48b36c764222e30c8
+      internalID: -867233585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _12
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ea1c621075523489a012c1f3476ae0
+      internalID: 881058523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _13
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60a998995fdba54eaa49beba7796dc8
+      internalID: -1069718681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _14
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0425a8fa5166ee24fa69dd8e29580cc7
+      internalID: 1325748980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _15
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ba14ac5ccfb2d4ea409cb93880ad7e
+      internalID: -1544665040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _16
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a49c43b82f70847a8cf4629da42387
+      internalID: 300629450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _17
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce89c0243fe12e42ae6d99d839ae7cd
+      internalID: -1485687581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _18
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a62cdd31e230a445a189d45bd1df6d1
+      internalID: -1691669485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _19
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d71959b77e31f94b96d7d2d20f4f924
+      internalID: -968960737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _20
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1d863cd1f79774a96f32f3bce9f478
+      internalID: -549087694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _21
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73699e85ac25eeb43ac6098f92375f8e
+      internalID: 841064959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c92ef7b7e35eb3419da74cdb5bc1046
+      internalID: 646205173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _23
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd353d8c339d16445b3d5b31932b7058
+      internalID: -204348686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7285fb08a2fae9b4f95b6530271552a9
+      internalID: -1526265496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _25
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b733f739c393db40abf44eedb49f23b
+      internalID: -494550126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _26
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd83783e11ca84f4f9dc894589becf80
+      internalID: 573331609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _27
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0cbb137c5d52e4e94fc636a5cbddd3
+      internalID: 1012206195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7622f0ad949c2704c82bc8a58f1585b0
+      internalID: -1349192202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _29
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079cf386aee9a6b4099bc99a989432cb
+      internalID: -1661316973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _30
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c40a00b1ed418499dbb93a8133abcf
+      internalID: 1933068538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _31
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4e478617751db46b821fdb02fe6a45
+      internalID: 610621466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3adf28eeed8fdde46921ed330e54641b
+      internalID: 1001921623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _33
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7859473570c20447b3b0e04656ca1b3
+      internalID: -141673639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _34
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597e68a54cdeb63408b451046d29c7fd
+      internalID: 1535049931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _35
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d8f0b52455f6545a4b473886ea4665
+      internalID: -1368973331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _36
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44e4194643a4f849860a7ee86f63448
+      internalID: 470605092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9828307c2c1a53a41adca1047108b203
+      internalID: -1742185611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d3de5445eb4104b98283fb078b1d23
+      internalID: 1488100406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e696d93ad4c466047a242f8a6d1fe0c5
+      internalID: -1377784050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bac2122475680740880d17d809e0c32
+      internalID: -416052564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _41
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330b88f30fe0f0548aeec3f4690ed4d9
+      internalID: 866872417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _42
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c2ceb6aa25ebd47909322e9180b335
+      internalID: -106831572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _43
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1751e39151dd1144b9ceb465db057aa9
+      internalID: -1824042422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _44
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a0726eacd10d744913754489a530ab
+      internalID: -1932722618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _45
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab6505d33d903d4492bfd83babcd478
+      internalID: -1931513630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _46
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e80acbbcf825947be973b8495ea1e1
+      internalID: 1277868951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _47
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09973684dfa8ee24b84f2b1830dac3a9
+      internalID: -2099165223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _48
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ee1564bdf56db429c9a025aac331ef
+      internalID: 2045426509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _49
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fa699b1e5748042883b9c657fa277c
+      internalID: 839573750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _50
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0c88ce77feeef4a8d044aa983d7100
+      internalID: -1872566958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _51
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ed58565ac46d6448b7aaaeea68b93bb
+      internalID: -1137464319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _52
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935fe2224a4916a49b29f0f424d0038f
+      internalID: -493521626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _53
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cd639d54997914fb9b948f22e0fe40
+      internalID: -973592173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _54
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccc98944fe3cfb44848c8704a03d158
+      internalID: -1721026927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _55
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98fd5da8a7ecef4399104199e147e94
+      internalID: -8836888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f214b514de9fe4395549cfd10520bc
+      internalID: 373300861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _57
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad287a9d87177d4cae504642d384cd3
+      internalID: -480733886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d8ed3cc99049e42b81163ed4119daa
+      internalID: 534731009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _59
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ba2a7584f40374f896edac3141ce7f
+      internalID: -1804983211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _60
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0c499995d786543af49df27d0a5ede
+      internalID: -1699145510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _61
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d7a3cd9dd7d4741a01cac4c4e30917
+      internalID: 1402656618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _62
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d0878687b73494fa7857bbd80f98c8
+      internalID: 1561030033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _63
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e288a591dda46da418440ca9429d0975
+      internalID: -900597614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _64
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66c80b69ffd24e409708e85cef11ba6
+      internalID: -1118617894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _65
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2052b418693bd4b8eab4d0e47da10d
+      internalID: -1657571171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _66
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8cde794275dfb44ea7263563aa21c9a
+      internalID: 1166108328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _67
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbe22c7e0763284b9cd707982799ec8
+      internalID: -1124073523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _68
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654997e855f6aa846a32d2e042ee13eb
+      internalID: 770415665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _69
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cffd2158d0c73648a9dbed63c6e4d13
+      internalID: -662315653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _70
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9ec8cff465a6341894d8259a99ae37
+      internalID: -406944446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _71
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beddccf3562b50340bf0920d9a0e9b94
+      internalID: -487481821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _72
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b38d2276692a04fad09227a5b97b1b
+      internalID: -438084644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6087b559730746b449d96bdf71f3c38f
+      internalID: 996340714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _74
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc9aa086ab52ef4a92a81fcc25a4a6b
+      internalID: -2114320385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _75
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5867fefe1c0be32468a49eb381671c13
+      internalID: -1068107946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _76
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80695311945204f44b38431243dd5ef0
+      internalID: 2003927921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _77
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef23194c61170bf4bafd76598acd612c
+      internalID: 1050391031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _78
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46141211f7051847ba00ccbe8b30387
+      internalID: 101388776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _79
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f29ddd2d3381f428fc20eaea67f7ca
+      internalID: 1549468446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _80
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031419bc1310c874f877d2af1035fd63
+      internalID: 1022493787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _81
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab78500aea94924ba7a0b93b71a480b
+      internalID: 1943664943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _82
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34d2f5dc8a895847ae3436689d460f8
+      internalID: 1181893465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _83
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154c1121fceee1941b9927a475e11956
+      internalID: -1856675576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _84
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc053d1ef9329d4582798923bdfd8f5
+      internalID: 1120946461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _85
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee53f78ee6637a43b89ce1bead99f42
+      internalID: 311586967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _86
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d296e0ad2d1c536459be321fc0b98473
+      internalID: 1182409422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _87
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48ddf85d6fd09a4b82dcda8653cb3fb
+      internalID: 1054708382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _88
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac7883023704654aaf36b8ec4862d73
+      internalID: 123487234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _89
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e678a9f93afefe419a3624d8dfc0ba3
+      internalID: -66777519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6e127347bc9ff4dbb0e96087819a08
+      internalID: 1052123931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _91
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a63b42d997b1d4891b7b56a32f760e
+      internalID: 1278207443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _92
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc751fd7b84c08345b00e782423d3082
+      internalID: -1901766039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _93
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e76771c91f8754ba7c5706b8d77fda
+      internalID: 1331958408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _94
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029851e86f8f2ad4e97f85a9eb5b1272
+      internalID: -2001469314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _95
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dcd68d2e36bbf49a9d8c52b3389db6
+      internalID: 789953943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _96
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41fd8e5de14b134d9cb1c3876520a41
+      internalID: -133546105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _97
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ece69b68001ce8449cd0aeb0ae557af
+      internalID: -282258809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _98
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b9a1c75c2122f4ea0fc44aacc8f0e4
+      internalID: -396334666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _99
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7a9a79dc119ee4fbcdd8c826947efd
+      internalID: -1076616471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _100
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4915a65310fce47afb96504c36b264
+      internalID: -1038490526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _101
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce134182f389b14d9fa2a86831f10b9
+      internalID: -667018996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _102
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1986087e65c7d794aa899ffc0d4ff743
+      internalID: 651269297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _103
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d8bb107e69b8547b943e4262862d7a
+      internalID: 2045267563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12eb4b7383587b441abce1bfe6ef1ccf
+      internalID: -420357346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _105
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743a55aab7a49c546a2aa16ea761b972
+      internalID: 590404596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _106
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec1ef0fa4bb4a34d80a69c4906a1f99
+      internalID: 1635745386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _107
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc3f2730589caf4f891d43810bd0142
+      internalID: -1341396561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _108
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171866f4c0d48d749b3409a3ac7edbc5
+      internalID: 933060542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _109
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11126602ff2f7cd4dacb488004783e39
+      internalID: 841170283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _110
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c84a629fde26b49b2dbf19790135c6
+      internalID: 869446586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _111
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bf955676aa52b4f938100e1741c960
+      internalID: 477176474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _112
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7acc23d07e63ed4786fcd2e121f1887
+      internalID: -1684928363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _113
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d4e04fdd0642f43a75fa69d66a36c0
+      internalID: 497228307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _114
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225690ed6acc50f43b38bca2a861d89b
+      internalID: 346924633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _115
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198813d386fe6224d944c9544ec4f1f6
+      internalID: -1177033768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _116
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245a1e7fa308f274cb24ac676b99a400
+      internalID: -312472038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _117
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d5ffcf0253d9441aa86889641aa94f
+      internalID: 1558350366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _118
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019534bba96668643bebebd7ed6a1449
+      internalID: 1166267619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _119
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58efbd394a4a7ff4580a1fc48587c0c1
+      internalID: 1691192588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _120
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dad04629a96e734e838269f3a491df0
+      internalID: 1577790712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b2324fe9fe0134f9c38dd6bf463ed3
+      internalID: 658524349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _122
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ec1632a5b61434380b87f75885ce18
+      internalID: -1984901806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _123
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a5064cbf413c748acaa70cad2ba64e
+      internalID: -1312581932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _124
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acff9c8386c22a141b0e16063b79a6ff
+      internalID: 630884164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _125
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58d4156d74b9d6439f2ace02ac06228
+      internalID: 414971033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _126
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050f1cb65dffedf4dbe16dadcd3f030e
+      internalID: -572053296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _127
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb05ebfb3cb22d44ea903ff3044ee712
+      internalID: 303663942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _128
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc67874d3f4c0564888a03d6cc941c44
+      internalID: 2077397112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _129
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5697f46fd19fb4f8dbed493497d7c0
+      internalID: -631882619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _130
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49201e22b73185e40b02067a79ebf437
+      internalID: -1906272272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _131
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3ddb699e9add649a7b59e80aa879cd
+      internalID: -393765770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _132
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5481da9d0169ad4448924bdb5c179e21
+      internalID: 1822047040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _133
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb584309029f4c844b0ace40774c0c3d
+      internalID: 1056248780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _134
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3de00d6eb6d8f48b68677b4bf8842f
+      internalID: -1031717385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _135
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3050cabac9d7294d9df8bf33f78bd77
+      internalID: -1428490031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _136
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b870db26ddc3b6347a000c93d662e56d
+      internalID: -1410159164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _137
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95d58a54f8aa5f4ab5b1765d26cbe2b
+      internalID: -130445252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _138
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6dba6703129674283784d003fa6b09
+      internalID: 1620931526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _139
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b810f2ab721d3ab418fdfa95a2d7bbda
+      internalID: -910748961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _140
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c022a4855adff81469d28993dd5e1a5a
+      internalID: 2133947658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _141
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db1efd134d910c4d9d8d4a2872111d2
+      internalID: -807552138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _142
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae437d1c7ab08b8428054c214b74032a
+      internalID: 2044350611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _143
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cc7c873137f4c40bcf7eabe882d209
+      internalID: -1632104874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _144
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9cd18aaf9c4514d9fff9134f0b6c86
+      internalID: -1979098943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _145
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d8384c9a23cac46ad4a6d9a9b7d52b
+      internalID: -674374430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _146
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a9018504f4be742ad8e0382b835cd8
+      internalID: 324301163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _147
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c32f606c08fc3c41ba62751c21a0652
+      internalID: 1402289423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _148
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62fdf6351e484547a4fac5e8fa0bf57
+      internalID: -1238491543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _149
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af52db4bab1e90c4b9287be3e2ea39a5
+      internalID: 1262638585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _150
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52db2edc5b7428345a36e545721ca3c5
+      internalID: -290469558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _151
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d02b647f4f67304aa8c130bee3faae8
+      internalID: 1624212964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _152
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a527d0ba5e7a374eb497579968c62bb
+      internalID: -1589202012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _153
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c3bf742b3693c419cb1bfa720fa6a0
+      internalID: -870562045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _154
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1b9201789a8594996d8f2faaedd2b6
+      internalID: 1337937732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _155
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052cea1d5ad31614f99cfaa880daac7e
+      internalID: 574558302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _156
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdf4b777d0a1cf45a2f356a28f6f5da
+      internalID: 2071764398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _157
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43379671d132c2419020630c30f56e5
+      internalID: -799935209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _158
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac87d3745a28d354fb293b39d44180f7
+      internalID: 2129009657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _159
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8c5d871a46f344d921a3ac1e33a608
+      internalID: -1384831671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _160
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7564bf6c33551146a55aca48baa8866
+      internalID: -969274535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _161
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f543f39c425cd645aa0314706a3a601
+      internalID: -503075118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _162
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44248b56ff56c741b623cd4d238f62c
+      internalID: -1255855024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _163
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafbb6743018d1c4bb468ff6b77c0d9b
+      internalID: 115050137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _164
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33530aec34b992e46b25062b436f0f44
+      internalID: -1776977794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _165
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9082bb1c7b6eaae44bec72d814a9e92c
+      internalID: 524276311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _166
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21267d462e998048a2528819d04ef69
+      internalID: -1955804852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _167
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147b8230c9b664e478b7ab5a92b0c05a
+      internalID: 928457083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE SET BASALTO _168
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad8d18f6095fbc458105c28d51c3541
+      internalID: 380576251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TILE SET BASALTO _0: -1685989764
+      TILE SET BASALTO _1: -2057462016
+      TILE SET BASALTO _10: 131222036
+      TILE SET BASALTO _100: -1038490526
+      TILE SET BASALTO _101: -667018996
+      TILE SET BASALTO _102: 651269297
+      TILE SET BASALTO _103: 2045267563
+      TILE SET BASALTO _104: -420357346
+      TILE SET BASALTO _105: 590404596
+      TILE SET BASALTO _106: 1635745386
+      TILE SET BASALTO _107: -1341396561
+      TILE SET BASALTO _108: 933060542
+      TILE SET BASALTO _109: 841170283
+      TILE SET BASALTO _11: -867233585
+      TILE SET BASALTO _110: 869446586
+      TILE SET BASALTO _111: 477176474
+      TILE SET BASALTO _112: -1684928363
+      TILE SET BASALTO _113: 497228307
+      TILE SET BASALTO _114: 346924633
+      TILE SET BASALTO _115: -1177033768
+      TILE SET BASALTO _116: -312472038
+      TILE SET BASALTO _117: 1558350366
+      TILE SET BASALTO _118: 1166267619
+      TILE SET BASALTO _119: 1691192588
+      TILE SET BASALTO _12: 881058523
+      TILE SET BASALTO _120: 1577790712
+      TILE SET BASALTO _121: 658524349
+      TILE SET BASALTO _122: -1984901806
+      TILE SET BASALTO _123: -1312581932
+      TILE SET BASALTO _124: 630884164
+      TILE SET BASALTO _125: 414971033
+      TILE SET BASALTO _126: -572053296
+      TILE SET BASALTO _127: 303663942
+      TILE SET BASALTO _128: 2077397112
+      TILE SET BASALTO _129: -631882619
+      TILE SET BASALTO _13: -1069718681
+      TILE SET BASALTO _130: -1906272272
+      TILE SET BASALTO _131: -393765770
+      TILE SET BASALTO _132: 1822047040
+      TILE SET BASALTO _133: 1056248780
+      TILE SET BASALTO _134: -1031717385
+      TILE SET BASALTO _135: -1428490031
+      TILE SET BASALTO _136: -1410159164
+      TILE SET BASALTO _137: -130445252
+      TILE SET BASALTO _138: 1620931526
+      TILE SET BASALTO _139: -910748961
+      TILE SET BASALTO _14: 1325748980
+      TILE SET BASALTO _140: 2133947658
+      TILE SET BASALTO _141: -807552138
+      TILE SET BASALTO _142: 2044350611
+      TILE SET BASALTO _143: -1632104874
+      TILE SET BASALTO _144: -1979098943
+      TILE SET BASALTO _145: -674374430
+      TILE SET BASALTO _146: 324301163
+      TILE SET BASALTO _147: 1402289423
+      TILE SET BASALTO _148: -1238491543
+      TILE SET BASALTO _149: 1262638585
+      TILE SET BASALTO _15: -1544665040
+      TILE SET BASALTO _150: -290469558
+      TILE SET BASALTO _151: 1624212964
+      TILE SET BASALTO _152: -1589202012
+      TILE SET BASALTO _153: -870562045
+      TILE SET BASALTO _154: 1337937732
+      TILE SET BASALTO _155: 574558302
+      TILE SET BASALTO _156: 2071764398
+      TILE SET BASALTO _157: -799935209
+      TILE SET BASALTO _158: 2129009657
+      TILE SET BASALTO _159: -1384831671
+      TILE SET BASALTO _16: 300629450
+      TILE SET BASALTO _160: -969274535
+      TILE SET BASALTO _161: -503075118
+      TILE SET BASALTO _162: -1255855024
+      TILE SET BASALTO _163: 115050137
+      TILE SET BASALTO _164: -1776977794
+      TILE SET BASALTO _165: 524276311
+      TILE SET BASALTO _166: -1955804852
+      TILE SET BASALTO _167: 928457083
+      TILE SET BASALTO _168: 380576251
+      TILE SET BASALTO _17: -1485687581
+      TILE SET BASALTO _18: -1691669485
+      TILE SET BASALTO _19: -968960737
+      TILE SET BASALTO _2: -8190729
+      TILE SET BASALTO _20: -549087694
+      TILE SET BASALTO _21: 841064959
+      TILE SET BASALTO _22: 646205173
+      TILE SET BASALTO _23: -204348686
+      TILE SET BASALTO _24: -1526265496
+      TILE SET BASALTO _25: -494550126
+      TILE SET BASALTO _26: 573331609
+      TILE SET BASALTO _27: 1012206195
+      TILE SET BASALTO _28: -1349192202
+      TILE SET BASALTO _29: -1661316973
+      TILE SET BASALTO _3: 879953628
+      TILE SET BASALTO _30: 1933068538
+      TILE SET BASALTO _31: 610621466
+      TILE SET BASALTO _32: 1001921623
+      TILE SET BASALTO _33: -141673639
+      TILE SET BASALTO _34: 1535049931
+      TILE SET BASALTO _35: -1368973331
+      TILE SET BASALTO _36: 470605092
+      TILE SET BASALTO _37: -1742185611
+      TILE SET BASALTO _38: 1488100406
+      TILE SET BASALTO _39: -1377784050
+      TILE SET BASALTO _4: 2023039384
+      TILE SET BASALTO _40: -416052564
+      TILE SET BASALTO _41: 866872417
+      TILE SET BASALTO _42: -106831572
+      TILE SET BASALTO _43: -1824042422
+      TILE SET BASALTO _44: -1932722618
+      TILE SET BASALTO _45: -1931513630
+      TILE SET BASALTO _46: 1277868951
+      TILE SET BASALTO _47: -2099165223
+      TILE SET BASALTO _48: 2045426509
+      TILE SET BASALTO _49: 839573750
+      TILE SET BASALTO _5: -1786348058
+      TILE SET BASALTO _50: -1872566958
+      TILE SET BASALTO _51: -1137464319
+      TILE SET BASALTO _52: -493521626
+      TILE SET BASALTO _53: -973592173
+      TILE SET BASALTO _54: -1721026927
+      TILE SET BASALTO _55: -8836888
+      TILE SET BASALTO _56: 373300861
+      TILE SET BASALTO _57: -480733886
+      TILE SET BASALTO _58: 534731009
+      TILE SET BASALTO _59: -1804983211
+      TILE SET BASALTO _6: -1329854833
+      TILE SET BASALTO _60: -1699145510
+      TILE SET BASALTO _61: 1402656618
+      TILE SET BASALTO _62: 1561030033
+      TILE SET BASALTO _63: -900597614
+      TILE SET BASALTO _64: -1118617894
+      TILE SET BASALTO _65: -1657571171
+      TILE SET BASALTO _66: 1166108328
+      TILE SET BASALTO _67: -1124073523
+      TILE SET BASALTO _68: 770415665
+      TILE SET BASALTO _69: -662315653
+      TILE SET BASALTO _7: -2034852507
+      TILE SET BASALTO _70: -406944446
+      TILE SET BASALTO _71: -487481821
+      TILE SET BASALTO _72: -438084644
+      TILE SET BASALTO _73: 996340714
+      TILE SET BASALTO _74: -2114320385
+      TILE SET BASALTO _75: -1068107946
+      TILE SET BASALTO _76: 2003927921
+      TILE SET BASALTO _77: 1050391031
+      TILE SET BASALTO _78: 101388776
+      TILE SET BASALTO _79: 1549468446
+      TILE SET BASALTO _8: 408914452
+      TILE SET BASALTO _80: 1022493787
+      TILE SET BASALTO _81: 1943664943
+      TILE SET BASALTO _82: 1181893465
+      TILE SET BASALTO _83: -1856675576
+      TILE SET BASALTO _84: 1120946461
+      TILE SET BASALTO _85: 311586967
+      TILE SET BASALTO _86: 1182409422
+      TILE SET BASALTO _87: 1054708382
+      TILE SET BASALTO _88: 123487234
+      TILE SET BASALTO _89: -66777519
+      TILE SET BASALTO _9: -821388451
+      TILE SET BASALTO _90: 1052123931
+      TILE SET BASALTO _91: 1278207443
+      TILE SET BASALTO _92: -1901766039
+      TILE SET BASALTO _93: 1331958408
+      TILE SET BASALTO _94: -2001469314
+      TILE SET BASALTO _95: 789953943
+      TILE SET BASALTO _96: -133546105
+      TILE SET BASALTO _97: -282258809
+      TILE SET BASALTO _98: -396334666
+      TILE SET BASALTO _99: -1076616471
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

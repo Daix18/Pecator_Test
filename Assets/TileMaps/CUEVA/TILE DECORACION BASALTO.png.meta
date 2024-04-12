@@ -1,0 +1,2983 @@
+fileFormatVersion: 2
+guid: 80ddd707254eb7d43a6a1961bc74a48a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90b4693a86d2b34f9c1a37f7cbf7fb8
+      internalID: -1971659921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4a5867cc834224394b1e70195a8018
+      internalID: 503727511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a838a7dac3cc54fa93f1178bc3970b
+      internalID: 425443524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc594c2b31da014ab27603307680df2
+      internalID: 1401696212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0ce03c06627804fbf4569dc448b792
+      internalID: -1203922262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa7447bac1d073488f72c4594284a6f
+      internalID: -1087826757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b64046e5e8cad045a2a672cfdda6a63
+      internalID: -941380975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddfe41f89efff949ac56b2c09749fcb
+      internalID: 449192188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_8
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da88080c3e043149ac59388a150ed38
+      internalID: 939554187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_9
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62928cb0bd510f447b6160f8f5f9765b
+      internalID: 2132215441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_10
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b3efcc5a7850346b9567f958a98087
+      internalID: 126647962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 696
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2667a8769aa57d34480d0e7fa2f67570
+      internalID: -2003080899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddd480ca6a8c3d4ebc0c84b7a00e202
+      internalID: 32075323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093c4fbb5422d974e96d6a2c8e3e8199
+      internalID: 275870379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5336bc3f200b0df43a75913782f32323
+      internalID: -232828660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_15
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4e77e5b26c56549be98c46b9692c9b
+      internalID: 1553388476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_16
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89b5cd1746fc0b47b9e0f1209c74ae3
+      internalID: 1315098542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_17
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed067bbfc5571a84595684eb4ae8cc47
+      internalID: -1381886401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394e12f58b359ce4da0aa675b2437f2c
+      internalID: -925210243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0e9cfa4d0af474f9947d6ace5f4655
+      internalID: -1716893886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_20
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cb9544f241d984dbad54d4cbc9a7a6
+      internalID: -2038767261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_21
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c092adf9987dd49b0f3a0a50a36acd
+      internalID: 75781133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_22
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae22ef419689b814e91c755517409cf3
+      internalID: 452612140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_23
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50672db9d1cdcb845b692ee55ff82c4e
+      internalID: 2147239600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_24
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adf45476fa37e54bb818835dbfd3f32
+      internalID: -823031524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_25
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b550d58565574f74a8264227fabf86fd
+      internalID: -1954322020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_26
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 632
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3e7b6799172e94d80f614dfbc42fcd
+      internalID: 661487177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe063a26391268f43a5fb312c5dacecc
+      internalID: -2130106773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9195d5ceaa20145ba035d134ee56ce
+      internalID: 931511041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b987b39c90f478449e83b87705516f1
+      internalID: 402542799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_30
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d4a7715a888444887e533db9e35dc6
+      internalID: 1102396487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_31
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b045980e79fa7664f8bfefe3fabff098
+      internalID: 1288665316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_32
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a859138e2f703748aee8d9fb26ccc7f
+      internalID: 976726701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_33
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e3349a4837d35243a3043bd776b683a
+      internalID: 718908505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_34
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebc73fbaff6c074cb165ff9a972cc7a
+      internalID: 107021264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_35
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b3dccda9e414f4e80835f79ff66457
+      internalID: 599932893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_36
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4048e7b06614e4792353cbc969e446
+      internalID: -149315904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_37
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cfc6b7444d07c4497e909445c420d7
+      internalID: -559571279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_38
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cfa83f60d3eee949b306edd5fe4c72a
+      internalID: -1939942773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_39
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3443a1d6bcda5fb4dab3670631c0120a
+      internalID: -1739892274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_40
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 568
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b95c47cf9917c40a1aaafd3bab3a39
+      internalID: 765271345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c87dbe3a95dae049862ddafa3d0e9a8
+      internalID: -1126830061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36292f65ecdf26489b1106938c13744
+      internalID: 1223825985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_43
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e59c02b800eec48bc8d6af985a8e0c
+      internalID: -1678764564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_44
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2a5149c8bee7d42a4ea99e826a3433
+      internalID: 1619937003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_45
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3335de177a5ca3b4badc0a89b87b803e
+      internalID: 752568468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_46
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1470e9c5be19844b5d01a402da4a60
+      internalID: -1463316603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_47
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf8a39c64afea14dac94866fbd476c6
+      internalID: 1951812838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_48
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81227db9b33da9048a87660c07239d83
+      internalID: -1176945357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_49
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90dfeee6514c4e94daffeed2adac3a1e
+      internalID: 2043041075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_50
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 504
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464658a8bd5eb6244be16797e3193009
+      internalID: 1952482805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_51
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0abedc4375dc114a86423d8d4b9c4cb
+      internalID: 135325951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_52
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853a188aa4aa4f848b1a7bf2b0955297
+      internalID: 117574017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_53
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21fa2da40658a243bbab596374e36ae
+      internalID: 778389151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_54
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50eebc59c69d974b8556203a155c2d8
+      internalID: 535132645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_55
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f50cf2beb893ef41a3b9f45b70e3b52
+      internalID: -2134874032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_56
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 440
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292b6b14a604b7343a613a157cf8aee1
+      internalID: -1694625536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_57
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ca2dbedbed2e24baeefc521132cdd4
+      internalID: 216943005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_58
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e1b305b4df709408f02a61a98e1b99
+      internalID: 435830901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_59
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 376
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59367e993299a3941bc33ebadb88e609
+      internalID: -1132009534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_60
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390d0937f6080534ea147ed421138160
+      internalID: -675383284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_61
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8aef83761ff12949a8d8d0d62f353bb
+      internalID: 2080859892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_62
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc64134fa5b4c649becc849753fe29a
+      internalID: 1181213350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_63
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f62079e717fe8244ae7998e776a4753
+      internalID: 716762572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_64
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb483759e1caff478bff443d965a4fa
+      internalID: 980647342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_65
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720b4a9035c798b4ba207f5b7ffe0c67
+      internalID: -1795606736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_66
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 312
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8b13d9402a70c44934cbab7e278b96
+      internalID: 405063977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_67
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5143c23a5f7164d9f29633a0cf2603
+      internalID: 369607909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_68
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3484296b055095f43ae61d4ae919356b
+      internalID: -1636505130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_69
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4d9159eef95584dbbcfe85fca4e60a
+      internalID: -1194839809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_70
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b181d9d1714bad34094edd600fd46660
+      internalID: 1643309480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_71
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9fd5510184bc643860a3c7e5605298
+      internalID: -563592985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_72
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5154849ae47b8ea49b67f7f85f03e840
+      internalID: -784498281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_73
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ea4f0a175beb04082de0b55874c0d4
+      internalID: 1400483173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_74
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7630073c13251446aea38cd99f02fff
+      internalID: -1500279976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_75
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c8d7385a0f65a4391bd2be4b6c440b
+      internalID: -1107734967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_76
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fcb05c83421ff42a0da79254f4312a
+      internalID: -1788601954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_77
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a13f705e32fba547bf52dfd2514f5f0
+      internalID: 1516235559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_78
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f1ef6c49ab33e4ea990183402e8feb
+      internalID: -1615713973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_79
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c3cbca78251f24783a83dcdbcbfb68
+      internalID: 380802718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_80
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 248
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ae868df7cf15441af6f3200ed11af6
+      internalID: 774879786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_81
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd4030162c747b4c9ed132e54fb1b5a
+      internalID: -226080384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_82
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa24d7af7bbbe24c9e3ad82a380ec25
+      internalID: 1976269444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_83
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b301ec8bffe97454fbdf8db6e2ad7cae
+      internalID: 450673053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_84
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744b10f69d9a2ab499c730dfbd26bbd3
+      internalID: 1020899388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_85
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c830c5f74e772439624a5c4c78b111
+      internalID: 990633584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_86
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc8af1893d951c428362da0cb9350c6
+      internalID: -965475335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_87
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe071b516b47494d8bb3f2bbdf595e2
+      internalID: 228138750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_88
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb50da911a7ab6e49a3a81c9252fe8da
+      internalID: 162964914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_89
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77557d7d261835c4193b9e67db6ece93
+      internalID: 1386598217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_90
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42f20a5966d48d043b693347417d6ce0
+      internalID: 1864901873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_91
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d00613a4937ca6418c4789d9b912583
+      internalID: 2005707870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_92
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50057fb4f78f4e44484ffbe597906e52
+      internalID: 1622787267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_93
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dd0f37fcf954f48b8690083072ce16
+      internalID: -1393374407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_94
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd212c2179b7a44d967292e8e5a6ef1
+      internalID: 1271916915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_95
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893f3e7d273ab474ea3d00559a357847
+      internalID: 1164152149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_96
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9bd81ec0bc82e4d88b792194a77e4e
+      internalID: 1781237590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_97
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8540176e56a40074193ba4824830fe5a
+      internalID: -1684904500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_98
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 184
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839c0e5d5a639dd478204bcd62ef20b0
+      internalID: -1169950752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_99
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887c84dda3a64404f89f77bde2a898cd
+      internalID: -575196081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_100
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb01e3cff271ea4986cd1f3c9153b68
+      internalID: 1972247745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_101
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24aeac5ff6252ec408b7481d68deabd1
+      internalID: -1014560517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_102
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26c6a02e42973b46afdaab166c97bbd
+      internalID: 566072858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_103
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fea8525874fc5841805894b3b585ea6
+      internalID: 1851326153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_104
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eff0f2d6db4a2f4a97c6bef8863cd60
+      internalID: 1034884241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_105
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ec895dbfbbb0d4ba0f03e9214a06c0
+      internalID: -1239227238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_106
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3101758ffed5bc44e9d9d8c295c9cde1
+      internalID: 1464620215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_107
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8158ebecdfcfcd478cb6dcbcebcfef5
+      internalID: 98789537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_108
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64aafd9779f58c43a8014a75b5a0c6c
+      internalID: -1217491389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_109
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a7512ad0f3a864897ff1051173b128
+      internalID: -70487363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_110
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7df82de54ac4c4a9224168bb2cb277
+      internalID: 487956806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_111
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687df2bc8be083049803a4b0d09a84a3
+      internalID: 1896461190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_112
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 120
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c811e6e145d96ef4cba862609c54986d
+      internalID: 1195402957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_113
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5032d5784e0d81d459710f590d64edd5
+      internalID: -365837132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_114
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42aaf6c4d8a08944a9bd79747da0f00
+      internalID: -2024256181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_115
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376e085931271994dbc29b8bd3ba5224
+      internalID: -158432888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_116
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cc3ebb4dfe0e242b7a7f7c04211688
+      internalID: -1776591823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_117
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b89dfe3abbddf438d894c610c55cde
+      internalID: -245658154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_118
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a91408d3a586940a4b8d2c89ed5f11
+      internalID: -758221050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_119
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0621b7a8de4c6004cab3108467f1cf29
+      internalID: 1910634551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_120
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee0587a3fffba74c8155729fdb7449b
+      internalID: -1935998098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_121
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62088e95c41a064f97f461dbebe6725
+      internalID: -1188513281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_122
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d965a4cfe8a1d488fa4e1d286040fb
+      internalID: 1376514212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_123
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fa238c97f119247929643df1b52de9
+      internalID: -30818370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_124
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29b8eea148a2c64ab5315f632e2c445
+      internalID: 49326601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_125
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c840923bed32f9548873989558ab3ff9
+      internalID: 1186237103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_126
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc447713e69137042bfce63fc71a6d7e
+      internalID: 1090871939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_127
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74669581a52072f4da78aca16000a6d2
+      internalID: 1000152550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_128
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6bb87fc2ce97d46a143971e27eb79d
+      internalID: 829047740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TILE DECORACION BASALTO_129
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 56
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9f0ecc25515814c8e3f35862492167
+      internalID: 1914087027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TILE DECORACION BASALTO_0: -1971659921
+      TILE DECORACION BASALTO_1: 503727511
+      TILE DECORACION BASALTO_10: 126647962
+      TILE DECORACION BASALTO_100: 1972247745
+      TILE DECORACION BASALTO_101: -1014560517
+      TILE DECORACION BASALTO_102: 566072858
+      TILE DECORACION BASALTO_103: 1851326153
+      TILE DECORACION BASALTO_104: 1034884241
+      TILE DECORACION BASALTO_105: -1239227238
+      TILE DECORACION BASALTO_106: 1464620215
+      TILE DECORACION BASALTO_107: 98789537
+      TILE DECORACION BASALTO_108: -1217491389
+      TILE DECORACION BASALTO_109: -70487363
+      TILE DECORACION BASALTO_11: -2003080899
+      TILE DECORACION BASALTO_110: 487956806
+      TILE DECORACION BASALTO_111: 1896461190
+      TILE DECORACION BASALTO_112: 1195402957
+      TILE DECORACION BASALTO_113: -365837132
+      TILE DECORACION BASALTO_114: -2024256181
+      TILE DECORACION BASALTO_115: -158432888
+      TILE DECORACION BASALTO_116: -1776591823
+      TILE DECORACION BASALTO_117: -245658154
+      TILE DECORACION BASALTO_118: -758221050
+      TILE DECORACION BASALTO_119: 1910634551
+      TILE DECORACION BASALTO_12: 32075323
+      TILE DECORACION BASALTO_120: -1935998098
+      TILE DECORACION BASALTO_121: -1188513281
+      TILE DECORACION BASALTO_122: 1376514212
+      TILE DECORACION BASALTO_123: -30818370
+      TILE DECORACION BASALTO_124: 49326601
+      TILE DECORACION BASALTO_125: 1186237103
+      TILE DECORACION BASALTO_126: 1090871939
+      TILE DECORACION BASALTO_127: 1000152550
+      TILE DECORACION BASALTO_128: 829047740
+      TILE DECORACION BASALTO_129: 1914087027
+      TILE DECORACION BASALTO_13: 275870379
+      TILE DECORACION BASALTO_14: -232828660
+      TILE DECORACION BASALTO_15: 1553388476
+      TILE DECORACION BASALTO_16: 1315098542
+      TILE DECORACION BASALTO_17: -1381886401
+      TILE DECORACION BASALTO_18: -925210243
+      TILE DECORACION BASALTO_19: -1716893886
+      TILE DECORACION BASALTO_2: 425443524
+      TILE DECORACION BASALTO_20: -2038767261
+      TILE DECORACION BASALTO_21: 75781133
+      TILE DECORACION BASALTO_22: 452612140
+      TILE DECORACION BASALTO_23: 2147239600
+      TILE DECORACION BASALTO_24: -823031524
+      TILE DECORACION BASALTO_25: -1954322020
+      TILE DECORACION BASALTO_26: 661487177
+      TILE DECORACION BASALTO_27: -2130106773
+      TILE DECORACION BASALTO_28: 931511041
+      TILE DECORACION BASALTO_29: 402542799
+      TILE DECORACION BASALTO_3: 1401696212
+      TILE DECORACION BASALTO_30: 1102396487
+      TILE DECORACION BASALTO_31: 1288665316
+      TILE DECORACION BASALTO_32: 976726701
+      TILE DECORACION BASALTO_33: 718908505
+      TILE DECORACION BASALTO_34: 107021264
+      TILE DECORACION BASALTO_35: 599932893
+      TILE DECORACION BASALTO_36: -149315904
+      TILE DECORACION BASALTO_37: -559571279
+      TILE DECORACION BASALTO_38: -1939942773
+      TILE DECORACION BASALTO_39: -1739892274
+      TILE DECORACION BASALTO_4: -1203922262
+      TILE DECORACION BASALTO_40: 765271345
+      TILE DECORACION BASALTO_41: -1126830061
+      TILE DECORACION BASALTO_42: 1223825985
+      TILE DECORACION BASALTO_43: -1678764564
+      TILE DECORACION BASALTO_44: 1619937003
+      TILE DECORACION BASALTO_45: 752568468
+      TILE DECORACION BASALTO_46: -1463316603
+      TILE DECORACION BASALTO_47: 1951812838
+      TILE DECORACION BASALTO_48: -1176945357
+      TILE DECORACION BASALTO_49: 2043041075
+      TILE DECORACION BASALTO_5: -1087826757
+      TILE DECORACION BASALTO_50: 1952482805
+      TILE DECORACION BASALTO_51: 135325951
+      TILE DECORACION BASALTO_52: 117574017
+      TILE DECORACION BASALTO_53: 778389151
+      TILE DECORACION BASALTO_54: 535132645
+      TILE DECORACION BASALTO_55: -2134874032
+      TILE DECORACION BASALTO_56: -1694625536
+      TILE DECORACION BASALTO_57: 216943005
+      TILE DECORACION BASALTO_58: 435830901
+      TILE DECORACION BASALTO_59: -1132009534
+      TILE DECORACION BASALTO_6: -941380975
+      TILE DECORACION BASALTO_60: -675383284
+      TILE DECORACION BASALTO_61: 2080859892
+      TILE DECORACION BASALTO_62: 1181213350
+      TILE DECORACION BASALTO_63: 716762572
+      TILE DECORACION BASALTO_64: 980647342
+      TILE DECORACION BASALTO_65: -1795606736
+      TILE DECORACION BASALTO_66: 405063977
+      TILE DECORACION BASALTO_67: 369607909
+      TILE DECORACION BASALTO_68: -1636505130
+      TILE DECORACION BASALTO_69: -1194839809
+      TILE DECORACION BASALTO_7: 449192188
+      TILE DECORACION BASALTO_70: 1643309480
+      TILE DECORACION BASALTO_71: -563592985
+      TILE DECORACION BASALTO_72: -784498281
+      TILE DECORACION BASALTO_73: 1400483173
+      TILE DECORACION BASALTO_74: -1500279976
+      TILE DECORACION BASALTO_75: -1107734967
+      TILE DECORACION BASALTO_76: -1788601954
+      TILE DECORACION BASALTO_77: 1516235559
+      TILE DECORACION BASALTO_78: -1615713973
+      TILE DECORACION BASALTO_79: 380802718
+      TILE DECORACION BASALTO_8: 939554187
+      TILE DECORACION BASALTO_80: 774879786
+      TILE DECORACION BASALTO_81: -226080384
+      TILE DECORACION BASALTO_82: 1976269444
+      TILE DECORACION BASALTO_83: 450673053
+      TILE DECORACION BASALTO_84: 1020899388
+      TILE DECORACION BASALTO_85: 990633584
+      TILE DECORACION BASALTO_86: -965475335
+      TILE DECORACION BASALTO_87: 228138750
+      TILE DECORACION BASALTO_88: 162964914
+      TILE DECORACION BASALTO_89: 1386598217
+      TILE DECORACION BASALTO_9: 2132215441
+      TILE DECORACION BASALTO_90: 1864901873
+      TILE DECORACION BASALTO_91: 2005707870
+      TILE DECORACION BASALTO_92: 1622787267
+      TILE DECORACION BASALTO_93: -1393374407
+      TILE DECORACION BASALTO_94: 1271916915
+      TILE DECORACION BASALTO_95: 1164152149
+      TILE DECORACION BASALTO_96: 1781237590
+      TILE DECORACION BASALTO_97: -1684904500
+      TILE DECORACION BASALTO_98: -1169950752
+      TILE DECORACION BASALTO_99: -575196081
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
