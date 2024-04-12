@@ -4,7 +4,6 @@ using UnityEngine;
 public class ObstaculeController : MonoBehaviour
 {
     public int damageAmount = 100; // Cantidad de daño que causa al jugador
-    public string playerTag = "Player"; // Etiqueta del jugador
     private bool playerDetected = false; // Variable para almacenar si el jugador ha sido detectado
     private Vector2 initialPosition; // Posición inicial del obstáculo
     private Rigidbody2D rb;
@@ -26,8 +25,9 @@ public class ObstaculeController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Si colisiona con el jugador, aplica daño y resetea el obstáculo
-        if (collision.gameObject.CompareTag(playerTag))
+        if (collision.gameObject.CompareTag("PlayerCollider"))
         {
+            Debug.Log("lokquierass");
             AttackController.THIS.TakeDamage(damageAmount); // Aplica daño al jugador
             StartCoroutine(ResetObstacle()); // Resetea el obstáculo después de causar daño
         }
