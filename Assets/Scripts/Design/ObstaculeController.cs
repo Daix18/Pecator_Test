@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ObstaculeController : MonoBehaviour
 {
-    public int damageAmount = 1; // Cantidad de daño que causa al jugador
+    public int damageAmount = 100; // Cantidad de daño que causa al jugador
     public string playerTag = "Player"; // Etiqueta del jugador
     private bool playerDetected = false; // Variable para almacenar si el jugador ha sido detectado
     private Vector2 initialPosition; // Posición inicial del obstáculo
@@ -16,14 +16,11 @@ public class ObstaculeController : MonoBehaviour
         rb.gravityScale = 0f; // Desactiva la gravedad inicialmente
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    // Esta función puede ser llamada desde otro script para activar el comportamiento del objeto que cae
+    public void ActivateObstacle()
     {
-        // Si el objeto es el jugador, activa la gravedad del objeto
-        if (other.CompareTag(playerTag))
-        {
-            playerDetected = true;
-            rb.gravityScale = 1f; // Activa la gravedad del objeto
-        }
+        playerDetected = true;
+        rb.gravityScale = 1f; // Activa la gravedad del objeto
     }
 
     void OnCollisionEnter2D(Collision2D collision)
