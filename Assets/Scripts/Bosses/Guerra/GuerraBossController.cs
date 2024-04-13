@@ -27,8 +27,6 @@ public class GuerraBossController : MonoBehaviour
     [SerializeField] private float attackDamage;
 
     [Header("Stun settings")]
-    [SerializeField] private int wallHitCount = 0;
-    [SerializeField] private int maxWallHits = 3;
     [SerializeField] private float stunDuration = 2f;
     [SerializeField] private bool stun;
 
@@ -51,7 +49,7 @@ public class GuerraBossController : MonoBehaviour
 
         if (onGround)
         {
-            rb.mass = 100f;
+            rb.mass = 1000f;
         }
         else
         {
