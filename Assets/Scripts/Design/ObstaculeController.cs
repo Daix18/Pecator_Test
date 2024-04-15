@@ -3,49 +3,51 @@ using UnityEngine;
 
 public class ObstaculeController : MonoBehaviour
 {
-    public int damageAmount = 100; // Cantidad de daño que causa al jugador
-    private bool playerDetected = false; // Variable para almacenar si el jugador ha sido detectado
-    private Vector2 initialPosition; // Posición inicial del obstáculo
+    public int damageAmount = 100;
+    private bool playerDetected = false;
+    private bool obstacleResetting = false; // Bandera para verificar si el obstáculo se está reiniciando
+    private Vector2 initialPosition;
     private Rigidbody2D rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         initialPosition = transform.position;
-        rb.gravityScale = 0f; // Desactiva la gravedad inicialmente
+        rb.gravityScale = 0f;
     }
 
-    // Esta función puede ser llamada desde otro script para activar el comportamiento del objeto que cae
     public void ActivateObstacle()
     {
-        playerDetected = true;
-        rb.gravityScale = 1f; // Activa la gravedad del objeto
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Si colisiona con el jugador, aplica daño y resetea el obstáculo
-        if (collision.gameObject.CompareTag("PlayerCollider"))
+        if (!obstacleResetting) // Verifica si el obstáculo no se está reiniciando actualmente
         {
-            Debug.Log("lokquierass");
-            AttackController.THIS.TakeDamage(damageAmount); // Aplica daño al jugador
-            StartCoroutine(ResetObstacle()); // Resetea el obstáculo después de causar daño
-        }
-        // Si colisiona con el suelo, resetea el obstáculo
-        else if (collision.gameObject.CompareTag("Ground"))
-        {
-            StartCoroutine(ResetObstacle()); // Resetea el obstáculo si colisiona con el suelo
+            playerDetected = true;
+            rb.gravityScale = 2f;
+            StartCoroutine(ResetObstacleAfterDelay());
         }
     }
 
-    IEnumerator ResetObstacle()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        rb.velocity = Vector2.zero; // Detiene el movimiento del obstáculo
-        rb.gravityScale = 0f; // Desactiva la gravedad
-        gameObject.SetActive(false); // Desactiva el obstáculo
-        yield return new WaitForSeconds(5f); // Espera 5 segundos
-        transform.position = initialPosition; // Devuelve el obstáculo a su posición inicial
-        gameObject.SetActive(true); // Activa el obstáculo nuevamente
-        playerDetected = false; // Reinicia la detección del jugador
+        if (collision.gameObject.CompareTag("PlayerCollider") && !obstacleResetting) // Verifica si el obstáculo no se está reiniciando actualmente
+        {
+            AttackController.THIS.TakeDamage(damageAmount);
+        }
+    }
+
+    IEnumerator ResetObstacleAfterDelay()
+    {
+        obstacleResetting = true; // Marca que el obstáculo se está reiniciando
+        yield return new WaitForSeconds(6f);
+        ResetObstacle();
+        obstacleResetting = false; // Marca que el reinicio del obstáculo ha terminado
+    }
+
+    private void ResetObstacle()
+    {
+        rb.velocity = Vector2.zero;
+        rb.gravityScale = 0f;
+        transform.position = initialPosition;
+        gameObject.SetActive(true);
+        playerDetected = false;
     }
 }
