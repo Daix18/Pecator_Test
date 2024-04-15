@@ -5,7 +5,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class GuerraBossController : MonoBehaviour
-{
+{    
+    public static GuerraBossController THIS;
+
     [Header("Fundamental Components")]
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public Animator animator;
@@ -16,7 +18,6 @@ public class GuerraBossController : MonoBehaviour
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private LayerMask queEsSuelo;
     [SerializeField] private bool onGround;
-    private Vector2 direccion;
 
     [Header("Vida")]
     [SerializeField] private float life;
@@ -27,6 +28,9 @@ public class GuerraBossController : MonoBehaviour
     [SerializeField] private float attackDamage;
     [SerializeField] private List<SpecialAttack> arrowRains = new List<SpecialAttack>();
 
+    [Header("Arrow Rain Settings")]
+    [SerializeField] private float cooldownDuration = 4f;
+    [SerializeField] private bool cooldown = false;
 
     [Header("Stun settings")]
     [SerializeField] private float stunDuration = 2f;
@@ -40,11 +44,20 @@ public class GuerraBossController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
+    private void Awake()
+    {
+        if (THIS == null)
+        {
+            THIS = this;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
         float distancePlayer = Vector2.Distance(transform.position, player.position);
         animator.SetFloat("playerDistance", distancePlayer);        
+        animator.SetBool("Cooldown", cooldown);
         animator.SetBool("Stunned", stun);
 
         onGround = Physics2D.OverlapBox(groundChecker.position, dimensionesCaja, 0f, queEsSuelo);
@@ -133,5 +146,17 @@ public class GuerraBossController : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackController.position, attackRadius);
         Gizmos.DrawWireCube(groundChecker.position, dimensionesCaja);
+    }
+
+    public IEnumerator Stun()
+    {
+        Debug.Log("Stunned");
+        rb.velocity = Vector2.zero;
+        stun = true;
+        cooldown = true;
+        yield return new WaitForSeconds(stunDuration);
+        stun = false;        
+        yield return new WaitForSeconds(cooldownDuration);
+        cooldown = false;
     }
 }

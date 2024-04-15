@@ -26533,7 +26533,9 @@ MonoBehaviour:
   - {fileID: 1072724482}
   - {fileID: 797959977}
   - {fileID: 157872972}
-  stunDuration: 2
+  cooldown: 0
+  cooldownDuration: 40
+  stunDuration: 5
   stun: 0
 --- !u!50 &1391881742
 Rigidbody2D:

@@ -29,12 +29,6 @@ public class SpecialAttack : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("PlayerCollider"))
@@ -50,5 +44,6 @@ public class SpecialAttack : MonoBehaviour
         yield return new WaitForSeconds(duration);
         collider2D.enabled = false;
         sistemaDeParticulas.Stop();
+        StartCoroutine(GuerraBossController.THIS.Stun());
     }
 }
