@@ -92382,7 +92382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controladorGolpe: {fileID: 2516492644567089703}
-  fillImage: {fileID: 0}
+  fillImage: {fileID: 1249662607}
   health: 100
   radioGolpe: 0.3
   "da\xF1oGolpe": 20

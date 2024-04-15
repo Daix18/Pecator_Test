@@ -16,13 +16,17 @@ public class ObstaculeController : MonoBehaviour
         rb.gravityScale = 0f;
     }
 
+    private void Update()
+    {
+        Debug.Log(obstacleResetting);
+    }
+
     public void ActivateObstacle()
     {
         if (!obstacleResetting) // Verifica si el obstáculo no se está reiniciando actualmente
         {
             playerDetected = true;
             rb.gravityScale = 2f;
-            StartCoroutine(ResetObstacleAfterDelay());
         }
     }
 
@@ -31,13 +35,14 @@ public class ObstaculeController : MonoBehaviour
         if (collision.gameObject.CompareTag("PlayerCollider") && !obstacleResetting) // Verifica si el obstáculo no se está reiniciando actualmente
         {
             AttackController.THIS.TakeDamage(damageAmount);
+            StartCoroutine(ResetObstacleAfterDelay());
         }
     }
 
     IEnumerator ResetObstacleAfterDelay()
     {
         obstacleResetting = true; // Marca que el obstáculo se está reiniciando
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(2f);
         ResetObstacle();
         obstacleResetting = false; // Marca que el reinicio del obstáculo ha terminado
     }
