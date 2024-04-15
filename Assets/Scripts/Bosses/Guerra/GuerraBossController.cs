@@ -25,6 +25,8 @@ public class GuerraBossController : MonoBehaviour
     [SerializeField] private Transform attackController;
     [SerializeField] private float attackRadius;
     [SerializeField] private float attackDamage;
+    [SerializeField] private List<SpecialAttack> arrowRains = new List<SpecialAttack>();
+
 
     [Header("Stun settings")]
     [SerializeField] private float stunDuration = 2f;
@@ -112,6 +114,17 @@ public class GuerraBossController : MonoBehaviour
             {
                 collision.GetComponent<AttackController>().TakeDamage(attackDamage);
             }
+        }
+    }
+
+    public void ArrowRain()
+    {
+        rb.velocity = Vector2.zero;
+
+        // Llamar a ArrowRain en todas las instancias de SpecialAttack almacenadas en la lista
+        foreach (SpecialAttack specialAttack in arrowRains)
+        {
+            StartCoroutine(specialAttack.ArrowRain());
         }
     }
 

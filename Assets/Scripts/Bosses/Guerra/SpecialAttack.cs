@@ -4,28 +4,35 @@ using UnityEngine;
 
 public class SpecialAttack : MonoBehaviour
 {
+    public static SpecialAttack THIS;
     [Header("Settings")]
-    [SerializeField] private ParticleSystem sistemaDeParticulas;
-    [SerializeField] private GameObject[] areas;
+    [SerializeField] private GameObject area;
     [SerializeField] private float damage;
+    [SerializeField] private float duration;
+    private ParticleSystem sistemaDeParticulas;
+    private new BoxCollider2D collider2D;
 
     // Start is called before the first frame update
     void Start()
+    {       
+        collider2D = GetComponent<BoxCollider2D>();
+        sistemaDeParticulas = GetComponent<ParticleSystem>();
+        collider2D.enabled = false;
+        sistemaDeParticulas.Stop();
+    }
+
+    private void Awake()
     {
-      
+        if (THIS == null)
+        {
+            THIS = this;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            // Activar el sistema de partículas
-            if (sistemaDeParticulas != null)
-            {
-                sistemaDeParticulas.Play();
-            }
-        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -34,5 +41,14 @@ public class SpecialAttack : MonoBehaviour
         {
             AttackController.THIS.TakeDamage(damage);
         }
+    }
+
+    public IEnumerator ArrowRain()
+    {
+        collider2D.enabled = true;
+        sistemaDeParticulas.Play();
+        yield return new WaitForSeconds(duration);
+        collider2D.enabled = false;
+        sistemaDeParticulas.Stop();
     }
 }
