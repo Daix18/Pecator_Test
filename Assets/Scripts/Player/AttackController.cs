@@ -13,8 +13,8 @@ public class AttackController : MonoBehaviour
     [SerializeField] private float health;
     [SerializeField] private float radioGolpe;
     [SerializeField] private float dañoGolpe;
-    [SerializeField] private float tiempoEntreAtaques;
-    [SerializeField] private float tiempoSiguienteAtaque;
+    [SerializeField] public float tiempoEntreAtaques;
+    [SerializeField] public float tiempoSiguienteAtaque;
     private Animator animator;
     public bool attacking;
     [SerializeField] private float initialHealth = 100f;    
@@ -38,14 +38,7 @@ public class AttackController : MonoBehaviour
         if (tiempoSiguienteAtaque > 0)
         {
             tiempoSiguienteAtaque -= Time.deltaTime;
-
         }
-
-        if (Input.GetButtonDown("Fire1") && tiempoSiguienteAtaque <= 0)
-        {
-            Golpe();
-            tiempoSiguienteAtaque = tiempoEntreAtaques;
-        }        
     }
 
     public void TakeDamage(float damage)
@@ -81,7 +74,6 @@ public class AttackController : MonoBehaviour
             attacking = true;
             animator.SetTrigger("Golpe");
         }
-
 
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
 

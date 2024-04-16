@@ -2830,8 +2830,8 @@ MonoBehaviour:
   _settingsMenuCanva: {fileID: 848525950}
   _keyboardControlsCanva: {fileID: 1088016031}
   _gamepadControlsCanva: {fileID: 301493525}
-  _player: {fileID: 0}
-  _playerAttack: {fileID: 0}
+  _player: {fileID: 2516492645574893196}
+  _playerAttack: {fileID: 2516492645574893198}
   _playerInput: {fileID: 438012628}
   _mainMenuFirst: {fileID: 2059356494}
   _settingsMenuFirst: {fileID: 1462776810}
@@ -3463,10 +3463,6 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 27c5b62c-8120-4a64-9878-9947bb9bf720
     m_ActionName: Player/MenuOpenClose[/Keyboard/escape,/XInputControllerWindows/start]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 4602d830-83fe-4f4f-b3d5-ec0a8cbf91ba
-    m_ActionName: UI/New action
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2516492645574893196}
@@ -94320,10 +94316,6 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b30d6fbe-b92d-4431-9896-9e30cdb73978
     m_ActionName: Player/Attack[/Mouse/leftButton,/XInputControllerWindows/buttonWest]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 4602d830-83fe-4f4f-b3d5-ec0a8cbf91ba
-    m_ActionName: UI/New action
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -94572,7 +94564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controladorGolpe: {fileID: 2516492644567089703}
-  fillImage: {fileID: 0}
+  fillImage: {fileID: 1249662607}
   health: 100
   radioGolpe: 0.3
   "da\xF1oGolpe": 20

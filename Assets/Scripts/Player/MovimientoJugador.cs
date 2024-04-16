@@ -75,6 +75,9 @@ public class MovimientoJugador : MonoBehaviour
     [Range(0.01f, 0.5f)][SerializeField] private float coyoteTime;
     [Range(0.01f, 0.5f)][SerializeField] private float jumpInputBufferTime;
 
+    private InputAction leftMouseClick;
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -271,13 +274,15 @@ public class MovimientoJugador : MonoBehaviour
         }
     }
 
-    public void StartAttack(InputAction.CallbackContext context)
-    {
-        if (context.performed)
+        public void StartAttack(InputAction.CallbackContext context)
         {
-            AttackController.THIS.Golpe();
+            if (context.performed && AttackController.THIS.tiempoSiguienteAtaque <= 0)
+            {
+                Debug.Log("Golpe");
+                AttackController.THIS.Golpe();
+                AttackController.THIS.tiempoSiguienteAtaque = AttackController.THIS.tiempoEntreAtaques;
+            }
         }
-    }
 
     public void StartKnife(InputAction.CallbackContext context)
     {

@@ -33,6 +33,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "b30d6fbe-b92d-4431-9896-9e30cdb73978",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Knife",
                     "type": "Button",
                     "id": "93f99d8f-d6c4-4ab9-9e40-fba7dc588ff7",
@@ -45,15 +54,6 @@
                     "name": "MenuOpenClose",
                     "type": "Button",
                     "id": "27c5b62c-8120-4a64-9878-9947bb9bf720",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Attack",
-                    "type": "Button",
-                    "id": "b30d6fbe-b92d-4431-9896-9e30cdb73978",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -243,7 +243,7 @@
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard",
                     "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -260,34 +260,6 @@
                     "isPartOfComposite": false
                 }
             ]
-        },
-        {
-            "name": "UI",
-            "id": "f9928402-16b5-4969-8cc4-aa8fe936f062",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "4602d830-83fe-4f4f-b3d5-ec0a8cbf91ba",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "68969fe8-c005-45ce-aada-85a023224400",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
         }
     ],
     "controlSchemes": [
@@ -298,6 +270,11 @@
                 {
                     "devicePath": "<Keyboard>",
                     "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
                     "isOR": false
                 }
             ]
