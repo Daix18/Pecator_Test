@@ -13,6 +13,7 @@ TagManager:
   - StopWall
   - Obstacle
   - Ground
+  - TriggerObjeto
   layers:
   - Default
   - TransparentFX
