@@ -42,7 +42,7 @@ public class ObstaculeController : MonoBehaviour
     IEnumerator ResetObstacleAfterDelay()
     {
         obstacleResetting = true; // Marca que el obstáculo se está reiniciando
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(6f);
         ResetObstacle();
         obstacleResetting = false; // Marca que el reinicio del obstáculo ha terminado
     }
