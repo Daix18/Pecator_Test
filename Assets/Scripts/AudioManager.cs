@@ -8,8 +8,8 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager Instance;
 
-    public Sound[] musicSounds, sfxSounds;
-    public AudioSource musicSource, sfxSource;
+    public Sound[] musicSounds/*, sfxSounds*/;
+    public AudioSource musicSource/*, sfxSource*/;
 
     private void Awake()
     {
@@ -48,7 +48,7 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    public void PlaySFX(string name)
+    /*public void PlaySFX(string name)
     {
         Sound s = Array.Find(sfxSounds, x => x.name == name);
 
@@ -61,5 +61,5 @@ public class AudioManager : MonoBehaviour
         {
             sfxSource.PlayOneShot(s.clip);
         }
-    }
+    }*/
 }

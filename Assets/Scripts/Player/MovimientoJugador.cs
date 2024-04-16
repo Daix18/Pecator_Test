@@ -198,7 +198,7 @@ public class MovimientoJugador : MonoBehaviour
             _jumpsLeft -= 1;
             //jump = true;
             Debug.Log("Salto");
-            AudioManager.Instance.PlaySFX("jump");
+            /*AudioManager.Instance.PlaySFX("jump");*/
         }
     }
     private void Flip()
