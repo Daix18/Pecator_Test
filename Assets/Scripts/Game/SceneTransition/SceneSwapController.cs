@@ -11,14 +11,11 @@ public class SceneSwapController : MonoBehaviour
     private GameObject _player;
     private Collider2D _playerCollider;
     private Collider2D _interactiveCollider;
-    private Collider2D _boundsCollider;
     private Vector3 _playerSpawnPosition;
-    private CinemachineConfiner2D _confiner;
 
     public bool _loadedFromInteractive;
 
     private FinishPoint.SpawnPointAt _spawnPointTo;
-
 
     private void Awake()
     {
@@ -26,10 +23,9 @@ public class SceneSwapController : MonoBehaviour
         {
             THIS = this;
         }
-
-        _boundsCollider = GameObject.FindGameObjectWithTag("Bounds").GetComponent<Collider2D>();
+        
         _player = GameObject.FindGameObjectWithTag("Player");
-        _playerCollider = _player.GetComponentInChildren<Collider2D>();
+        _playerCollider = _player.GetComponentInChildren<Collider2D>();        
     }
 
     private void OnEnable()
@@ -46,7 +42,6 @@ public class SceneSwapController : MonoBehaviour
     {
         THIS._loadedFromInteractive = true;
         THIS.StartCoroutine(THIS.FadeOutTheChangeScene(myScene, spawnPointAt));
-        THIS.StartCoroutine(THIS.BoundsChange());        
     }
 
     private IEnumerator FadeOutTheChangeScene(SceneField myScene, FinishPoint.SpawnPointAt spawnPointAt = FinishPoint.SpawnPointAt.None)
@@ -60,13 +55,6 @@ public class SceneSwapController : MonoBehaviour
 
         _spawnPointTo = spawnPointAt;
         SceneManager.LoadScene(myScene);
-    }
-
-    private IEnumerator BoundsChange()
-    {
-        _confiner.m_BoundingShape2D = _boundsCollider;
-        yield return new WaitForSeconds(1f);
-        _confiner.InvalidateCache();
     }
 
     private void OnSceneLoad(Scene scene, LoadSceneMode mode)
