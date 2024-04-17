@@ -6477,7 +6477,7 @@ RectTransform:
   m_Children:
   - {fileID: 406317694}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7966,6 +7966,8 @@ MonoBehaviour:
   speedGroundMovement: 6
   speedAirMovement: 6
   suavizadoDeMovimiento: 0
+  mirandoDerecha: 1
+  _camera: {fileID: 0}
   _jumpsLeft: 0
   maxJumps: 2
   jumpingForce: 6.5
@@ -18039,7 +18041,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Barra Espaciadora
+  m_text: Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0c40be11c2260234f8102653401465a5, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26465,7 +26467,7 @@ Transform:
   - {fileID: 35694789}
   - {fileID: 110124467}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1391881739
 BoxCollider2D:
@@ -27757,7 +27759,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Esc
+  m_text: Escape
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0c40be11c2260234f8102653401465a5, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27892,7 +27894,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mayusculas
+  m_text: Left Shift
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0c40be11c2260234f8102653401465a5, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -29858,7 +29860,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e9da93fdf4dd34b804679889b3d3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 0}
   mapa: {fileID: 136106033}
   playerIcon: {fileID: 0}
 --- !u!1 &1932114848
