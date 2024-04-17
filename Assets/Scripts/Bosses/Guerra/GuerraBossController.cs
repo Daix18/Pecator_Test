@@ -29,7 +29,10 @@ public class GuerraBossController : MonoBehaviour
     [SerializeField] private List<SpecialAttack> arrowRains = new List<SpecialAttack>();
 
     [Header("Arrow Rain Settings")]
+    public Transform fatherArrowRain;
     [SerializeField] private float cooldownDuration = 4f;
+    public float minXLimit = -5f;
+    public float maxXLimit = 5f;
     [SerializeField] private bool cooldown = false;
 
     [Header("Stun settings")]

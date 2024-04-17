@@ -2,12 +2,12 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public class GameController : MonoBehaviour
 {
     public static GameController THIS;
-
-    [SerializeField] Animator transitionAnim;
+    
     [Header("Image Components.")]
     [SerializeField] private Image mapa;
     [SerializeField] private Image playerIcon;
@@ -32,18 +32,5 @@ public class GameController : MonoBehaviour
             Time.timeScale = 1f;
             mapa.enabled = false;
         }
-    }
-
-    public void NextLevel(string sceneName)
-    {
-        StartCoroutine(LoadLevel(sceneName));
-    }
-
-    IEnumerator LoadLevel(string sceneName)
-    {
-        transitionAnim.SetTrigger("End");
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadSceneAsync(sceneName);
-        transitionAnim.SetTrigger("Start");
     }
 }

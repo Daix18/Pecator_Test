@@ -22,7 +22,11 @@ public class MovimientoJugador : MonoBehaviour
     private float normalGravity;
     private Vector3 velocidad = Vector3.zero;
     private Vector2 direccion;
-    private bool mirandoDerecha = true;
+    [HideInInspector] public bool mirandoDerecha = true;
+
+    [Header("Camera Settings")]
+    [SerializeField] private GameObject _camera;
+    private CameFollowController _cameFollowController;
 
     [Header("Salto")]
     [SerializeField] private int _jumpsLeft;
@@ -75,17 +79,15 @@ public class MovimientoJugador : MonoBehaviour
     [Range(0.01f, 0.5f)][SerializeField] private float coyoteTime;
     [Range(0.01f, 0.5f)][SerializeField] private float jumpInputBufferTime;
 
-    private InputAction leftMouseClick;
-
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         tr = GetComponent<TrailRenderer>();
         animator = GetComponent<Animator>();
+        _cameFollowController = _camera.GetComponent<CameFollowController>();
         _jumpsLeft = maxJumps;
         _dashesLeft = maxDashes;
-        normalGravity = rb.gravityScale;        
+        normalGravity = rb.gravityScale;
     }
 
     private void Awake()
@@ -107,14 +109,14 @@ public class MovimientoJugador : MonoBehaviour
         }        
 
         //Si el jugador está cayendo, se multiplica la gravedad y se le resta 1, para que este proporcionada a la gravedad.
-        if (rb.velocity.y < 0)
+        if (rb.velocity.y < 0f)
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
         //En el caso de que el jugador está ascendiendo y no se presiona el salto, el salto es más suave.
         else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
-            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;                       
         }
 
 
@@ -203,10 +205,20 @@ public class MovimientoJugador : MonoBehaviour
     }
     private void Flip()
     {
-        mirandoDerecha = !mirandoDerecha;
-        Vector3 escala = transform.localScale;
-        escala.x *= -1;
-        transform.localScale = escala;
+        if (mirandoDerecha)
+        {
+            Vector3 rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
+            transform.rotation = Quaternion.Euler(rotator);
+            mirandoDerecha = !mirandoDerecha;
+            _cameFollowController.CallTurn();
+        }
+        else
+        {
+            Vector3 rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
+            transform.rotation = Quaternion.Euler(rotator);
+            mirandoDerecha = !mirandoDerecha;
+            _cameFollowController.CallTurn();
+        }
     }
 
     private void WallJump()

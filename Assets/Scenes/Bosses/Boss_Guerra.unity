@@ -6275,11 +6275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   area: {fileID: 1264344883}
-  fatherArrowRain: {fileID: 0}
   damage: 20
   duration: 5
-  minXLimit: -5
-  maxXLimit: 5
 --- !u!4 &157872973
 Transform:
   m_ObjectHideFlags: 0
@@ -6404,7 +6401,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &211052503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9419,6 +9416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 502902181}
   - component: {fileID: 502902182}
+  - component: {fileID: 502902183}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -9480,6 +9478,21 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 381548802}
+--- !u!114 &502902183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502902180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BoundingShape2D: {fileID: 0}
+  m_Damping: 0.5
+  m_MaxWindowSize: -1
 --- !u!1 &516995974
 GameObject:
   m_ObjectHideFlags: 0
@@ -17214,11 +17227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   area: {fileID: 861733493}
-  fatherArrowRain: {fileID: 0}
   damage: 20
   duration: 5
-  minXLimit: -5
-  maxXLimit: 5
 --- !u!61 &797959978
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23845,11 +23855,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   area: {fileID: 1956984004}
-  fatherArrowRain: {fileID: 0}
   damage: 20
   duration: 5
-  minXLimit: -5
-  maxXLimit: 5
 --- !u!61 &1072724483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26538,7 +26545,10 @@ MonoBehaviour:
   - {fileID: 1072724482}
   - {fileID: 797959977}
   - {fileID: 157872972}
+  fatherArrowRain: {fileID: 1413273948}
   cooldownDuration: 40
+  minXLimit: 17.18
+  maxXLimit: 21
   cooldown: 0
   stunDuration: 5
   stun: 0
