@@ -5,6 +5,15 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+
+    public int PuntosTotales { get { return puntosTotales; } }
+    private int puntosTotales;
+
+    public void SumarPuntos(int puntosASumar)
+    {
+        puntosTotales += puntosASumar;
+        Debug.Log(puntosTotales);
+    }
     public static GameController THIS;
 
     [SerializeField] Animator transitionAnim;
