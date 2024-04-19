@@ -39,7 +39,7 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private Transform groundChecker;
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private bool onGround;
-    //private bool jump = false;
+    private bool isJumping = false;
     private float jumpBufferCounter;
 
     [Header("Wall Slide Settings")]
@@ -102,8 +102,7 @@ public class MovimientoJugador : MonoBehaviour
         {
             _jumpsLeft = maxJumps;
             _dashesLeft = maxDashes;
-            //rb.gravityScale = 1;
-            //jump = false;
+            isJumping = false;
         }        
 
         //Si el jugador está cayendo, se multiplica la gravedad y se le resta 1, para que este proporcionada a la gravedad.
@@ -116,13 +115,6 @@ public class MovimientoJugador : MonoBehaviour
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;                       
         }
-
-
-        ////Salto Buffer
-        //if (Input.GetButtonDown("Jump") && _jumpsLeft == 0 && jumpBufferCounter > 0)
-        //{
-        //    Jump();
-        //}
 
         if (!onGround && onWall && direccion.x != 0)
         {
@@ -151,8 +143,10 @@ public class MovimientoJugador : MonoBehaviour
         onWall = Physics2D.OverlapBox(wallChecker.position, wallBoxDimensions, 0f, queEsSuelo);
 
         animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
+        animator.SetFloat("yVelocity", rb.velocity.y);
         animator.SetBool("wallSliding", wallSliding);
         animator.SetBool("isDashing", isDashing);
+        animator.SetBool("isJumping", isJumping);
 
         if (onGround)
             speedMovement = speedGroundMovement;
@@ -177,11 +171,6 @@ public class MovimientoJugador : MonoBehaviour
     {
         direccion = controles.Player.Mover.ReadValue<Vector2>();
 
-        //if (onGround && jump)
-        //{
-        //    lastOnGroundTime = coyoteTime;
-        //}
-
         if (direccion.x > 0 && !mirandoDerecha)
         {
             Debug.Log("Flipeo");
@@ -199,7 +188,7 @@ public class MovimientoJugador : MonoBehaviour
         {            
             rb.velocity = new Vector2(0f, jumpingForce);
             _jumpsLeft -= 1;
-            //jump = true;
+            isJumping = true;
             Debug.Log("Salto");
         }        
     }
