@@ -222,6 +222,7 @@ public class MovimientoJugador : MonoBehaviour
         canDash = false;
         isDashing = true;
         tr.emitting = true;
+        isJumping  = false;
         rb.gravityScale = dashGravity;
         dashingDir = new Vector2(direccion.x, direccion.y);
 
