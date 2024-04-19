@@ -7,7 +7,10 @@ using Cinemachine;
 public class GameController : MonoBehaviour
 {
     public static GameController THIS;
-    
+
+    [Header("Settings")]
+    [Range(0f, 2f)][SerializeField] private float timeScale;
+
     [Header("Image Components.")]
     [SerializeField] private Image mapa;
     [SerializeField] private Image playerIcon;
@@ -20,6 +23,8 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Time.timeScale = timeScale;
+
         if (Input.GetKeyDown(KeyCode.M))
         {
             //Se pausa el tiempo y se muestra el mapa.

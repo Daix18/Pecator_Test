@@ -9,7 +9,6 @@ public class MovimientoJugador : MonoBehaviour
     private Rigidbody2D rb;
     private TrailRenderer tr;
     private Animator animator;
-    [Range(0f, 2f)][SerializeField] private float timeScale;
 
     [Header("Movimiento")]
     [SerializeField] private float speedMovement;
@@ -98,7 +97,6 @@ public class MovimientoJugador : MonoBehaviour
     private void Update()
     {
         waitTime += Time.deltaTime;
-        Time.timeScale = timeScale;        
 
         if (onGround && rb.velocity.y <= 0)
         {
@@ -153,6 +151,8 @@ public class MovimientoJugador : MonoBehaviour
         onWall = Physics2D.OverlapBox(wallChecker.position, wallBoxDimensions, 0f, queEsSuelo);
 
         animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
+        animator.SetBool("wallSliding", wallSliding);
+        animator.SetBool("isDashing", isDashing);
 
         if (onGround)
             speedMovement = speedGroundMovement;
