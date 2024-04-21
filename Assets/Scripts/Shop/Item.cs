@@ -32,7 +32,4 @@ public class Item
             case ItemType.Sword_2: return 150;
         }
     }
-
-   
-
 }

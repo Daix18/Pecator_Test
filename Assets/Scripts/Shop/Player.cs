@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour, IShopCustomer
 {
-
     public static Player Instance { get; private set; }
 
     public event EventHandler OnGoldAmountChanged;
@@ -22,6 +21,8 @@ public class Player : MonoBehaviour, IShopCustomer
     private int chest;
     public int sword;
 
+    #endregion
+
     private void Awake()
     {
         Instance = this;
@@ -33,10 +34,6 @@ public class Player : MonoBehaviour, IShopCustomer
     {
 
     }
-
-
-    }
-
 
     private void Update()
     {
@@ -89,7 +86,6 @@ public class Player : MonoBehaviour, IShopCustomer
         {
             healthPotionAmount--;
             OnHealthPotionAmountChanged?.Invoke(this, EventArgs.Empty);
-            FlashColor(Color.green);
         }
     }
 
@@ -123,8 +119,6 @@ public class Player : MonoBehaviour, IShopCustomer
             case Item.ItemType.ArmorNone: EquipArmorNone(); break;
             case Item.ItemType.Armor_1: EquipArmor_1(); break;
             case Item.ItemType.Armor_2: EquipArmor_2(); break;
-            case Item.ItemType.HelmetNone: EquipHelmetNone(); break;
-            case Item.ItemType.Helmet: EquipHelmet(); break;
             case Item.ItemType.HealthPotion: AddHealthPotion(); break;
             case Item.ItemType.Sword_2: EquipWeapon_Sword2(); break;
         }
@@ -143,5 +137,4 @@ public class Player : MonoBehaviour, IShopCustomer
             return false;
         }
     }
-
 }

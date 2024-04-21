@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UI_Shop : MonoBehaviour
 {
@@ -19,11 +20,11 @@ public class UI_Shop : MonoBehaviour
 
     private void Start()
     {
-        CreateItemButton(Item.ItemType.Armor_1, Item.GetSprite(Item.ItemType.Armor_1), "Armor 1", Item.GetCost(Item.ItemType.Armor_1), 0);
-        CreateItemButton(Item.ItemType.Armor_2, Item.GetSprite(Item.ItemType.Armor_2), "Armor 2", Item.GetCost(Item.ItemType.Armor_2), 1);
-        CreateItemButton(Item.ItemType.Helmet, Item.GetSprite(Item.ItemType.Helmet), "Helmet", Item.GetCost(Item.ItemType.Helmet), 2);
-        CreateItemButton(Item.ItemType.Sword_2, Item.GetSprite(Item.ItemType.Sword_2), "Sword", Item.GetCost(Item.ItemType.Sword_2), 3);
-        CreateItemButton(Item.ItemType.HealthPotion, Item.GetSprite(Item.ItemType.HealthPotion), "HealthPotion", Item.GetCost(Item.ItemType.HealthPotion), 4);
+        //CreateItemButton(Item.ItemType.Armor_1, Item.GetSprite(Item.ItemType.Armor_1), "Armor 1", Item.GetCost(Item.ItemType.Armor_1), 0);
+        //CreateItemButton(Item.ItemType.Armor_2, Item.GetSprite(Item.ItemType.Armor_2), "Armor 2", Item.GetCost(Item.ItemType.Armor_2), 1);
+        //CreateItemButton(Item.ItemType.Helmet, Item.GetSprite(Item.ItemType.Helmet), "Helmet", Item.GetCost(Item.ItemType.Helmet), 2);
+        //CreateItemButton(Item.ItemType.Sword_2, Item.GetSprite(Item.ItemType.Sword_2), "Sword", Item.GetCost(Item.ItemType.Sword_2), 3);
+        //CreateItemButton(Item.ItemType.HealthPotion, Item.GetSprite(Item.ItemType.HealthPotion), "HealthPotion", Item.GetCost(Item.ItemType.HealthPotion), 4);
 
         Hide();
     }
@@ -42,10 +43,11 @@ public class UI_Shop : MonoBehaviour
 
         shopItemTransform.Find("itemImage").GetComponent<Image>().sprite = itemSprite;
 
-        shopItemTransform.GetComponent<Button_UI>().ClickFunc = () => {
-            // Clicked on shop item button
-            TryBuyItem(itemType);
-        };
+        //shopItemTransform.GetComponent<Button_UI>().ClickFunc = () => 
+        //{
+        //    // Clicked on shop item button
+        //    TryBuyItem(itemType);
+        //};
     }
 
     private void TryBuyItem(Item.ItemType itemType)
