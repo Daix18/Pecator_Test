@@ -52,7 +52,7 @@ public class MenuController : MonoBehaviour
         isPaused = true;
         Time.timeScale = 0f;
 
-        _player.enabled = false;        
+        _player.enabled = false;
         _playerAttack.enabled = false;
         _playerInput.enabled = false;
 
@@ -135,11 +135,11 @@ public class MenuController : MonoBehaviour
         OpenGamepadControlsMenu();
     }
 
-    public void OnResumePress() 
+    public void OnResumePress()
     {
         UnPause();
     }
-    
+
     public void OnSettingsBackPress()
     {
         OpenMainMenu();

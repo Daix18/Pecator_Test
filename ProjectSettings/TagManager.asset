@@ -11,7 +11,9 @@ TagManager:
   - Spawnpoint
   - PlayerCollider
   - StopWall
-  - Bounds
+  - Obstacle
+  - Ground
+  - TriggerObjeto
   layers:
   - Default
   - TransparentFX

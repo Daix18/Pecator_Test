@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
 
 
@@ -94,7 +91,7 @@ namespace UnityEngine.InputSystem.Samples.RebindUI
             public Sprite keyK;
             public Sprite keyL;
             public Sprite keyM;
-            public Sprite keyMinus;           
+            public Sprite keyMinus;
             public Sprite leftMouse;
             public Sprite rightMouse;
             public Sprite middleMouse;

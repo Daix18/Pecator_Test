@@ -1,11 +1,20 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using Cinemachine;
 
 public class GameController : MonoBehaviour
 {
+
+    public int PuntosTotales { get { return puntosTotales; } }
+    private int puntosTotales;
+
+    public void SumarPuntos(int puntosASumar)
+    {
+        puntosTotales += puntosASumar;
+        Debug.Log(puntosTotales);
+    }
     public static GameController THIS;
 
     [Header("Settings")]

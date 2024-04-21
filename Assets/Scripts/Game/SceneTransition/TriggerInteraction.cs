@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TriggerInteraction : MonoBehaviour
@@ -9,7 +7,7 @@ public class TriggerInteraction : MonoBehaviour
 
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("PlayerCollider");                
+        Player = GameObject.FindGameObjectWithTag("PlayerCollider");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

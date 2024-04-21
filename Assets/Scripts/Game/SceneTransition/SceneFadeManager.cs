@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +11,7 @@ public class SceneFadeManager : MonoBehaviour
 
     [SerializeField] private Color _fadeOutStartColor;
 
-    public bool IsFadingOut {  get; private set; }
+    public bool IsFadingOut { get; private set; }
 
     public bool IsFadingIn { get; private set; }
 
@@ -28,7 +26,7 @@ public class SceneFadeManager : MonoBehaviour
     }
 
     private void Update()
-    {        
+    {
         if (IsFadingOut)
         {
             if (_fadeOutImage.color.a < 1f)

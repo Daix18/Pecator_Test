@@ -105,12 +105,12 @@ public class MovimientoJugador : MonoBehaviour
             isJumping = false;
         }        
 
-        //Si el jugador está cayendo, se multiplica la gravedad y se le resta 1, para que este proporcionada a la gravedad.
+        //Si el jugador estï¿½ cayendo, se multiplica la gravedad y se le resta 1, para que este proporcionada a la gravedad.
         if (rb.velocity.y < 0f)
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
-        //En el caso de que el jugador está ascendiendo y no se presiona el salto, el salto es más suave.
+        //En el caso de que el jugador estï¿½ ascendiendo y no se presiona el salto, el salto es mï¿½s suave.
         else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
         {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;                       
@@ -125,9 +125,9 @@ public class MovimientoJugador : MonoBehaviour
             wallSliding = false;
         }
 
-        //Si no ha hecho un wall jump, está pegado en una pared y está haciendo un wall Slide, se hace un wall Jump.
+        //Si no ha hecho un wall jump, estï¿½ pegado en una pared y estï¿½ haciendo un wall Slide, se hace un wall Jump.
         if (!wallJumping && onWall && wallSliding)
-        {           
+        {
             if (Input.GetButtonDown("Jump"))
             {
                 //Salto en pared
@@ -185,12 +185,12 @@ public class MovimientoJugador : MonoBehaviour
     private void Jump()
     {
         if (_jumpsLeft > 0)
-        {            
+        {
             rb.velocity = new Vector2(0f, jumpingForce);
             _jumpsLeft -= 1;
             isJumping = true;
             Debug.Log("Salto");
-        }        
+        }
     }
     private void Flip()
     {
@@ -211,9 +211,9 @@ public class MovimientoJugador : MonoBehaviour
     }
 
     private void WallJump()
-    {        
+    {
         onWall = false;
-        rb.velocity = new Vector2(-direccion.x * jumpForceWallX, jumpForceWallY);        
+        rb.velocity = new Vector2(-direccion.x * jumpForceWallX, jumpForceWallY);
         StartCoroutine(WallJumpChange());
     }
 
@@ -243,7 +243,7 @@ public class MovimientoJugador : MonoBehaviour
     {
         GameObject projectile = Instantiate(knifePrefab, lanzamientoPosicion.position, Quaternion.identity);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        // Asumiendo que el personaje mira hacia la derecha. Si no, necesitarás ajustar la dirección basándote en la orientación del personaje.
+        // Asumiendo que el personaje mira hacia la derecha. Si no, necesitarï¿½s ajustar la direcciï¿½n basï¿½ndote en la orientaciï¿½n del personaje.
         rb.velocity = new Vector2(transform.localScale.x * fuerzaLanzamiento, 0);
     }
 
@@ -256,9 +256,9 @@ public class MovimientoJugador : MonoBehaviour
 
     public void StartJump(InputAction.CallbackContext context)
     {
-        //Comprobación para saltar que incluye el coyote jump.
+        //Comprobaciï¿½n para saltar que incluye el coyote jump.
         if (context.performed && !wallSliding)
-        {            
+        {
             //Salto normal
             Jump();
         }
@@ -307,8 +307,8 @@ public class MovimientoJugador : MonoBehaviour
     private void OnEnable()
     {
         controles.Enable();
-        controles.Player.Mover.performed += ctx => direccion = ctx.ReadValue<Vector2>(); // Asignar el valor de la dirección del movimiento
-        controles.Player.Mover.canceled += ctx => direccion = Vector2.zero; // Limpiar la dirección del movimiento cuando se detiene
+        controles.Player.Mover.performed += ctx => direccion = ctx.ReadValue<Vector2>(); // Asignar el valor de la direcciï¿½n del movimiento
+        controles.Player.Mover.canceled += ctx => direccion = Vector2.zero; // Limpiar la direcciï¿½n del movimiento cuando se detiene
     }
 
     //Cuando salgamos de la escena, los controles se desactivan

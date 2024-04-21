@@ -12,16 +12,16 @@ public class AttackController : MonoBehaviour
     [Header("Attack Settings")]
     [SerializeField] private float health;
     [SerializeField] private float radioGolpe;
-    [SerializeField] private float dañoGolpe;
+    [SerializeField] private float danoGolpe;
     [SerializeField] public float tiempoEntreAtaques;
     [SerializeField] public float tiempoSiguienteAtaque;
     private Animator animator;
     public bool attacking;
-    [SerializeField] private float initialHealth = 100f;    
+    [SerializeField] private float initialHealth = 100f;
 
     private void Start()
     {
-        animator = GetComponent<Animator>();        
+        animator = GetComponent<Animator>();
         health = initialHealth;
     }
 
@@ -34,7 +34,7 @@ public class AttackController : MonoBehaviour
     }
 
     private void Update()
-    {        
+    {
         if (tiempoSiguienteAtaque > 0)
         {
             tiempoSiguienteAtaque -= Time.deltaTime;
@@ -81,7 +81,7 @@ public class AttackController : MonoBehaviour
         {
             if (colisionador.CompareTag("Enemigo"))
             {
-                colisionador.transform.GetComponent<Peste_Boss_Controller>().TakeDamage(dañoGolpe);
+                colisionador.transform.GetComponent<Peste_Boss_Controller>().TakeDamage(danoGolpe);
             }
         }
     }
