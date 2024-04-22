@@ -4,22 +4,13 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-
-    public int valor = 1;
-    public GameController gameController;
+    public int valor = 1;    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("PlayerCollider"))
         {
-            gameController.SumarPuntos(valor);
-            Destroy(this.gameObject);
+            GameController.THIS.SumarPuntos(valor);            
         }
-
-    }
-
-    private void Awake()
-    {
-        GameObject.Find("MonedaP_0").GetComponent<Coin>().gameController = gameController;
     }
 }
