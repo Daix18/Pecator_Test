@@ -27387,7 +27387,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -27411,7 +27411,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766939588}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -27421,8 +27421,8 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!212 &766939591
 SpriteRenderer:
@@ -28422,7 +28422,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &850957726
 MonoBehaviour:
@@ -28437,6 +28437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
+  gameManager: {fileID: 0}
 --- !u!61 &850957727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29669,7 +29670,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!66 &956019319
 CompositeCollider2D:
@@ -29696,15 +29697,15 @@ CompositeCollider2D:
       - X: -53045996
         Y: 150985920
       - X: -53045996
-        Y: -43288904
+        Y: -32718830
       - X: 283420416
-        Y: -43288904
+        Y: -32718830
   m_CompositePaths:
     m_Paths:
-    - - {x: 28.342012, y: -4.3288903}
+    - - {x: 28.342012, y: -3.271883}
       - {x: 28.342012, y: 15.098592}
       - {x: -5.3046, y: 15.098563}
-      - {x: -5.3045707, y: -4.3288903}
+      - {x: -5.3045707, y: -3.271883}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &956019320
@@ -29741,7 +29742,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: 11.518721, y: 5.384851}
+  m_Offset: {x: 11.518721, y: 5.913355}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -29752,7 +29753,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 33.64664, y: 19.427483}
+  m_Size: {x: 33.64664, y: 18.370476}
   m_EdgeRadius: 0
 --- !u!114 &956019322
 MonoBehaviour:
@@ -29907,7 +29908,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1003673864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.031113, y: 27.196934, z: -20.101889}
+  m_LocalPosition: {x: -7.7711124, y: 27.226934, z: -20.101889}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35910,7 +35911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805360605}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.031113, y: 27.196934, z: -20.101889}
+  m_LocalPosition: {x: -7.7711124, y: 27.226934, z: -20.101889}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -90353,7 +90354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &2024301140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -90445,7 +90446,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2033957118
 GameObject:
@@ -92158,7 +92159,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141202071}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -92216,7 +92217,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2144657843
 GameObject:
@@ -92611,7 +92612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2516492645574893204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.43, y: 18.74, z: 0}
+  m_LocalPosition: {x: 16.69, y: 18.77, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -92851,11 +92852,10 @@ MonoBehaviour:
   fillImage: {fileID: 1249662607}
   health: 100
   radioGolpe: 0.3
-  danoGolpe: 0
+  "da\xF1oGolpe": 20
   tiempoEntreAtaques: 0.3
   tiempoSiguienteAtaque: 0
   attacking: 0
-  canAttack: 0
   initialHealth: 100
 --- !u!1 &2516492645574893204
 GameObject:
