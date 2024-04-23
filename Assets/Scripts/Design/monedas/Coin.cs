@@ -10,7 +10,8 @@ public class Coin : MonoBehaviour
     {
         if (collision.CompareTag("PlayerCollider"))
         {
-            GameController.THIS.SumarPuntos(valor);            
+            GameController.THIS.SumarPuntos(valor);
+            Destroy(gameObject);
         }
     }
 }

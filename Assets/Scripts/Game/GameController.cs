@@ -24,10 +24,33 @@ public class GameController : MonoBehaviour
     {
         THIS = this;
     }
+    private int cantidadMonedas = 0;
+
+    // Otros métodos y variables del GameController...
+
+    private void Start()
+    {
+        // Establece la cantidad inicial de monedas a 0 al inicio del juego
+        cantidadMonedas = 0;
+    }
+
+    // Método para obtener la cantidad de monedas
+    public int GetCantidadMonedas()
+    {
+        return cantidadMonedas;
+    }
+
+    // Método para sumar puntos (en este caso, monedas)
+    public void SumarPuntos(int puntos)
+    {
+        cantidadMonedas += puntos;
+        // Aquí puedes agregar cualquier otra lógica relacionada con sumar puntos.
+    }
 
     // Update is called once per frame
     void Update()
     {
+
         Time.timeScale = timeScale;
 
         if (Input.GetKeyDown(KeyCode.M))
@@ -43,7 +66,7 @@ public class GameController : MonoBehaviour
             mapa.enabled = false;
         }
     }
-    public void SumarPuntos(int puntosASumar)
+    public void SumarPuntosOtros(int puntosASumar)
     {
         puntosTotales += puntosASumar;
         Debug.Log(puntosTotales);
