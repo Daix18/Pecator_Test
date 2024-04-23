@@ -9,7 +9,7 @@ public class ObstaculosCollision : MonoBehaviour
     {
         if (other.CompareTag("PlayerCollider"))
         {
-            other.GetComponent<AttackController>().TakeDamage(damageAmount);
+            AttackController.THIS.TakeDamage(damageAmount);
         }
     }
 }

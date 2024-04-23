@@ -34,6 +34,15 @@ public class ObstaculeController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Suelo"))
+        {
+            rb.velocity = Vector2.zero;
+            rb.gravityScale = 0f;
+        }
+    }
+
     IEnumerator ResetObstacleAfterDelay()
     {
         obstacleResetting = true; // Marca que el obstáculo se está reiniciando

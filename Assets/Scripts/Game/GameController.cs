@@ -6,16 +6,9 @@ using Cinemachine;
 
 public class GameController : MonoBehaviour
 {
-
-    public int PuntosTotales { get { return puntosTotales; } }
-    private int puntosTotales;
-
-    public void SumarPuntos(int puntosASumar)
-    {
-        puntosTotales += puntosASumar;
-        Debug.Log(puntosTotales);
-    }
     public static GameController THIS;
+
+
 
     [Header("Settings")]
     [Range(0f, 2f)][SerializeField] private float timeScale;
@@ -24,14 +17,40 @@ public class GameController : MonoBehaviour
     [SerializeField] private Image mapa;
     [SerializeField] private Image playerIcon;
 
+    public int PuntosTotales { get { return puntosTotales; } }
+    private int puntosTotales;
+
     private void Awake()
     {
         THIS = this;
+    }
+    private int cantidadMonedas = 0;
+
+    // Otros métodos y variables del GameController...
+
+    private void Start()
+    {
+        // Establece la cantidad inicial de monedas a 0 al inicio del juego
+        cantidadMonedas = 0;
+    }
+
+    // Método para obtener la cantidad de monedas
+    public int GetCantidadMonedas()
+    {
+        return cantidadMonedas;
+    }
+
+    // Método para sumar puntos (en este caso, monedas)
+    public void SumarPuntos(int puntos)
+    {
+        cantidadMonedas += puntos;
+        // Aquí puedes agregar cualquier otra lógica relacionada con sumar puntos.
     }
 
     // Update is called once per frame
     void Update()
     {
+
         Time.timeScale = timeScale;
 
         if (Input.GetKeyDown(KeyCode.M))
@@ -46,5 +65,10 @@ public class GameController : MonoBehaviour
             Time.timeScale = 1f;
             mapa.enabled = false;
         }
+    }
+    public void SumarPuntosOtros(int puntosASumar)
+    {
+        puntosTotales += puntosASumar;
+        Debug.Log(puntosTotales);
     }
 }
