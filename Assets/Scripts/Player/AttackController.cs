@@ -75,6 +75,7 @@ public class AttackController : MonoBehaviour
         {
             if (!attacking)
             {
+                MovimientoJugador.THIS.enabled = false;
                 attacking = true;
                 canAttack = false;
                 animator.SetTrigger("Golpe");
@@ -97,6 +98,7 @@ public class AttackController : MonoBehaviour
     {
         attacking = false;
         canAttack = true;
+        MovimientoJugador.THIS.enabled = true;
     }
 
     public void ResetHealth()

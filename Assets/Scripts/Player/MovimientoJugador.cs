@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class MovimientoJugador : MonoBehaviour
 {
+    public static MovimientoJugador THIS;
+
     private Controls controles;
     private Rigidbody2D rb;
     private TrailRenderer tr;
@@ -91,6 +93,11 @@ public class MovimientoJugador : MonoBehaviour
 
     private void Awake()
     {
+        if (THIS == null)
+        {
+            THIS = this;
+        }
+
         controles = new();
     }
 
@@ -250,8 +257,6 @@ public class MovimientoJugador : MonoBehaviour
             // Establecer la velocidad basada en la escala local x del objeto y la potencia de dash
             rb.velocity = dashingDir.normalized * dashingPower;
         }
-
-        Invoke("StopDash", dashingTime);
     }
     void LanzarCuchillo()
     {
@@ -290,16 +295,15 @@ public class MovimientoJugador : MonoBehaviour
         }
     }
 
-        public void StartAttack(InputAction.CallbackContext context)
+    public void StartAttack(InputAction.CallbackContext context)
+    {
+        if (context.performed && AttackController.THIS.tiempoSiguienteAtaque <= 0)
         {
-            if (context.performed && AttackController.THIS.tiempoSiguienteAtaque <= 0)
-            {
-                Debug.Log("Golpe");
-                AttackController.THIS.Golpe();
-                AttackController.THIS.tiempoSiguienteAtaque = AttackController.THIS.tiempoEntreAtaques;
-                rb.velocity  = Vector2.zero;
-            }
+            Debug.Log("Golpe");
+            AttackController.THIS.Golpe();
+            AttackController.THIS.tiempoSiguienteAtaque = AttackController.THIS.tiempoEntreAtaques;
         }
+    }
 
     public void StartKnife(InputAction.CallbackContext context)
     {
