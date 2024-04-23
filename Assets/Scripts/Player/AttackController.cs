@@ -17,6 +17,8 @@ public class AttackController : MonoBehaviour
     [SerializeField] public float tiempoSiguienteAtaque;
     private Animator animator;
     public bool attacking;
+    public bool canAttack;
+
     [SerializeField] private float initialHealth = 100f;
 
     private void Start()
@@ -69,10 +71,14 @@ public class AttackController : MonoBehaviour
     public void Golpe()
     {
         // Comprobar si el golpe ya está activo, si no, activarlo
-        if (!attacking)
+        if (canAttack)
         {
-            attacking = true;
-            animator.SetTrigger("Golpe");
+            if (!attacking)
+            {
+                attacking = true;
+                canAttack = false;
+                animator.SetTrigger("Golpe");
+            }
         }
 
         Collider2D[] objetos = Physics2D.OverlapCircleAll(controladorGolpe.position, radioGolpe);
@@ -90,6 +96,7 @@ public class AttackController : MonoBehaviour
     public void FinalizarGolpe()
     {
         attacking = false;
+        canAttack = true;
     }
 
     public void ResetHealth()
