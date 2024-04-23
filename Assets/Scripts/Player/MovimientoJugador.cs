@@ -125,6 +125,20 @@ public class MovimientoJugador : MonoBehaviour
             wallSliding = false;
         }
 
+        if (!onGround)
+        {
+            AttackController.THIS.canAttack = false;
+        }
+        else
+        {
+            AttackController.THIS.canAttack = true;
+        }
+
+        if (AttackController.THIS.attacking)
+        {
+            rb.velocity = Vector2.zero;
+        }
+
         //Si no ha hecho un wall jump, est� pegado en una pared y est� haciendo un wall Slide, se hace un wall Jump.
         if (!wallJumping && onWall && wallSliding)
         {
@@ -283,6 +297,7 @@ public class MovimientoJugador : MonoBehaviour
                 Debug.Log("Golpe");
                 AttackController.THIS.Golpe();
                 AttackController.THIS.tiempoSiguienteAtaque = AttackController.THIS.tiempoEntreAtaques;
+                rb.velocity  = Vector2.zero;
             }
         }
 
