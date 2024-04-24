@@ -45,6 +45,7 @@ public class Peste_Boss_Controller : MonoBehaviour
     {
         float distancePlayer = Vector2.Distance(transform.position, player.position);
         animator.SetFloat("playerDistance", distancePlayer);
+        animator.SetFloat("xVelocity", rb.velocity.x);
         animator.SetBool("Cooldown", cooldown);
         animator.SetBool("doubleJumped", doubleJumped);
         animator.SetBool("stunned", stun);
