@@ -7990,13 +7990,13 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 60ad79ac56a02cd498b86ad764519b73, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: f8bf2650915450a4c914da95bb348810, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 04dc9f8591660364ba7d29b76fac8a0b, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 274d7fc5baa346c459f535db5efefdb1, type: 2}
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b33c57ba8da90fd40bbd544897ed288c, type: 2}
   - m_RefCount: 100
@@ -13742,7 +13742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e9da93fdf4dd34b804679889b3d3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 0}
+  timeScale: 0
   mapa: {fileID: 1727638862}
   playerIcon: {fileID: 0}
 --- !u!1 &1296773818
@@ -29226,7 +29226,7 @@ SpriteRenderer:
   m_Size: {x: 3.84, y: 3.84}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!96 &2516492645574893194
@@ -29349,11 +29349,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8b5e42b2eba134497ad8484303c9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 1
   speedMovement: 8
   speedGroundMovement: 6
   speedAirMovement: 6
   suavizadoDeMovimiento: 0
+  mirandoDerecha: 1
+  _camera: {fileID: 0}
   _jumpsLeft: 0
   maxJumps: 2
   jumpingForce: 6.5
@@ -29403,10 +29404,11 @@ MonoBehaviour:
   fillImage: {fileID: 0}
   health: 100
   radioGolpe: 0.3
-  "da\xF1oGolpe": 20
+  danoGolpe: 0
   tiempoEntreAtaques: 0.3
   tiempoSiguienteAtaque: 0
   attacking: 0
+  canAttack: 0
   initialHealth: 100
 --- !u!1 &2516492645574893204
 GameObject:
