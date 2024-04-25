@@ -28422,7 +28422,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &850957726
 MonoBehaviour:
@@ -28437,7 +28437,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valor: 1
-  gameManager: {fileID: 0}
 --- !u!61 &850957727
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29670,7 +29669,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!66 &956019319
 CompositeCollider2D:
@@ -90446,7 +90445,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2033957118
 GameObject:
@@ -92217,7 +92216,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2144657843
 GameObject:
@@ -92852,10 +92851,11 @@ MonoBehaviour:
   fillImage: {fileID: 1249662607}
   health: 100
   radioGolpe: 0.3
-  "da\xF1oGolpe": 20
+  danoGolpe: 0
   tiempoEntreAtaques: 0.3
   tiempoSiguienteAtaque: 0
   attacking: 0
+  canAttack: 0
   initialHealth: 100
 --- !u!1 &2516492645574893204
 GameObject:
