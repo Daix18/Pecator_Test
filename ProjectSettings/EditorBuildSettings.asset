@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 6e8aee90a8d1a494e91fe0b80b3e2e83
   - enabled: 1
-    path: Assets/Scenes/Tutorial/Tutorial_1.unity
+    path: "Assets/Scenes/MONTA\xD1A/Tutorial_1 1.unity"
     guid: d8d5d4786d57f7d49bf767e938d29c5d
   - enabled: 1
     path: Assets/Scenes/Tutorial/Tutorial_2.unity
