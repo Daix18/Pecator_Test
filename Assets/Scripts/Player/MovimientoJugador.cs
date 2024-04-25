@@ -65,10 +65,10 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private float dashingCooldown = 1f;
     [SerializeField] private float dashGravity;
     [SerializeField] private int _dashesLeft;
+    [SerializeField] private bool isDashing;
     private float waitTime;
     private Vector2 dashingDir;
     private bool canDash = true;
-    private bool isDashing;
 
     [Header("Knife Mechanic Settings")]
     [SerializeField] private GameObject knifePrefab;
@@ -244,11 +244,11 @@ public class MovimientoJugador : MonoBehaviour
         tr.emitting = true;
         isJumping  = false;
         rb.gravityScale = dashGravity;
-        dashingDir = new Vector2(direccion.x, direccion.y);
+        dashingDir = new Vector2(direccion.x, 0);
 
         if (dashingDir == Vector2.zero)
         {
-            dashingDir = new Vector2(transform.localScale.x, 0);
+            dashingDir = new Vector2(transform.forward.x, 0);
         }
 
         if (isDashing)
@@ -289,7 +289,7 @@ public class MovimientoJugador : MonoBehaviour
             if (waitTime >= dashingCooldown)
             {
                 waitTime = 0;
-                Invoke("Dash", 0);
+                Dash();
             }
         }
     }

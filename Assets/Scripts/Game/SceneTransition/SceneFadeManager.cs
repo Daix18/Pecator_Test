@@ -63,7 +63,6 @@ public class SceneFadeManager : MonoBehaviour
 
     public void StartFadeIn()
     {
-        Debug.Log("FadeIn");
         if (_fadeOutImage.color.a >= 1f)
         {
             _fadeOutImage.color = _fadeOutStartColor;
