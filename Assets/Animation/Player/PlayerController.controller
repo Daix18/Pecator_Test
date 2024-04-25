@@ -264,6 +264,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: wallSliding
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: isDashing
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 464069529881246754}
   m_Solo: 0
@@ -542,6 +545,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isDashing
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: wallSliding
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6214993893756535305}
   m_Solo: 0
@@ -597,6 +603,9 @@ AnimatorStateTransition:
     m_EventTreshold: -1
   - m_ConditionMode: 2
     m_ConditionEvent: isJumping
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: wallSliding
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2074633558107349158}

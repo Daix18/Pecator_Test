@@ -19794,7 +19794,6 @@ MonoBehaviour:
   wallBoxDimensions: {x: 0.1, y: 0.35, z: 0}
   maxDashes: 1
   dashingPower: 20
-  dashingTime: 0.3
   dashingCooldown: 1
   dashGravity: 0
   _dashesLeft: 0
@@ -34971,7 +34970,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 25
-      m_TileSpriteIndex: 36
+      m_TileSpriteIndex: 37
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -37241,7 +37240,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 49
-      m_TileSpriteIndex: 34
+      m_TileSpriteIndex: 36
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -45424,14 +45423,14 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -1124073523, guid: b45ae3035dd76f343a7a0481cd1ebd4b, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 5
     m_Data: {fileID: 1166108328, guid: b45ae3035dd76f343a7a0481cd1ebd4b, type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: -1124073523, guid: b45ae3035dd76f343a7a0481cd1ebd4b, type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: -312472038, guid: b45ae3035dd76f343a7a0481cd1ebd4b, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -693453654, guid: a042891a580727c49a23b730cb9d9b0d, type: 3}
   - m_RefCount: 2
@@ -96503,7 +96502,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 10.13}
+  m_Size: {x: 5, y: 5}
   m_EdgeRadius: 0
 --- !u!212 &1824253632
 SpriteRenderer:
