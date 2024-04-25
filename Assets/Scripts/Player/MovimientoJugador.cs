@@ -18,8 +18,6 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private float speedAirMovement;
 
     [Range(0, 0.3f)][SerializeField] private float suavizadoDeMovimiento;
-    //private float inputX;
-    //private float inputY;
     private float normalGravity;
     private Vector3 velocidad = Vector3.zero;
     private Vector2 direccion;
@@ -246,9 +244,11 @@ public class MovimientoJugador : MonoBehaviour
         rb.gravityScale = dashGravity;
         dashingDir = new Vector2(direccion.x, 0);
 
+        float direccionDashX = transform.rotation.eulerAngles.y > 0 ? -1f : 1f;
+
         if (dashingDir == Vector2.zero)
         {
-            dashingDir = new Vector2(transform.forward.x, 0);
+            dashingDir = new Vector2(direccionDashX, 0);
         }
 
         if (isDashing)
