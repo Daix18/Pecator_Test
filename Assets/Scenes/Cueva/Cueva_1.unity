@@ -3236,7 +3236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5696174220360149504, guid: 8ec2841b471337841b8002b622196ec0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.13
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5696174220360149504, guid: 8ec2841b471337841b8002b622196ec0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18899,8 +18899,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPointAt: 8
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 3146ed7f8f4aac54f99a8cce5c16873f, type: 3}
-    _sceneName: Boss_Peste
+    _sceneAsset: {fileID: 102900000, guid: 204e6417aa2e9f24cb437ff5f2deabae, type: 3}
+    _sceneName: Cueva_2
   CurrentFinishPointPosition: 7
 --- !u!212 &894203494
 SpriteRenderer:
@@ -96476,8 +96476,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPointAt: 5
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 5aaa163f60f2ecd46a991582ac92d629, type: 3}
-    _sceneName: Tutorial_3
+    _sceneAsset: {fileID: 102900000, guid: e418dd8d7d8561f49a1a643d059cd691, type: 3}
+    _sceneName: Cueva_2.1
   CurrentFinishPointPosition: 6
 --- !u!61 &1824253631
 BoxCollider2D:
@@ -96565,7 +96565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824253629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.516, y: -2.594, z: 0}
+  m_LocalPosition: {x: -3.98, y: -2.594, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []

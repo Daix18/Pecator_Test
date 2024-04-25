@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a21ba43f154d56a4db51a0e0d49a065e
+guid: 2e811d58716e3b94482d2d0166a25425
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fall_Animation_0
+      name: Idle_Animationt_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78b7d7cd6b0728244a6d52f20737d8a9
-      internalID: -2093254215
+      spriteID: 53d226d0c1509ba4285f540eb2e4e67c
+      internalID: 403756132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fall_Animation_1
+      name: Idle_Animationt_1
       rect:
         serializedVersion: 2
         x: 384
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de3db8e55ca592d4faa5abcb23634172
-      internalID: -1803442331
+      spriteID: 43fc5a0432d598840a87a968d640a6af
+      internalID: -1992950702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fall_Animation_2
+      name: Idle_Animationt_2
       rect:
         serializedVersion: 2
         x: 0
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba317c5936f414b4b8b756bf8c509b00
-      internalID: 2133338147
+      spriteID: 78d4c2c71d5ffd14f81e3fe080dcd076
+      internalID: 397639585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fall_Animation_3
+      name: Idle_Animationt_3
       rect:
         serializedVersion: 2
         x: 384
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b12925afba43c004d96d7ee12fdd3d78
-      internalID: 882708055
+      spriteID: b239fe4b06805514f9a0c14c5734249b
+      internalID: 511891097
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fall_Animation_0: -2093254215
-      Fall_Animation_1: -1803442331
-      Fall_Animation_2: 2133338147
-      Fall_Animation_3: 882708055
+      Idle_Animationt_0: 403756132
+      Idle_Animationt_1: -1992950702
+      Idle_Animationt_2: 397639585
+      Idle_Animationt_3: 511891097
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

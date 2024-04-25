@@ -13,6 +13,16 @@ public class FinishPoint : TriggerInteraction
         Six,
         Seven,
         Eight,
+        Nine,
+        Ten,
+        Eleven,
+        Twelve,
+        Thirteen,
+        Fourteen,
+        Fifteen,
+        Sixteen,
+        Seventeen,
+        Eighteen,
     }
 
     [Header("Spawn To")]

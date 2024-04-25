@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a21ba43f154d56a4db51a0e0d49a065e
+guid: 250dae85bd75a504baacb7a06d66a5c0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fall_Animation_0
+      name: Walk_Animationt_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78b7d7cd6b0728244a6d52f20737d8a9
-      internalID: -2093254215
+      spriteID: 539c20dacb368644283f6c426c33f61f
+      internalID: -1844246423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fall_Animation_1
+      name: Walk_Animationt_1
       rect:
         serializedVersion: 2
         x: 384
@@ -140,14 +140,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de3db8e55ca592d4faa5abcb23634172
-      internalID: -1803442331
+      spriteID: 956dbfe9e9b349d48a88db48bc127a6a
+      internalID: -1032305728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fall_Animation_2
+      name: Walk_Animationt_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a985bffb7e54249940776590d4c075
+      internalID: -1156255781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_Animationt_3
       rect:
         serializedVersion: 2
         x: 0
@@ -161,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba317c5936f414b4b8b756bf8c509b00
-      internalID: 2133338147
+      spriteID: 8f02c99c1c140fe44981d87c9473d204
+      internalID: 465220756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fall_Animation_3
+      name: Walk_Animationt_4
       rect:
         serializedVersion: 2
         x: 384
@@ -182,8 +203,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b12925afba43c004d96d7ee12fdd3d78
-      internalID: 882708055
+      spriteID: 7fa5baaff9ac0f04dab6b12fc52636c2
+      internalID: -1807580983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk_Animationt_5
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 384
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6cb9a3418ac9f49a99676b525cd373
+      internalID: 921827734
       vertices: []
       indices: 
       edges: []
@@ -199,10 +241,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fall_Animation_0: -2093254215
-      Fall_Animation_1: -1803442331
-      Fall_Animation_2: 2133338147
-      Fall_Animation_3: 882708055
+      Walk_Animationt_0: -1844246423
+      Walk_Animationt_1: -1032305728
+      Walk_Animationt_2: -1156255781
+      Walk_Animationt_3: 465220756
+      Walk_Animationt_4: -1807580983
+      Walk_Animationt_5: 921827734
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
