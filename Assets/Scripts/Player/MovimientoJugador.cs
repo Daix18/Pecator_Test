@@ -62,7 +62,6 @@ public class MovimientoJugador : MonoBehaviour
     [Header("Dash Settings")]
     [SerializeField] private int maxDashes = 1;
     [SerializeField] private float dashingPower = 24f;
-    [SerializeField] private float dashingTime = 0.2f;
     [SerializeField] private float dashingCooldown = 1f;
     [SerializeField] private float dashGravity;
     [SerializeField] private int _dashesLeft;

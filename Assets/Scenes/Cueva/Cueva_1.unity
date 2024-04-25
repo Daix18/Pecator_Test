@@ -11109,8 +11109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPointAt: 8
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 3146ed7f8f4aac54f99a8cce5c16873f, type: 3}
-    _sceneName: Boss_Peste
+    _sceneAsset: {fileID: 102900000, guid: 204e6417aa2e9f24cb437ff5f2deabae, type: 3}
+    _sceneName: Cueva_2
   CurrentFinishPointPosition: 7
 --- !u!212 &894203494
 SpriteRenderer:
@@ -81209,8 +81209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPointAt: 5
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 5aaa163f60f2ecd46a991582ac92d629, type: 3}
-    _sceneName: Tutorial_3
+    _sceneAsset: {fileID: 102900000, guid: e418dd8d7d8561f49a1a643d059cd691, type: 3}
+    _sceneName: Cueva_2.1
   CurrentFinishPointPosition: 6
 --- !u!61 &1824253631
 BoxCollider2D:

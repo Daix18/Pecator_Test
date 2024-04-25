@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a4e37e0519de3b46b231b4ba3ff5de4
-      internalID: 1030630486
+      spriteID: 78b7d7cd6b0728244a6d52f20737d8a9
+      internalID: -2093254215
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88c24fa130da2914a8825196d4299faf
-      internalID: -410333076
+      spriteID: de3db8e55ca592d4faa5abcb23634172
+      internalID: -1803442331
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4df425a473c371a4da39ecfd454000c2
-      internalID: -2071099034
+      spriteID: ba317c5936f414b4b8b756bf8c509b00
+      internalID: 2133338147
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 615526e82b5cc3e4897854b570e06eb1
-      internalID: 1516811475
+      spriteID: b12925afba43c004d96d7ee12fdd3d78
+      internalID: 882708055
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fall_Animation_0: 1030630486
-      Fall_Animation_1: -410333076
-      Fall_Animation_2: -2071099034
-      Fall_Animation_3: 1516811475
+      Fall_Animation_0: -2093254215
+      Fall_Animation_1: -1803442331
+      Fall_Animation_2: 2133338147
+      Fall_Animation_3: 882708055
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
