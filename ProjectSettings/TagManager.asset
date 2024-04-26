@@ -14,7 +14,7 @@ TagManager:
   - Obstacle
   - Ground
   - TriggerObjeto
-  - Bounds
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

@@ -104,6 +104,8 @@ namespace Bundos.MovingPlatforms
             Vector2 direction = (waypoint - transform.position).normalized;
             rb.velocity = direction * moveSpeed;
         }
+
+
         private void OnDrawGizmos()
         {
             if (IsSelected() && editing)

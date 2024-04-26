@@ -11,6 +11,7 @@ public class MovimientoJugador : MonoBehaviour
     private Rigidbody2D rb;
     private TrailRenderer tr;
     private Animator animator;
+    private Transform oldParent;
 
     [Header("Movimiento")]
     [SerializeField] private float speedMovement;
@@ -22,6 +23,8 @@ public class MovimientoJugador : MonoBehaviour
     private Vector3 velocidad = Vector3.zero;
     private Vector2 direccion;
     [HideInInspector] public bool mirandoDerecha = true;
+    [SerializeField] private Rigidbody2D rbPlatform;
+    [SerializeField] private bool onPlatform;
 
     [Header("Camera Settings")]
     [SerializeField] private GameObject _camera;
@@ -362,6 +365,46 @@ public class MovimientoJugador : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(groundChecker.position, dimensionesCaja);
         Gizmos.DrawWireCube(wallChecker.position, wallBoxDimensions);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "MovingPlatform")
+        {
+            DontDestroyOnLoad(collision.gameObject);
+            oldParent = transform.parent;
+            transform.parent = collision.transform;
+            rbPlatform = collision.GetComponent<Rigidbody2D>(); // Obtener referencia al Rigidbody de la plataforma
+            rb.gravityScale = 10;
+            onPlatform = true; // Establecer la bandera enPlataformaMovil a true
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "MovingPlatform")
+        {
+            if (onPlatform && rbPlatform != null)
+            {
+                Vector2 movimientoPlataforma = rbPlatform.velocity * Time.fixedDeltaTime;
+                transform.position += (Vector3)movimientoPlataforma;
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "MovingPlatform")
+        {
+            collision.transform.parent = null;
+            GameObject platforms = GameObject.Find("Platforms");
+            Transform temp = transform.parent;
+            transform.parent = oldParent;
+            temp.parent = PersistController.THIS.transform.parent;
+            rb.gravityScale = 1;
+            collision.transform.parent = platforms.transform;
+            onPlatform = false; 
+        }
     }
 
     //Corrutinas:
