@@ -251,6 +251,26 @@ public class MovimientoJugador : MonoBehaviour
             dashingDir = new Vector2(direccionDashX, 0);
         }
 
+
+        //Esto es para hacer el dash de manera diagonal.
+        // Obtener la dirección de entrada del jugador
+        Vector2 direccionInput = new Vector2(direccion.x, direccion.y).normalized;
+
+        // Definir la dirección del dash
+        if (Mathf.Abs(direccionInput.x) != 0 && Mathf.Abs(direccionInput.y) != 0)
+        {
+            // Si ambas componentes de la dirección de entrada son diferentes de cero,
+            // entonces la dirección del dash se define en la dirección de entrada
+            dashingDir = direccionInput;
+        }
+        else if (Mathf.Abs(direccionInput.x) > Mathf.Abs(direccionInput.y))
+        {
+            // Si la magnitud de la componente x de la dirección de entrada es mayor que la de la componente y,
+            // entonces la dirección del dash se define en la componente x de la dirección de entrada,
+            // con la componente y igual a cero
+            dashingDir = new Vector2(direccionInput.x, 0).normalized;
+        }
+
         if (isDashing)
         {
             // Establecer la velocidad basada en la escala local x del objeto y la potencia de dash
