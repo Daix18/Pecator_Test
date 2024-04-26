@@ -59,7 +59,8 @@ public class GuerraBossController : MonoBehaviour
     void Update()
     {
         float distancePlayer = Vector2.Distance(transform.position, player.position);
-        animator.SetFloat("playerDistance", distancePlayer);        
+        animator.SetFloat("playerDistance", distancePlayer);
+        animator.SetFloat("xVelocity", rb.velocity.x);
         animator.SetBool("Cooldown", cooldown);
         animator.SetBool("Stunned", stun);
 

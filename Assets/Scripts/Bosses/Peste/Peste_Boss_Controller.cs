@@ -166,7 +166,6 @@ public class Peste_Boss_Controller : MonoBehaviour
         cooldown = false;
     }
 
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;

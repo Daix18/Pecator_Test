@@ -1344,10 +1344,10 @@ MonoBehaviour:
   wallBoxDimensions: {x: 0.1, y: 0.35, z: 0}
   maxDashes: 1
   dashingPower: 20
-  dashingTime: 0.3
   dashingCooldown: 1
   dashGravity: 0
   _dashesLeft: 0
+  isDashing: 0
   knifePrefab: {fileID: 4170110281044481596, guid: 66b4af45dc90fa84398b7d285ebce0e7, type: 3}
   lanzamientoPosicion: {fileID: 1940469137}
   fuerzaLanzamiento: 10
@@ -5815,8 +5815,8 @@ Transform:
   m_GameObject: {fileID: 636515930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.073, y: -0.513, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1807291732}
   m_Father: {fileID: 1194393902}
@@ -5862,7 +5862,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.25652528, g: 1, b: 0, a: 0}
   m_FlipX: 0
