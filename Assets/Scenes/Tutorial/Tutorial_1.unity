@@ -27390,18 +27390,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0027280003, y: 0.00037285686}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.79, y: 1.85}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 2.79, y: 1.85}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.79, y: 1.85}
+  m_Size: {x: 0.4948593, y: 0.63867086}
   m_EdgeRadius: 0
 --- !u!50 &766939590
 Rigidbody2D:
@@ -27465,7 +27465,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2ee54ebbc1a69fe4a823cbf2099a0013, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c5c780a246d1fc4e8c4f3c9ae43d936, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -27484,8 +27484,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766939588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.16, y: 20.63, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 22.762, y: 21.18, z: 0}
+  m_LocalScale: {x: 1.1868646, y: 1.3436627, z: 1.500461}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -90347,6 +90347,7 @@ GameObject:
   - component: {fileID: 2024301142}
   - component: {fileID: 2024301141}
   - component: {fileID: 2024301140}
+  - component: {fileID: 2024301143}
   m_Layer: 0
   m_Name: cARTEL
   m_TagString: TriggerObjeto
@@ -90447,6 +90448,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2024301143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024301139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d96f30f0e6babeb49ab369ff54b19042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textHistoria: {fileID: 0}
 --- !u!1 &2033957118
 GameObject:
   m_ObjectHideFlags: 0
@@ -92913,7 +92927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49678717f21e9e74f8ff18ab46be08a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  historiaText: {fileID: 0}
+  textos: []
+  cuadrosDialogo: []
   historia: 
 --- !u!1 &2516492645723638208
 GameObject:

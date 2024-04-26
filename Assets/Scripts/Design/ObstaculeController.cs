@@ -14,14 +14,18 @@ public class ObstaculeController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         initialPosition = transform.position;
         rb.gravityScale = 0f;
-    }  
-
+    }
+    private void Update()
+    {
+        Debug.Log(obstacleResetting);
+    }
     public void ActivateObstacle()
     {
         if (!obstacleResetting) // Verifica si el obstáculo no se está reiniciando actualmente
         {
             playerDetected = true;
             rb.gravityScale = 2f;
+            
         }
     }
 
