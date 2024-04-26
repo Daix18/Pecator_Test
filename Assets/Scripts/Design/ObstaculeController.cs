@@ -15,17 +15,13 @@ public class ObstaculeController : MonoBehaviour
         initialPosition = transform.position;
         rb.gravityScale = 0f;
     }
-    private void Update()
-    {
-        Debug.Log(obstacleResetting);
-    }
+
     public void ActivateObstacle()
     {
         if (!obstacleResetting) // Verifica si el obstáculo no se está reiniciando actualmente
         {
             playerDetected = true;
             rb.gravityScale = 2f;
-            
         }
     }
 
@@ -33,9 +29,9 @@ public class ObstaculeController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PlayerCollider") && !obstacleResetting) // Verifica si el obstáculo no se está reiniciando actualmente
         {
-            Debug.Log("oliwis");
-            AttackController.THIS.TakeDamage(damageAmount);
             StartCoroutine(ResetObstacleAfterDelay());
+            AttackController.THIS.TakeDamage(damageAmount);
+            Debug.Log("oliwis");
         }
     }
 
