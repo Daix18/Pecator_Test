@@ -33,6 +33,7 @@ public class ObstaculeController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PlayerCollider") && !obstacleResetting) // Verifica si el obstáculo no se está reiniciando actualmente
         {
+            Debug.Log("oliwis");
             AttackController.THIS.TakeDamage(damageAmount);
             StartCoroutine(ResetObstacleAfterDelay());
         }
