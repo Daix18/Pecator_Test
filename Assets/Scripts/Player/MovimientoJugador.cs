@@ -168,6 +168,7 @@ public class MovimientoJugador : MonoBehaviour
         animator.SetBool("wallSliding", wallSliding);
         animator.SetBool("isDashing", isDashing);
         animator.SetBool("isJumping", isJumping);
+        animator.SetBool("onPlatform", onPlatform);
 
         if (onGround)
             speedMovement = speedGroundMovement;
@@ -375,7 +376,6 @@ public class MovimientoJugador : MonoBehaviour
             oldParent = transform.parent;
             transform.parent = collision.transform;
             rbPlatform = collision.GetComponent<Rigidbody2D>(); // Obtener referencia al Rigidbody de la plataforma
-            rb.gravityScale = 10;
             onPlatform = true; // Establecer la bandera enPlataformaMovil a true
         }
     }
@@ -401,7 +401,6 @@ public class MovimientoJugador : MonoBehaviour
             Transform temp = transform.parent;
             transform.parent = oldParent;
             temp.parent = PersistController.THIS.transform.parent;
-            rb.gravityScale = 1;
             collision.transform.parent = platforms.transform;
             onPlatform = false; 
         }
