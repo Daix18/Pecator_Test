@@ -36,6 +36,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
     [SerializeField] private float waitTime = 2f;
     [SerializeField] private float cooldownDuration = 4f;
     [SerializeField] private float throwMagnitude = 10f;
+    public float attackRange = 3f;
     [SerializeField] private bool cooldown = false;
     [SerializeField] private bool isDashing;
     [SerializeField] private bool canDash;
@@ -58,8 +59,6 @@ public class Hambre_Boss_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distancePlayer = Vector2.Distance(transform.position, player.position);
-        animator.SetFloat("playerDistance", distancePlayer);
         animator.SetBool("Cooldown", cooldown);
         animator.SetBool("Stunned", stun);
         animator.SetBool("Dashing", isDashing);
@@ -115,20 +114,17 @@ public class Hambre_Boss_Controller : MonoBehaviour
         }
     }
 
-    private void Flip()
+    public void LookAtPlayer()
     {
-        facingRight = !facingRight;
-        Vector3 escala = transform.localScale;
-        escala.x *= -1;
-        transform.localScale = escala;
-
-        if (facingRight)
+        if (transform.position.x > player.position.x && facingRight)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.rotation = Quaternion.Euler(transform.rotation.x, 180f, transform.rotation.z);
+            facingRight = !facingRight;
         }
-        else if (!facingRight)
+        else if (transform.position.x < player.position.x && !facingRight)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.rotation = Quaternion.Euler(transform.rotation.x, 0, transform.rotation.z);
+            facingRight = !facingRight;
         }
 
         // Invertir la dirección de movimiento
@@ -138,15 +134,6 @@ public class Hambre_Boss_Controller : MonoBehaviour
     private void Death()
     {
         Destroy(gameObject);
-    }
-
-    public void LookAtPlayer()
-    {
-        if (player.position.x > transform.position.x && !facingRight || (player.position.x < transform.position.x && facingRight))
-        {
-            Debug.Log("Flipeo");
-            Flip();
-        }
     }
 
     public void Dash()
@@ -214,7 +201,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
 
     IEnumerator Sequence()
     {
-        Flip();
+        LookAtPlayer();
         yield return new WaitForSeconds(waitTime);
         Dash();
     }

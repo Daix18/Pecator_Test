@@ -17,18 +17,24 @@ public class Peste_Boss_Controller : MonoBehaviour
 
     [Header("Vida")]
     [SerializeField] private float life;
+
     [Header("Attack Settings")]
     [SerializeField] private Transform attackController;
     [SerializeField] private float attackRadius;
     [SerializeField] private float attackDamage;
+    public float attackRange = 3f;
+
     [Header("Jump Settings")]
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float cooldownTime = 1.5f;
+    [SerializeField] private float horizontalJumpForce = 5f;
     [SerializeField] private bool cooldown = true;
     [SerializeField] private bool doubleJumped;
+
     [Header("Gas Ability")]
     [SerializeField] private float fallMultiplier = 2.5f;
     [SerializeField] private float duration;
+
     [Header("Stun Settings")]
     [SerializeField] private bool stun;
 
@@ -43,8 +49,6 @@ public class Peste_Boss_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distancePlayer = Vector2.Distance(transform.position, player.position);
-        animator.SetFloat("playerDistance", distancePlayer);
         animator.SetFloat("xVelocity", rb.velocity.x);
         animator.SetBool("Cooldown", cooldown);
         animator.SetBool("doubleJumped", doubleJumped);
@@ -66,28 +70,10 @@ public class Peste_Boss_Controller : MonoBehaviour
             Death();
         }
     }
+
     private void Death()
     {
         Destroy(gameObject);
-    }
-    private void Flip()
-    {
-        facingRight = !facingRight;
-        Vector3 escala = transform.localScale;
-        escala.x *= -1;
-        transform.localScale = escala;
-
-        if (facingRight)
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        else if (!facingRight)
-        {
-            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y + 180, 0);
-        }
-
-        // Invertir la dirección de movimiento
-        rb.velocity = new Vector2(rb.velocity.x * -1, rb.velocity.y);
     }
 
     public void TakeDamage(float damage)
@@ -98,23 +84,37 @@ public class Peste_Boss_Controller : MonoBehaviour
 
     public void LookAtPlayer()
     {
-        if (player.position.x > transform.position.x && !facingRight || (player.position.x < transform.position.x && facingRight))
+        if (transform.position.x > player.position.x && facingRight)
         {
-            Debug.Log("Flipeo");
-            Flip();
+            transform.rotation = Quaternion.Euler(transform.rotation.x, 180f, transform.rotation.z);
+            facingRight = !facingRight;
         }
+        else if (transform.position.x < player.position.x && !facingRight)
+        {
+            transform.rotation = Quaternion.Euler(transform.rotation.x, 0, transform.rotation.z);
+            facingRight = !facingRight;
+        }
+
+        // Invertir la dirección de movimiento
+        rb.velocity = new Vector2(rb.velocity.x * -1, rb.velocity.y);
     }
-    public void Jump()
+
+    public void JumpAndMoveForward()
     {
-        // Aplicar fuerza al jefe para realizar el double jump
-        rb.velocity = Vector2.up * jumpForce;
-        rb.mass = 1;
+        // Calcular la dirección hacia la que se moverá el jefe (hacia el jugador)
+        float moveDirection = player.position.x > transform.position.x ? 1f : -1f;
+
+        // Aplicar una fuerza al jefe para realizar el salto
+        rb.velocity = new Vector2(moveDirection * horizontalJumpForce, jumpForce);
     }
 
     public void SecondJump()
     {
-        // Aplicar fuerza al jefe para realizar el double jump
-        rb.velocity = Vector2.up * jumpForce;
+        // Calcular la dirección hacia la que se moverá el jefe (hacia el jugador)
+        float moveDirection = player.position.x > transform.position.x ? 1f : -1f;
+
+        // Aplicar una fuerza al jefe para realizar el salto
+        rb.velocity = new Vector2(moveDirection * horizontalJumpForce, jumpForce);
     }
 
     public void Attack()
@@ -133,7 +133,7 @@ public class Peste_Boss_Controller : MonoBehaviour
     public void Down()
     {
         // Detener el movimiento horizontal del jefe
-        rb.velocity = new Vector2(-5f, rb.velocity.y);
+        rb.velocity = Vector2.zero;
 
         // Aplicar una fuerza hacia abajo para una caída rápida
         rb.AddForce(Vector2.down * jumpForce * fallMultiplier, ForceMode2D.Impulse);

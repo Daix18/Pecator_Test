@@ -25068,7 +25068,6 @@ MonoBehaviour:
   _maxFallSpeed: 500
   fallMultiplier: 3
   lowJumpMultiplier: 3
-  jumpBufferTime: 0.6
   queEsSuelo:
     serializedVersion: 2
     m_Bits: 64
@@ -25086,15 +25085,13 @@ MonoBehaviour:
   wallBoxDimensions: {x: 0.1, y: 0.35, z: 0}
   maxDashes: 1
   dashingPower: 20
-  dashingTime: 0.3
   dashingCooldown: 1
   dashGravity: 0
   _dashesLeft: 0
+  isDashing: 0
   knifePrefab: {fileID: 4170110281044481596, guid: 66b4af45dc90fa84398b7d285ebce0e7, type: 3}
   lanzamientoPosicion: {fileID: 441859892}
   fuerzaLanzamiento: 10
-  coyoteTime: 0.061
-  jumpInputBufferTime: 0.06
 --- !u!212 &1499177875
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -25,10 +25,10 @@ public class GasController : MonoBehaviour
 
         foreach (Collider2D collision in objects)
         {
-            if (collision.CompareTag("Player"))
+            if (collision.CompareTag("PlayerCollider"))
             {
                 Debug.Log("Se ha restado vida");
-                collision.GetComponent<AttackController>().TakeDamage(gasDamage);
+                collision.GetComponentInParent<AttackController>().TakeDamage(gasDamage);
             }
         }
     }

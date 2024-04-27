@@ -23,8 +23,8 @@ public class MovimientoJugador : MonoBehaviour
     private Vector3 velocidad = Vector3.zero;
     private Vector2 direccion;
     [HideInInspector] public bool mirandoDerecha = true;
-    [SerializeField] private Rigidbody2D rbPlatform;
-    [SerializeField] private bool onPlatform;
+    private Rigidbody2D rbPlatform;
+    private bool onPlatform;
 
     [Header("Camera Settings")]
     [SerializeField] private GameObject _camera;
@@ -37,13 +37,12 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private float _maxFallSpeed;
     [SerializeField] private float fallMultiplier = 2.5f;
     [SerializeField] private float lowJumpMultiplier = 2f;
-    [SerializeField] private float jumpBufferTime = 0.2f;
     [SerializeField] private LayerMask queEsSuelo;
     [SerializeField] private Transform groundChecker;
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private bool onGround;
     private bool isJumping = false;
-    private float jumpBufferCounter;
+    private bool canJump;
 
     [Header("Wall Slide Settings")]
     [SerializeField] private float wallSlideSpeed;
@@ -76,10 +75,6 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private Transform lanzamientoPosicion;
     [SerializeField] private float fuerzaLanzamiento = 10f;
 
-    [Header("Coyote Time")]
-    [Range(0.01f, 0.5f)][SerializeField] private float coyoteTime;
-    [Range(0.01f, 0.5f)][SerializeField] private float jumpInputBufferTime;
-
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -110,6 +105,7 @@ public class MovimientoJugador : MonoBehaviour
             _jumpsLeft = maxJumps;
             _dashesLeft = maxDashes;
             isJumping = false;
+            canJump = true;
         }        
 
         //Si el jugador est� cayendo, se multiplica la gravedad y se le resta 1, para que este proporcionada a la gravedad.
@@ -206,9 +202,9 @@ public class MovimientoJugador : MonoBehaviour
 
     private void Jump()
     {
-        if (_jumpsLeft > 0)
+        if (_jumpsLeft > 0 && canJump)
         {
-            rb.velocity = new Vector2(0f, jumpingForce);
+            rb.velocity = Vector2.up * jumpingForce;
             _jumpsLeft -= 1;
             isJumping = true;
             Debug.Log("Salto");
@@ -241,6 +237,7 @@ public class MovimientoJugador : MonoBehaviour
 
     public void Dash()
     {
+        canJump = false;
         canDash = false;
         isDashing = true;
         tr.emitting = true;
@@ -255,6 +252,7 @@ public class MovimientoJugador : MonoBehaviour
             dashingDir = new Vector2(direccionDashX, 0);
         }
 
+        Debug.Log("Dash");
 
         //Esto es para hacer el dash de manera diagonal.
         // Obtener la dirección de entrada del jugador
@@ -281,6 +279,16 @@ public class MovimientoJugador : MonoBehaviour
             rb.velocity = dashingDir.normalized * dashingPower;
         }
     }
+    public void StopDash()
+    {
+        canDash = true;
+        canJump = true;
+        isDashing = false;
+        tr.emitting = false;
+        rb.velocity = Vector2.zero;
+        rb.gravityScale = normalGravity;
+    }
+
     void LanzarCuchillo()
     {
         GameObject projectile = Instantiate(knifePrefab, lanzamientoPosicion.position, Quaternion.identity);
@@ -336,14 +344,6 @@ public class MovimientoJugador : MonoBehaviour
         }
     }
 
-    public void StopDash()
-    {
-        canDash = true;
-        isDashing = false;
-        tr.emitting = false;
-        rb.velocity = Vector2.zero;
-        rb.gravityScale = normalGravity;
-    }
 
     //Cuando entremos en al escena, los controles se cargan
     private void OnEnable()

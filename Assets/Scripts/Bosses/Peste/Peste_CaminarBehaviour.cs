@@ -4,6 +4,8 @@ public class Peste_CaminarBehaviour : StateMachineBehaviour
 {
     [SerializeField] private float speedMovement;
 
+    Transform player;
+
     private Peste_Boss_Controller bossPeste;
 
     private Rigidbody2D rb;
@@ -12,20 +14,34 @@ public class Peste_CaminarBehaviour : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         bossPeste = animator.GetComponent<Peste_Boss_Controller>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = bossPeste.rb;
-        bossPeste.LookAtPlayer();
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        // Mantener la velocidad en el eje Y igual a la velocidad actual
+        // Mantén la velocidad en el eje Y igual a la velocidad actual
         float currentYVelocity = rb.velocity.y;
 
-        // Determinar la dirección de movimiento basada en la orientación del jefe
-        Vector2 moveDirection = bossPeste.facingRight ? Vector2.right : -Vector2.right;
+        bossPeste.LookAtPlayer();
 
-        // Aplicar la velocidad de movimiento en la dirección adecuada
-        rb.velocity = moveDirection * speedMovement + Vector2.up * currentYVelocity;
+        // Mantén la velocidad horizontal constante
+        float currentXVelocity = rb.velocity.x;
+
+        // Calcula el vector de movimiento hacia el jugador con una velocidad constante
+        Vector2 target = new Vector2(player.position.x, rb.position.y);
+        Vector2 newPos = Vector2.MoveTowards(rb.position, target, speedMovement * Time.fixedDeltaTime);
+
+        // Establece la velocidad del jefe
+        rb.velocity = new Vector2(currentXVelocity, currentYVelocity);
+
+        // Mueve al jefe a la nueva posición
+        rb.MovePosition(newPos);
+
+        if (Vector2.Distance(player.position, rb.position) <= bossPeste.attackRange)
+        {
+            animator.SetTrigger("Attack");
+        }
     }
 
 
@@ -33,6 +49,8 @@ public class Peste_CaminarBehaviour : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         rb.velocity = new Vector2(0, rb.velocity.y);
+
+        animator.ResetTrigger("Attack");
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,7 +14,10 @@ public class GuerraBossController : MonoBehaviour
     [HideInInspector] public Animator animator;
     [HideInInspector] public bool facingRight = true;
     public Transform player;
+    public float attackRange = 3f;
     [SerializeField] private Transform groundChecker;
+    [SerializeField] private Transform leftAttackPosition;
+    [SerializeField] private Transform rightAttackPosition;
     [SerializeField] private Image fillImage;
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private LayerMask queEsSuelo;
@@ -86,33 +90,21 @@ public class GuerraBossController : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void Flip()
+    public void LookAtPlayer()
     {
-        facingRight = !facingRight;
-        Vector3 escala = transform.localScale;
-        escala.x *= -1;
-        transform.localScale = escala;
-
-        if (facingRight)
+        if (transform.position.x > player.position.x && facingRight)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.rotation = Quaternion.Euler(transform.rotation.x, 180f, transform.rotation.z);
+            facingRight = !facingRight;
         }
-        else if (!facingRight)
+        else if (transform.position.x < player.position.x && !facingRight)
         {
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.rotation = Quaternion.Euler(transform.rotation.x, 0, transform.rotation.z);
+            facingRight = !facingRight;
         }
 
         // Invertir la dirección de movimiento
         rb.velocity = new Vector2(rb.velocity.x * -1, rb.velocity.y);
-    }
-
-    public void LookAtPlayer()
-    {
-        if (player.position.x > transform.position.x && !facingRight || (player.position.x < transform.position.x && facingRight))
-        {
-            Debug.Log("Flipeo");
-            Flip();
-        }
     }
 
     public void TakeDamage(float damage)
@@ -145,6 +137,36 @@ public class GuerraBossController : MonoBehaviour
         }
     }
 
+    void MoveBeforeAttack()
+    {
+        float distanceToLeftPosition = Vector2.Distance(transform.position, leftAttackPosition.position);
+        float distanceToRightPosition = Vector2.Distance(transform.position, rightAttackPosition.position);
+
+        Transform targetPosition;
+
+        // Seleccionar la posición objetivo más cercana
+        if (distanceToLeftPosition < distanceToRightPosition)
+        {
+            targetPosition = leftAttackPosition;
+        }
+        else if (distanceToLeftPosition > distanceToRightPosition)
+        {
+            targetPosition = rightAttackPosition;
+        }
+        else
+        {
+            // Si las distancias son iguales, lanzar un dado (random) para decidir qué posición tomar
+            if (Random.Range(0, 2) == 0)
+            {
+                targetPosition = leftAttackPosition;
+            }
+            else
+            {
+                targetPosition = rightAttackPosition;
+            }
+        }
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
@@ -163,4 +185,5 @@ public class GuerraBossController : MonoBehaviour
         yield return new WaitForSeconds(cooldownDuration);
         cooldown = false;
     }
+
 }
