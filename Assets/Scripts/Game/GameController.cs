@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
     {
         THIS = this;
     }
-    private int cantidadMonedas = 0;
+    public int cantidadMonedas = 0;
 
     // Otros métodos y variables del GameController...
 
