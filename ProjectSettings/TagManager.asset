@@ -15,6 +15,7 @@ TagManager:
   - Ground
   - TriggerObjeto
   - Bounds
+  - Event
   layers:
   - Default
   - TransparentFX
