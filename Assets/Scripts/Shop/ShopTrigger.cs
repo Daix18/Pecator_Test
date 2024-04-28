@@ -11,7 +11,7 @@ public class ShopTrigger : MonoBehaviour
     {
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            shopUI.SetActive(!shopUI.activeSelf); // Alternar la visibilidad de la tienda
+            shopUI.SetActive(true); // Alternar la visibilidad de la tienda
         }
     }
 

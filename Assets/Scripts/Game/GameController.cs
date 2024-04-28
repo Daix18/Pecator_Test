@@ -8,14 +8,11 @@ public class GameController : MonoBehaviour
 {
     public static GameController THIS;
 
-
-
     [Header("Settings")]
     [Range(0f, 2f)][SerializeField] private float timeScale;
 
     [Header("Image Components.")]
-    [SerializeField] private Image mapa;
-    [SerializeField] private Image playerIcon;
+    public Image mapa;
 
     public int PuntosTotales { get { return puntosTotales; } }
     private int puntosTotales;
