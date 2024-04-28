@@ -195,11 +195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94753bf7a9ce61648b5b187d17b37c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointAt: 2
+  spawnPointAt: 17
   _sceneToLoad:
     _sceneAsset: {fileID: 102900000, guid: 3146ed7f8f4aac54f99a8cce5c16873f, type: 3}
     _sceneName: Boss_Peste
-  CurrentFinishPointPosition: 1
+  CurrentFinishPointPosition: 16
 --- !u!212 &72456789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18948,11 +18948,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94753bf7a9ce61648b5b187d17b37c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointAt: 11
+  spawnPointAt: 14
   _sceneToLoad:
     _sceneAsset: {fileID: 102900000, guid: 2aab043c685b88e46876fcca06cd39cf, type: 3}
     _sceneName: Cueva_2_To_3 1
-  CurrentFinishPointPosition: 12
+  CurrentFinishPointPosition: 15
 --- !u!61 &1687051625
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Cueva/Cueva_2.unity
     guid: 204e6417aa2e9f24cb437ff5f2deabae
   - enabled: 1
-    path: Assets/Scenes/Cueva/Cueva_2_To_3 1.unity
+    path: Assets/Scenes/Cueva/Cueva_2_To_3.unity
     guid: 2aab043c685b88e46876fcca06cd39cf
   - enabled: 1
     path: Assets/Scenes/Cueva/cueva_3.unity

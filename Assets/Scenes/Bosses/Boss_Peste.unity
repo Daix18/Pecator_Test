@@ -14103,11 +14103,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94753bf7a9ce61648b5b187d17b37c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointAt: 13
+  spawnPointAt: 0
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: a99a4c04cd22cfb448ebd972a6b34476, type: 3}
+    _sceneAsset: {fileID: 0}
     _sceneName: cueva_3
-  CurrentFinishPointPosition: 14
+  CurrentFinishPointPosition: 17
 --- !u!1 &1799578270
 GameObject:
   m_ObjectHideFlags: 0

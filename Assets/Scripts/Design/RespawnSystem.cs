@@ -11,8 +11,10 @@ public class RespawnSystem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollider"))
         {
+            Debug.Log("Checkpoint Actualizado!");
+
             // Actualizar la posición del último "spawn point" al pasar por el spawn point
             lastSpawnPoint = transform.position;
         }
