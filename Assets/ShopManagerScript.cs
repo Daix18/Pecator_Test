@@ -46,7 +46,7 @@ public class ShopManagerScript : MonoBehaviour
     void Update()
     {
         cantidadMonedas  =  GameController.THIS.cantidadMonedas;
-        CoinsTXT.text = "Monedas:" + cantidadMonedas;
+        CoinsTXT.text = "Monedas: " + cantidadMonedas;
 
     }
 }
