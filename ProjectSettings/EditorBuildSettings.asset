@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 6e8aee90a8d1a494e91fe0b80b3e2e83
   - enabled: 1
-    path: Assets/Scenes/PUEBLO.unity
+    path: Assets/Scenes/Tutorial/Tutorial_1.unity
     guid: ad60a51c9647c2941bc27a7e0a65616f
   - enabled: 1
-    path: Assets/Scenes/Tutorial/PACA LA VACA/Tutorial_2_Backup.unity
+    path: Assets/Scenes/Tutorial/PACA LA VACA/Tutorial_2.unity
     guid: 769c3537111d04f41825b0ea0d5f6a0d
   - enabled: 1
-    path: Assets/Scenes/Tutorial/PACA LA VACA/Tutorial_3_Bakup.unity
+    path: Assets/Scenes/Tutorial/PACA LA VACA/Tutorial_3.unity
     guid: 5aaa163f60f2ecd46a991582ac92d629
   - enabled: 1
     path: Assets/Scenes/Cueva/Cueva_1.unity
