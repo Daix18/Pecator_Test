@@ -92902,9 +92902,11 @@ MonoBehaviour:
   groundChecker: {fileID: 2516492645896466769}
   dimensionesCaja: {x: 0.9, y: -0.1, z: 0}
   onGround: 0
+  doubleJumpUnlocked: 0
   wallSlideSpeed: 1.5
   onWall: 0
   wallSliding: 0
+  wallSlideUnlocked: 0
   jumpForceWallX: 6
   jumpForceWallY: 6
   wallJumpTime: 0.2
@@ -92917,9 +92919,11 @@ MonoBehaviour:
   dashGravity: 0
   _dashesLeft: 0
   isDashing: 0
+  dashUnlocked: 0
   knifePrefab: {fileID: 4170110281044481596, guid: 66b4af45dc90fa84398b7d285ebce0e7, type: 3}
   lanzamientoPosicion: {fileID: 2516492645723638211}
   fuerzaLanzamiento: 10
+  knifeUnlocked: 0
 --- !u!114 &2516492645574893198
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,25 +4,14 @@ public class FinishPoint : TriggerInteraction
 {
     public enum SpawnPointAt
     {
-        None,
-        One,
-        Two,
-        Three,
-        Four,
-        Five,
-        Six,
-        Seven,
-        Eight,
-        Nine,
-        Ten,
-        Eleven,
-        Twelve,
-        Thirteen,
-        Fourteen,
-        Fifteen,
-        Sixteen,
-        Seventeen,
-        Eighteen,
+        //Canitdad de puertas
+        None, One, Two, Three, Four, Five, Six,
+        Seven, Eight, Nine, Ten, Eleven, Twelve,
+        Thirteen, Fourteen, Fifteen, Sixteen, 
+        Seventeen, Eighteen, Ninetween, Twenty,
+        TwentyOne, TwentyTwo,TwentyThree,
+        TwentyFour, TwentyFive, TwentySix,
+        TwentySeven, TwentyEight, TwentyNine,
     }
 
     [Header("Spawn To")]

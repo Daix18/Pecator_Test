@@ -2,11 +2,21 @@ using UnityEngine;
 
 public class RespawnSystem : MonoBehaviour
 {
-    private Vector2 lastSpawnPoint; // Variable para almacenar la posición del último "spawn point"
+    public static RespawnSystem THIS;
 
-    private void Start()
+    private Vector2 lastSpawnPoint;
+
+    private void Awake()
     {
-        lastSpawnPoint = transform.position;
+        if (THIS == null)
+        {
+            THIS = this;
+        }
+    }
+
+    private void Update()
+    {
+        Debug.Log(lastSpawnPoint);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -15,7 +25,6 @@ public class RespawnSystem : MonoBehaviour
         {
             Debug.Log("Checkpoint Actualizado!");
 
-            // Actualizar la posición del último "spawn point" al pasar por el spawn point
             lastSpawnPoint = transform.position;
         }
     }
@@ -24,4 +33,5 @@ public class RespawnSystem : MonoBehaviour
     {
         return lastSpawnPoint;
     }
+
 }

@@ -8,8 +8,6 @@ public class GameController : MonoBehaviour
 {
     public static GameController THIS;
 
-
-
     [Header("Settings")]
     [Range(0f, 2f)][SerializeField] private float timeScale;
 
@@ -19,6 +17,20 @@ public class GameController : MonoBehaviour
 
     public int PuntosTotales { get { return puntosTotales; } }
     private int puntosTotales;
+
+    private bool pesteLoaded;
+
+    private void OnEnable()
+    {
+        // Suscribirse al evento SceneManager.sceneLoaded
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        // Desuscribirse del evento SceneManager.sceneLoaded para evitar fugas de memoria
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
     private void Awake()
     {
@@ -71,4 +83,29 @@ public class GameController : MonoBehaviour
         puntosTotales += puntosASumar;
         Debug.Log(puntosTotales);
     }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Aquí puedes realizar acciones basadas en la escena cargada
+        if (scene.name == "Boss_Peste")
+        {
+            if (!pesteLoaded)
+            {
+                StartCoroutine(LoadPesteScene());
+            }
+        }
+        // Agrega más condiciones según las escenas que tengas y las acciones que desees realizar
+    }
+
+    //Corrutinas:
+
+    //Corrutina para cargar la escena del boss de la peste y desactivar ciertas cosas.
+    IEnumerator LoadPesteScene()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Peste_Boss_Controller.THIS.carlos.SetActive(false);
+        Peste_Boss_Controller.THIS.finishPoints.SetActive(false);
+        pesteLoaded = true;
+    }
+
 }

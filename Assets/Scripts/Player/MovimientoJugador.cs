@@ -43,11 +43,13 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private bool onGround;
     private bool isJumping = false;
     private bool canJump;
+    public bool doubleJumpUnlocked;
 
     [Header("Wall Slide Settings")]
     [SerializeField] private float wallSlideSpeed;
     [SerializeField] private bool onWall;
     [SerializeField] private bool wallSliding;
+    public bool wallSlideUnlocked;
 
     [Header("Wall Jump Settings")]
     [SerializeField] private float jumpForceWallX;
@@ -66,6 +68,7 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private float dashGravity;
     [SerializeField] private int _dashesLeft;
     [SerializeField] private bool isDashing;
+    public bool dashUnlocked;
     private float waitTime;
     private Vector2 dashingDir;
     private bool canDash = true;
@@ -74,6 +77,7 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private GameObject knifePrefab;
     [SerializeField] private Transform lanzamientoPosicion;
     [SerializeField] private float fuerzaLanzamiento = 10f;
+    public bool knifeUnlocked;
 
     private void Start()
     {
@@ -119,7 +123,16 @@ public class MovimientoJugador : MonoBehaviour
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;                       
         }
 
-        if (!onGround && onWall && direccion.x != 0)
+        if (!doubleJumpUnlocked)
+        {
+            maxJumps = 1;
+        }
+        else
+        {
+            maxJumps = 2;
+        }
+
+        if (!onGround && onWall && direccion.x != 0 && wallSlideUnlocked)
         {
             wallSliding = true;
         }
@@ -316,7 +329,7 @@ public class MovimientoJugador : MonoBehaviour
 
     public void StartDash(InputAction.CallbackContext context)
     {
-        if (context.performed && canDash)
+        if (context.performed && canDash && dashUnlocked)
         {
             if (waitTime >= dashingCooldown)
             {
@@ -338,7 +351,7 @@ public class MovimientoJugador : MonoBehaviour
 
     public void StartKnife(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && knifeUnlocked)
         {
             LanzarCuchillo();
         }

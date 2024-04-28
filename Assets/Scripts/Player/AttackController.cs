@@ -56,13 +56,9 @@ public class AttackController : MonoBehaviour
     }
     private void RespawnPlayer()
     {
-        RespawnSystem respawnSystem = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnSystem>();
-        if (respawnSystem != null)
-        {
-            transform.position = respawnSystem.GetLastSpawnPoint();
-            health = initialHealth;
-            fillImage.fillAmount = 1f;
-        }
+        transform.position = RespawnSystem.THIS.GetLastSpawnPoint();
+        health = initialHealth;
+        fillImage.fillAmount = 1f;        
     }
     public float GetCurrentHealth()
     {
