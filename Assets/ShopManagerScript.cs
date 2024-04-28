@@ -9,7 +9,7 @@ public class ShopManagerScript : MonoBehaviour
 {
     public int[,] shopItems = new int[5,5];
     public int cantidadMonedas;
-    public Text CoinsTXT;
+    public TextMeshProUGUI CoinsTXT;
     void Start()
     {
         CoinsTXT.text =  "Monedas:" + cantidadMonedas.ToString();
@@ -40,12 +40,13 @@ public class ShopManagerScript : MonoBehaviour
         {
             cantidadMonedas -= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
             shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
-            CoinsTXT.text = "Monedas:" + cantidadMonedas.ToString();
             ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString() ;
         }
     }
     void Update()
     {
         cantidadMonedas  =  GameController.THIS.cantidadMonedas;
+        CoinsTXT.text = "Monedas:" + cantidadMonedas;
+
     }
 }
