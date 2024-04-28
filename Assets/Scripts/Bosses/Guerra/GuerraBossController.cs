@@ -14,7 +14,9 @@ public class GuerraBossController : MonoBehaviour
     [HideInInspector] public Animator animator;
     [HideInInspector] public bool facingRight = true;
     public Transform player;
+    Transform targetPosition;
     public float attackRange = 3f;
+    public float speedMovement;
     [SerializeField] private Transform groundChecker;
     [SerializeField] private Transform leftAttackPosition;
     [SerializeField] private Transform rightAttackPosition;
@@ -38,6 +40,7 @@ public class GuerraBossController : MonoBehaviour
     public float minXLimit = -5f;
     public float maxXLimit = 5f;
     [SerializeField] private bool cooldown = false;
+    private bool readyToAttack;
 
     [Header("Stun settings")]
     [SerializeField] private float stunDuration = 2f;
@@ -62,8 +65,7 @@ public class GuerraBossController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distancePlayer = Vector2.Distance(transform.position, player.position);
-        animator.SetFloat("playerDistance", distancePlayer);
+        animator.SetBool("ReadyToAttack", readyToAttack);
         animator.SetFloat("xVelocity", rb.velocity.x);
         animator.SetBool("Cooldown", cooldown);
         animator.SetBool("Stunned", stun);
@@ -82,6 +84,11 @@ public class GuerraBossController : MonoBehaviour
         if (life <= 0)
         {
             Death();
+        }
+
+        if (!cooldown && !readyToAttack)
+        {
+            MoveBeforeAttack();
         }
     }
 
@@ -137,12 +144,10 @@ public class GuerraBossController : MonoBehaviour
         }
     }
 
-    void MoveBeforeAttack()
+    public void MoveBeforeAttack()
     {
         float distanceToLeftPosition = Vector2.Distance(transform.position, leftAttackPosition.position);
         float distanceToRightPosition = Vector2.Distance(transform.position, rightAttackPosition.position);
-
-        Transform targetPosition;
 
         // Seleccionar la posición objetivo más cercana
         if (distanceToLeftPosition < distanceToRightPosition)
@@ -165,6 +170,8 @@ public class GuerraBossController : MonoBehaviour
                 targetPosition = rightAttackPosition;
             }
         }
+
+        StartCoroutine(MoveToPosition());
     }
 
     private void OnDrawGizmos()
@@ -180,10 +187,31 @@ public class GuerraBossController : MonoBehaviour
         rb.velocity = Vector2.zero;
         stun = true;
         cooldown = true;
+        readyToAttack = false;
         yield return new WaitForSeconds(stunDuration);
         stun = false;        
         yield return new WaitForSeconds(cooldownDuration);
         cooldown = false;
     }
 
+    public IEnumerator MoveToPosition()
+    {
+        speedMovement = 0.1f;
+
+        // Mientras la distancia entre la posición actual y la posición objetivo sea mayor que 0.1 unidades
+        while (Vector2.Distance(transform.position, targetPosition.position) > 0.1f)
+        {
+            Vector2 direction = (targetPosition.position - transform.position).normalized;
+            Vector2 newPosition = (Vector2)transform.position + direction * (speedMovement * Time.deltaTime * 0.5f);
+            transform.position = Vector2.MoveTowards(transform.position, newPosition, speedMovement * Time.deltaTime);
+            yield return null;
+        }
+
+        // Detiene el movimiento una vez que se alcanza la posición objetivo
+        rb.velocity = Vector2.zero;
+
+        readyToAttack = true;
+
+        speedMovement = 3;
+    }
 }
