@@ -87,8 +87,6 @@ public class Peste_Boss_Controller : MonoBehaviour
     {
         Destroy(gameObject);
 
-        MovimientoJugador.THIS.doubleJumpUnlocked = true;
-
         //Reactivamos las puertas para poder salir de la escnea.
         carlos.SetActive(true);
         finishPoints.SetActive(true);
