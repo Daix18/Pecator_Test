@@ -42,7 +42,7 @@ public class AttackController : MonoBehaviour
             tiempoSiguienteAtaque -= Time.deltaTime;
         }
 
-        Debug.Log($"<color=red>Player Damage: </color>" + danoGolpe);
+
     }
 
     public void TakeDamage(float damage)
