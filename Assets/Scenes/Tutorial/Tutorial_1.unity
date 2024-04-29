@@ -5247,7 +5247,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &766939589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12161,7 +12161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeScale: 1
   mapa: {fileID: 1727638862}
-  playerIcon: {fileID: 0}
+  cantidadMonedas: 0
 --- !u!1 &1296773818
 GameObject:
   m_ObjectHideFlags: 0
@@ -94255,7 +94255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2141202072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94958,9 +94958,11 @@ MonoBehaviour:
   groundChecker: {fileID: 2516492645896466769}
   dimensionesCaja: {x: 0.9, y: -0.1, z: 0}
   onGround: 0
+  doubleJumpUnlocked: 0
   wallSlideSpeed: 1.5
   onWall: 0
   wallSliding: 0
+  wallSlideUnlocked: 0
   jumpForceWallX: 6
   jumpForceWallY: 6
   wallJumpTime: 0.2
@@ -94973,9 +94975,12 @@ MonoBehaviour:
   dashGravity: 0
   _dashesLeft: 0
   isDashing: 0
+  dashUnlocked: 0
   knifePrefab: {fileID: 4170110281044481596, guid: 66b4af45dc90fa84398b7d285ebce0e7, type: 3}
   lanzamientoPosicion: {fileID: 2516492645723638211}
   fuerzaLanzamiento: 10
+  knifeLife: 0
+  knifeUnlocked: 0
 --- !u!114 &2516492645574893198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95055,7 +95060,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49678717f21e9e74f8ff18ab46be08a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  historiaText: {fileID: 0}
+  textos: []
+  cuadrosDialogo: []
   historia: 
 --- !u!1 &2516492645723638208
 GameObject:
