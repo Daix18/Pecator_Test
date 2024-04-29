@@ -134,6 +134,8 @@ public class Hambre_Boss_Controller : MonoBehaviour
     private void Death()
     {
         Destroy(gameObject);
+
+        MovimientoJugador.THIS.dashUnlocked = true;
     }
 
     public void Dash()

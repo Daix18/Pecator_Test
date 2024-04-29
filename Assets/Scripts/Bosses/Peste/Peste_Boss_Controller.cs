@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class Peste_Boss_Controller : MonoBehaviour
 {
+    public static Peste_Boss_Controller THIS;
+
     [Header("Fundamental Components")]
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public Animator animator;
@@ -14,6 +16,8 @@ public class Peste_Boss_Controller : MonoBehaviour
     [SerializeField] private Image fillImage;
     [SerializeField] private bool onGround;
     public bool facingRight = true;
+    public GameObject carlos;
+    public GameObject finishPoints;
 
     [Header("Vida")]
     [SerializeField] private float life;
@@ -46,6 +50,14 @@ public class Peste_Boss_Controller : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
+    private void Awake()
+    {
+        if (THIS == null)
+        {
+            THIS = this;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -74,6 +86,12 @@ public class Peste_Boss_Controller : MonoBehaviour
     private void Death()
     {
         Destroy(gameObject);
+
+        MovimientoJugador.THIS.doubleJumpUnlocked = true;
+
+        //Reactivamos las puertas para poder salir de la escnea.
+        carlos.SetActive(true);
+        finishPoints.SetActive(true);
     }
 
     public void TakeDamage(float damage)
@@ -134,6 +152,8 @@ public class Peste_Boss_Controller : MonoBehaviour
     {
         // Detener el movimiento horizontal del jefe
         rb.velocity = Vector2.zero;
+
+        rb.gravityScale = 100f;
 
         // Aplicar una fuerza hacia abajo para una caída rápida
         rb.AddForce(Vector2.down * jumpForce * fallMultiplier, ForceMode2D.Impulse);

@@ -460,6 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e9da93fdf4dd34b804679889b3d3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeScale: 0
   mapa: {fileID: 119011025}
   playerIcon: {fileID: 0}
 --- !u!114 &500985492
@@ -1923,37 +1924,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8b5e42b2eba134497ad8484303c9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 1
   speedMovement: 8
+  speedGroundMovement: 0
+  speedAirMovement: 0
   suavizadoDeMovimiento: 0
-  maxJumps: 2
+  mirandoDerecha: 1
+  _camera: {fileID: 0}
   _jumpsLeft: 0
+  maxJumps: 2
   jumpingForce: 5.5
   _maxFallSpeed: 500
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
   queEsSuelo:
     serializedVersion: 2
     m_Bits: 64
   groundChecker: {fileID: 792447400}
   dimensionesCaja: {x: 0.6, y: 0, z: 0}
   onGround: 0
-  jumpBufferTime: 0.6
+  doubleJumpUnlocked: 0
   wallSlideSpeed: 1.5
-  maxDashes: 1
+  onWall: 0
+  wallSliding: 0
+  wallSlideUnlocked: 0
   jumpForceWallX: 6
   jumpForceWallY: 12
   wallJumpTime: 0.2
+  wallJumping: 0
   wallChecker: {fileID: 1378546703}
   wallBoxDimensions: {x: 0.48, y: 0.48, z: 0}
+  maxDashes: 1
   dashingPower: 20
-  dashingTime: 0.2
   dashingCooldown: 1
   dashGravity: 0
   _dashesLeft: 0
+  isDashing: 0
+  dashUnlocked: 0
   knifePrefab: {fileID: 4170110281044481596, guid: 66b4af45dc90fa84398b7d285ebce0e7, type: 3}
   lanzamientoPosicion: {fileID: 629993786}
   fuerzaLanzamiento: 10
-  coyoteTime: 0.061
-  jumpInputBufferTime: 0.06
+  knifeLife: 0
+  knifeUnlocked: 0
 --- !u!70 &988718710
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1983,10 +1994,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controladorGolpe: {fileID: 2130672350}
+  fillImage: {fileID: 0}
+  health: 0
   radioGolpe: 0.3
-  "da\xF1oGolpe": 20
+  danoGolpe: 0
   tiempoEntreAtaques: 0.3
   tiempoSiguienteAtaque: 0
+  attacking: 0
+  canAttack: 0
+  initialHealth: 100
 --- !u!114 &988718712
 MonoBehaviour:
   m_ObjectHideFlags: 0
