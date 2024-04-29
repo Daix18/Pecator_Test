@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cueva/HABILIDAD 1.unity
     guid: 059b6757c169d774385733967126922b
+  - enabled: 1
+    path: Assets/Scenes/catedral/Catedral.unity
+    guid: d0b21695662186444bb09004104a597c
   m_configObjects: {}
