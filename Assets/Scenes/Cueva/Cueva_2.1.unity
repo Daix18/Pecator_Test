@@ -10592,8 +10592,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPointAt: 11
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: d16e787c467d51648b382cf5ed662522, type: 3}
-    _sceneName: Cueva_1
+    _sceneAsset: {fileID: 102900000, guid: 204e6417aa2e9f24cb437ff5f2deabae, type: 3}
+    _sceneName: Cueva_2
   CurrentFinishPointPosition: 12
 --- !u!61 &761116859
 BoxCollider2D:

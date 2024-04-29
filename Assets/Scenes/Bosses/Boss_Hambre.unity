@@ -4055,8 +4055,8 @@ GameObject:
   - component: {fileID: 522902199}
   - component: {fileID: 522902204}
   - component: {fileID: 522902203}
-  - component: {fileID: 522902202}
   - component: {fileID: 522902201}
+  - component: {fileID: 522902205}
   m_Layer: 0
   m_Name: Hambre
   m_TagString: Untagged
@@ -4105,8 +4105,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.7075472, g: 0.30576026, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 575a387052cf0b94798fac1ec39b3f89, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4124,8 +4124,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522902198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.08, y: 8.85, z: 0}
-  m_LocalScale: {x: 4.13, y: 1, z: 1}
+  m_LocalPosition: {x: 2.86, y: 9.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2044465081}
@@ -4155,32 +4155,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &522902202
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522902198}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!95 &522902203
 Animator:
   serializedVersion: 5
@@ -4241,6 +4215,7 @@ MonoBehaviour:
   waitTime: 1
   cooldownDuration: 30
   throwMagnitude: 10
+  attackRange: 3
   cooldown: 0
   isDashing: 0
   canDash: 0
@@ -4248,6 +4223,32 @@ MonoBehaviour:
   maxWallHits: 3
   stunDuration: 5
   stun: 0
+--- !u!61 &522902205
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522902198}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.14523602, y: -0.5493722}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.76, y: 3.84}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.6107407, y: 1.4278173}
+  m_EdgeRadius: 0
 --- !u!1 &549783199
 GameObject:
   m_ObjectHideFlags: 0
@@ -9383,7 +9384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384779201}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2.519, y: -0.742, z: 0}
   m_LocalScale: {x: 0.17138012, y: 1.24866, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13775,7 +13776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913804689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -1.286, z: 0}
   m_LocalScale: {x: 0.17138012, y: 1.24866, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28352,7 +28353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044465080}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.54116213, y: 0.4159994, z: 0}
+  m_LocalPosition: {x: 2.796, y: -0.336, z: 0}
   m_LocalScale: {x: 0.35351083, y: 0.17999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28741,10 +28742,11 @@ MonoBehaviour:
   fillImage: {fileID: 0}
   health: 100
   radioGolpe: 0.3
-  "da\xF1oGolpe": 20
+  danoGolpe: 0
   tiempoEntreAtaques: 0.3
   tiempoSiguienteAtaque: 0
   attacking: 0
+  canAttack: 0
   initialHealth: 100
 --- !u!114 &2055865616
 MonoBehaviour:
@@ -28758,27 +28760,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8b5e42b2eba134497ad8484303c9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 1
   speedMovement: 8
   speedGroundMovement: 6
   speedAirMovement: 6
   suavizadoDeMovimiento: 0
+  mirandoDerecha: 1
+  _camera: {fileID: 0}
   _jumpsLeft: 0
   maxJumps: 2
   jumpingForce: 5.5
   _maxFallSpeed: 500
   fallMultiplier: 3
   lowJumpMultiplier: 3
-  jumpBufferTime: 0.6
   queEsSuelo:
     serializedVersion: 2
     m_Bits: 64
   groundChecker: {fileID: 924773810}
   dimensionesCaja: {x: 0.96, y: -0.1, z: 0}
   onGround: 0
+  doubleJumpUnlocked: 0
   wallSlideSpeed: 1.5
   onWall: 0
   wallSliding: 0
+  wallSlideUnlocked: 0
   jumpForceWallX: 6
   jumpForceWallY: 6
   wallJumpTime: 0.2
@@ -28787,15 +28791,16 @@ MonoBehaviour:
   wallBoxDimensions: {x: 0.1, y: 0.35, z: 0}
   maxDashes: 1
   dashingPower: 20
-  dashingTime: 0.2
   dashingCooldown: 1
   dashGravity: 0
   _dashesLeft: 0
+  isDashing: 0
+  dashUnlocked: 0
   knifePrefab: {fileID: 4170110281044481596, guid: 66b4af45dc90fa84398b7d285ebce0e7, type: 3}
   lanzamientoPosicion: {fileID: 1463882646}
   fuerzaLanzamiento: 10
-  coyoteTime: 0.061
-  jumpInputBufferTime: 0.06
+  knifeLife: 0
+  knifeUnlocked: 0
 --- !u!212 &2055865617
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29751,9 +29756,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e9da93fdf4dd34b804679889b3d3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 0}
+  timeScale: 0
   mapa: {fileID: 700781357}
-  playerIcon: {fileID: 0}
+  cantidadMonedas: 0
 --- !u!1 &2133217277
 GameObject:
   m_ObjectHideFlags: 0
