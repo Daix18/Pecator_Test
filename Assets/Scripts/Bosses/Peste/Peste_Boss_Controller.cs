@@ -88,8 +88,8 @@ public class Peste_Boss_Controller : MonoBehaviour
         Destroy(gameObject);
 
         //Reactivamos las puertas para poder salir de la escnea.
-        carlos.GetComponent<Collider2D>().enabled = true;
-        finishPoints.GetComponent<Collider2D>().enabled = true;
+        carlos.SetActive(true);
+        finishPoints.SetActive(true);
     }
 
     public void TakeDamage(float damage)

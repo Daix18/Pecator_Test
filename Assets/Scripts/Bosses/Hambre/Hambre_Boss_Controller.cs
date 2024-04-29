@@ -148,8 +148,8 @@ public class Hambre_Boss_Controller : MonoBehaviour
     {
         Destroy(gameObject);
 
-        carlos.GetComponent<BoxCollider2D>().enabled = true;
-        finishPoints.GetComponent<BoxCollider2D>().enabled = true;
+        carlos.SetActive(true);
+        finishPoints.SetActive(true);
     }
 
     public void Dash()

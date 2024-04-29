@@ -735,7 +735,7 @@ GameObject:
   - component: {fileID: 858382242}
   m_Layer: 0
   m_Name: BodyCollider
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8873,8 +8873,8 @@ MonoBehaviour:
   fillImage: {fileID: 1820616936}
   onGround: 0
   facingRight: 1
-  carlos: {fileID: 0}
-  finishPoints: {fileID: 0}
+  carlos: {fileID: 1783413120}
+  finishPoints: {fileID: 2001668506}
   life: 150
   attackController: {fileID: 841371831}
   attackRadius: 0.29
@@ -23289,7 +23289,7 @@ GameObject:
   - component: {fileID: 2019834986}
   m_Layer: 0
   m_Name: HeadCollider
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

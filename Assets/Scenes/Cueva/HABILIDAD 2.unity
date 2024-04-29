@@ -659,8 +659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPointAt: 25
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 671435f2c1e89f94d92078efff1e1ce3, type: 3}
-    _sceneName: Boss_Hambre
+    _sceneAsset: {fileID: 102900000, guid: d7f34046ed73add4ca4cf6bfb187997d, type: 3}
+    _sceneName: HABILIDAD 3
   CurrentFinishPointPosition: 34
 --- !u!212 &469852510
 SpriteRenderer:

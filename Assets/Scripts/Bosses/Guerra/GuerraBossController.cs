@@ -97,7 +97,7 @@ public class GuerraBossController : MonoBehaviour
     {
         Destroy(gameObject);
 
-        carlos.GetComponent<BoxCollider2D>().enabled = true;
+        carlos.SetActive(true);
     }
 
     public void LookAtPlayer()

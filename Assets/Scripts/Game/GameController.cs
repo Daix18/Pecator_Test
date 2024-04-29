@@ -106,7 +106,10 @@ public class GameController : MonoBehaviour
 
         if (scene.name == "Boss_Guerra")
         {
-            StartCoroutine(LoadGuerraScene());
+            if (!guerraLoaded)
+            {
+                StartCoroutine(LoadGuerraScene());
+            }
         }
     }
 
@@ -116,8 +119,8 @@ public class GameController : MonoBehaviour
     IEnumerator LoadPesteScene()
     {
         yield return new WaitForSeconds(0.3f);
-        Peste_Boss_Controller.THIS.carlos.GetComponent<BoxCollider2D>().enabled = false;
-        Peste_Boss_Controller.THIS.finishPoints.GetComponent<BoxCollider2D>().enabled = false;
+        Peste_Boss_Controller.THIS.carlos.SetActive(false);
+        Peste_Boss_Controller.THIS.finishPoints.SetActive(false);
         pesteLoaded = true;
     }
 
@@ -125,15 +128,15 @@ public class GameController : MonoBehaviour
     IEnumerator LoadHambreScene()
     {
         yield return new WaitForSeconds(0.3f);
-        Hambre_Boss_Controller.THIS.carlos.GetComponent<BoxCollider2D>().enabled = false;
-        Hambre_Boss_Controller.THIS.finishPoints.GetComponent<BoxCollider2D>().enabled = false;
+        Hambre_Boss_Controller.THIS.carlos.SetActive(false);
+        Hambre_Boss_Controller.THIS.finishPoints.SetActive(false);
         hambreLoaded = true;
     }
 
     IEnumerator LoadGuerraScene()
     {
         yield return new WaitForSeconds(0.3f);
-        GuerraBossController.THIS.carlos.GetComponent<BoxCollider2D>().enabled = false;
+        GuerraBossController.THIS.carlos.SetActive(false);
         guerraLoaded = true;
     }
 }

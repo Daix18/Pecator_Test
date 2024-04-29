@@ -197,8 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPointAt: 17
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 3146ed7f8f4aac54f99a8cce5c16873f, type: 3}
-    _sceneName: Boss_Peste
+    _sceneAsset: {fileID: 102900000, guid: 061110905e1f5ce438498775bb1d6720, type: 3}
+    _sceneName: Cueva_4
   CurrentFinishPointPosition: 16
 --- !u!212 &72456789
 SpriteRenderer:
