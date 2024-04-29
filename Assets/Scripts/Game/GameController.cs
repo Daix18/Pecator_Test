@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour
 
     private bool pesteLoaded;
     private bool hambreLoaded;
+    private bool guerraLoaded;
 
     private void OnEnable()
     {
@@ -102,7 +103,11 @@ public class GameController : MonoBehaviour
                 StartCoroutine(LoadHambreScene());
             }
         }
-        // Agrega más condiciones según las escenas que tengas y las acciones que desees realizar
+
+        if (scene.name == "Boss_Guerra")
+        {
+            StartCoroutine(LoadGuerraScene());
+        }
     }
 
     //Corrutinas:
@@ -116,12 +121,19 @@ public class GameController : MonoBehaviour
         pesteLoaded = true;
     }
 
-
+    //Corrutina para cargar la escena del boss del hambre y desactivar ciertas cosas.
     IEnumerator LoadHambreScene()
     {
         yield return new WaitForSeconds(0.3f);
         Hambre_Boss_Controller.THIS.carlos.SetActive(false);
         Hambre_Boss_Controller.THIS.finishPoints.SetActive(false);
         hambreLoaded = true;
+    }
+
+    IEnumerator LoadGuerraScene()
+    {
+        yield return new WaitForSeconds(0.3f);
+        GuerraBossController.THIS.carlos.SetActive(false);
+        guerraLoaded = true;
     }
 }

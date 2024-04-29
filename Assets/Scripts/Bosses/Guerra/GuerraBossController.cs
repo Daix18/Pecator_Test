@@ -14,6 +14,7 @@ public class GuerraBossController : MonoBehaviour
     [HideInInspector] public Animator animator;
     [HideInInspector] public bool facingRight = true;
     public Transform player;
+    public GameObject carlos;
     Transform targetPosition;
     public float attackRange = 3f;
     public float speedMovement;
