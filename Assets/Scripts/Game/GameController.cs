@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour
     private int puntosTotales;
 
     private bool pesteLoaded;
+    private bool hambreLoaded;
 
     private void OnEnable()
     {
@@ -107,4 +108,11 @@ public class GameController : MonoBehaviour
         pesteLoaded = true;
     }
 
+
+    IEnumerator LoadHambreScene()
+    {
+        yield return new WaitForSeconds(0.3f);
+
+        hambreLoaded = true;
+    }
 }
