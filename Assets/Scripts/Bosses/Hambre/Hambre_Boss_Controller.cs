@@ -1,15 +1,20 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Hambre_Boss_Controller : MonoBehaviour
 {
+    public static Hambre_Boss_Controller THIS;
+
     [Header("Fundamental Components")]
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public Animator animator;
     [HideInInspector] public bool facingRight = true;
     bool hasCalledMoveStopWalls = false;
     public Transform player;
+    public GameObject carlos;
+    public GameObject finishPoints;
     [SerializeField] private Transform groundChecker;
     [SerializeField] private Transform wallChecker;
     [SerializeField] private Transform stopwallRight;
@@ -111,6 +116,14 @@ public class Hambre_Boss_Controller : MonoBehaviour
         if (life <= 0)
         {
             Death();
+        }
+    }
+
+    private void Awake()
+    {
+        if (THIS == null)
+        {
+            THIS = this;
         }
     }
 

@@ -14,6 +14,10 @@ public class FinishPoint : TriggerInteraction
         TwentySeven, TwentyEight, TwentyNine,
         Thirty, ThirtyOne, ThirtyTwo, ThirtyThree,
         ThirtyFour, ThirtyFive, ThirtySix, ThirtySeven,
+        ThityEight, ThirtyNine, Forty, FortyOne, FortyTwo,
+        FortyThree, FortyFour, FortyFive, FortySix, 
+        FortySeven, FortyEight, FortyNine, Fifty, FiftyOne, 
+        FiftyTwo, FiftyThree, FiftyFour, FiftyFive, FiftySix,
     }
 
     [Header("Spawn To")]

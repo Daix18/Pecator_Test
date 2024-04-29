@@ -630,11 +630,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94753bf7a9ce61648b5b187d17b37c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointAt: 25
+  spawnPointAt: 39
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 671435f2c1e89f94d92078efff1e1ce3, type: 3}
-    _sceneName: Boss_Hambre
-  CurrentFinishPointPosition: 34
+    _sceneAsset: {fileID: 102900000, guid: 0c91b5581a06f35499325807debde211, type: 3}
+    _sceneName: "monta\xF1a_3"
+  CurrentFinishPointPosition: 38
 --- !u!212 &469852510
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8511,11 +8511,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94753bf7a9ce61648b5b187d17b37c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointAt: 32
+  spawnPointAt: 36
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 9acfcc7d612fcb24a9e77809cd9538a3, type: 3}
-    _sceneName: Cueva_6
-  CurrentFinishPointPosition: 33
+    _sceneAsset: {fileID: 102900000, guid: 671435f2c1e89f94d92078efff1e1ce3, type: 3}
+    _sceneName: Boss_Hambre
+  CurrentFinishPointPosition: 37
 --- !u!61 &1695813475
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8602,7 +8602,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695813473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.55, y: 18.58, z: 0}
+  m_LocalPosition: {x: 32.61, y: 18.58, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 1
   m_Children: []

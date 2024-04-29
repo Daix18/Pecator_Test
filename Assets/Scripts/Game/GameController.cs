@@ -94,6 +94,14 @@ public class GameController : MonoBehaviour
                 StartCoroutine(LoadPesteScene());
             }
         }
+
+        if (scene.name == "Boss_Hambre")
+        {
+            if (!hambreLoaded)
+            {
+                StartCoroutine(LoadHambreScene());
+            }
+        }
         // Agrega más condiciones según las escenas que tengas y las acciones que desees realizar
     }
 
@@ -112,7 +120,8 @@ public class GameController : MonoBehaviour
     IEnumerator LoadHambreScene()
     {
         yield return new WaitForSeconds(0.3f);
-
+        Hambre_Boss_Controller.THIS.carlos.SetActive(false);
+        Hambre_Boss_Controller.THIS.finishPoints.SetActive(false);
         hambreLoaded = true;
     }
 }
