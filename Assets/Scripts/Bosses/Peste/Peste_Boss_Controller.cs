@@ -153,6 +153,8 @@ public class Peste_Boss_Controller : MonoBehaviour
         // Detener el movimiento horizontal del jefe
         rb.velocity = Vector2.zero;
 
+        rb.gravityScale = 100f;
+
         // Aplicar una fuerza hacia abajo para una caída rápida
         rb.AddForce(Vector2.down * jumpForce * fallMultiplier, ForceMode2D.Impulse);
 
