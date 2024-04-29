@@ -13,6 +13,10 @@ public class ShopManagerScript : MonoBehaviour
     // Variable para controlar si los ítems con ID 1 y 2 han sido comprados
     private bool[] itemPurchased = new bool[5];
 
+    // GameObjects para los mapas
+    public GameObject mapaSimple;
+    public GameObject mapaComplejo;
+
     void Start()
     {
         CoinsTXT.text = "Monedas:" + GameController.THIS.cantidadMonedas.ToString();
@@ -34,6 +38,10 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[3, 2] = 0;
         shopItems[3, 3] = 0;
         shopItems[3, 4] = 0;
+
+        // Desactivar los mapas al inicio
+        mapaSimple.SetActive(false);
+        mapaComplejo.SetActive(false);
     }
 
     private void Update()
@@ -55,7 +63,7 @@ public class ShopManagerScript : MonoBehaviour
             ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = shopItems[3, itemID].ToString();
             UpdateCoinsText(); // Actualizar el texto de las monedas después de comprar
 
-            //Limitar que solo puedes comprar un mapa.
+            // Limitar que solo puedes comprar un mapa.
             // Marcar el ítem como comprado si tiene ID 1 o 2
             if (itemID == 1 || itemID == 2)
                 itemPurchased[itemID] = true;
@@ -85,8 +93,7 @@ public class ShopManagerScript : MonoBehaviour
     {
         // Implementa la lógica de compra para el mapa 1
         // Aquí puedes mostrar la imagen del mapa 1 en la UI
-        //GameController.THIS.mapa.sprite = 
-        //Aqui tienes que poner el sprite del mapa que has comprado.
+        mapaSimple.SetActive(true);
     }
 
     // Método para comprar un objeto de tipo 2 (mapa)
@@ -94,6 +101,7 @@ public class ShopManagerScript : MonoBehaviour
     {
         // Implementa la lógica de compra para el mapa 2
         // Aquí puedes mostrar la imagen del mapa 2 en la UI
+        mapaComplejo.SetActive(true);
     }
 
     // Método para comprar un objeto de tipo 3 (daño)

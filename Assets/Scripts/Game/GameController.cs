@@ -11,13 +11,14 @@ public class GameController : MonoBehaviour
     [Header("Settings")]
     [Range(0f, 2f)][SerializeField] private float timeScale;
 
-    [Header("Image Components.")]
-    public Image mapa;
-
     public int PuntosTotales { get { return puntosTotales; } }
     private int puntosTotales;
 
     private bool pesteLoaded;
+
+    // Image Components para los mapas
+    public Image mapaSimple;
+    public Image mapaComplejo;
 
     private void OnEnable()
     {
@@ -37,46 +38,34 @@ public class GameController : MonoBehaviour
     }
     public int cantidadMonedas = 0;
 
-    // Otros métodos y variables del GameController...
-
     private void Start()
     {
         // Establece la cantidad inicial de monedas a 0 al inicio del juego
         cantidadMonedas = 0;
     }
 
-    // Método para obtener la cantidad de monedas
     public int GetCantidadMonedas()
     {
         return cantidadMonedas;
     }
 
-    // Método para sumar puntos (en este caso, monedas)
     public void SumarPuntos(int puntos)
     {
         cantidadMonedas += puntos;
-        // Aquí puedes agregar cualquier otra lógica relacionada con sumar puntos.
     }
 
-    // Update is called once per frame
     void Update()
     {
-
-        Time.timeScale = timeScale;
-
+        // Verificar si se presiona la tecla M
         if (Input.GetKeyDown(KeyCode.M))
         {
-            //Se pausa el tiempo y se muestra el mapa.
-            Time.timeScale = 0f;
-            mapa.enabled = true;
-        }
-        else if (Input.GetButtonDown("Cancel"))
-        {
-            //Se reanuda el tiempo y se desactiva el mapa.
-            Time.timeScale = 1f;
-            mapa.enabled = false;
+            // Si el mapa simple está activo, se desactiva; si está desactivado, se activa
+            mapaSimple.enabled = !mapaSimple.enabled;
+            mapaComplejo.enabled = false; // Desactivar el mapa complejo al mostrar el simple
+
         }
     }
+
     public void SumarPuntosOtros(int puntosASumar)
     {
         puntosTotales += puntosASumar;
@@ -96,15 +85,10 @@ public class GameController : MonoBehaviour
         // Agrega más condiciones según las escenas que tengas y las acciones que desees realizar
     }
 
-    //Corrutinas:
-
     //Corrutina para cargar la escena del boss de la peste y desactivar ciertas cosas.
     IEnumerator LoadPesteScene()
     {
         yield return new WaitForSeconds(0.3f);
-        Peste_Boss_Controller.THIS.carlos.SetActive(false);
-        Peste_Boss_Controller.THIS.finishPoints.SetActive(false);
         pesteLoaded = true;
     }
-
 }
