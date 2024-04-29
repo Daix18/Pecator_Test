@@ -4,10 +4,10 @@ using UnityEngine;
 public class ObstaculeController : MonoBehaviour
 {
     public int damageAmount = 100;
-    private bool playerDetected;
     private bool obstacleResetting; // Bandera para verificar si el obstáculo se está reiniciando
     private Vector2 initialPosition;
     private Rigidbody2D rb;
+    public bool playerDetected;
 
     void Start()
     {

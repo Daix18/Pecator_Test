@@ -94979,7 +94979,7 @@ MonoBehaviour:
   knifePrefab: {fileID: 4170110281044481596, guid: 66b4af45dc90fa84398b7d285ebce0e7, type: 3}
   lanzamientoPosicion: {fileID: 2516492645723638211}
   fuerzaLanzamiento: 10
-  knifeLife: 0
+  knifeLife: 1.5
   knifeUnlocked: 0
 --- !u!114 &2516492645574893198
 MonoBehaviour:
