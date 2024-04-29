@@ -12,8 +12,7 @@ public class GameController : MonoBehaviour
     [Range(0f, 2f)][SerializeField] private float timeScale;
 
     [Header("Image Components.")]
-    [SerializeField] private Image mapa;
-    [SerializeField] private Image playerIcon;
+    public Image mapa;
 
     public int PuntosTotales { get { return puntosTotales; } }
     private int puntosTotales;
@@ -36,7 +35,7 @@ public class GameController : MonoBehaviour
     {
         THIS = this;
     }
-    private int cantidadMonedas = 0;
+    public int cantidadMonedas = 0;
 
     // Otros métodos y variables del GameController...
 

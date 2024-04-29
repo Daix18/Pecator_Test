@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TextHistoria : MonoBehaviour
 {
-    public Text historiaText; // Referencia al objeto de texto donde mostrar la historia
+    public TextMeshProUGUI[] textos; // Referencia a los objetos de texto donde mostrar la historia
+    public GameObject[] cuadrosDialogo; // Referencia a los cuadros de diálogo
     public string historia; // La historia que deseas mostrar
 
     private bool mostrarHistoria = false;
@@ -21,17 +23,24 @@ public class TextHistoria : MonoBehaviour
         }
     }
 
-    // Método para mostrar u ocultar la historia en el objeto de texto UI
-    void MostrarOcultarHistoria()
+    // Método para mostrar u ocultar la historia en los objetos de texto y cuadros de diálogo
+    public void MostrarOcultarHistoria()
     {
-        if (mostrarHistoria)
+        foreach (TextMeshProUGUI texto in textos)
         {
-            historiaText.text = historia; // Mostrar la historia
-            historiaText.gameObject.SetActive(true); // Activar el objeto de texto
+            if (mostrarHistoria)
+            {
+                texto.text = historia; // Mostrar la historia
+            }
+            else
+            {
+                texto.text = ""; // Ocultar el texto
+            }
         }
-        else
+
+        foreach (GameObject cuadroDialogo in cuadrosDialogo)
         {
-            historiaText.gameObject.SetActive(false); // Ocultar el objeto de texto
+            cuadroDialogo.SetActive(mostrarHistoria); // Mostrar u ocultar el cuadro de diálogo
         }
     }
 

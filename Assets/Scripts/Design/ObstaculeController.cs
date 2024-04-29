@@ -14,7 +14,7 @@ public class ObstaculeController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         initialPosition = transform.position;
         rb.gravityScale = 0f;
-    }  
+    }
 
     public void ActivateObstacle()
     {
@@ -29,8 +29,9 @@ public class ObstaculeController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PlayerCollider") && !obstacleResetting) // Verifica si el obstáculo no se está reiniciando actualmente
         {
-            AttackController.THIS.TakeDamage(damageAmount);
             StartCoroutine(ResetObstacleAfterDelay());
+            AttackController.THIS.TakeDamage(damageAmount);
+            Debug.Log("oliwis");
         }
     }
 

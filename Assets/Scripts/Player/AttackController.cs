@@ -10,16 +10,16 @@ public class AttackController : MonoBehaviour
     [SerializeField] private Image fillImage;
 
     [Header("Attack Settings")]
-    [SerializeField] private float health;
+    [SerializeField] public float health;
     [SerializeField] private float radioGolpe;
-    [SerializeField] private float danoGolpe;
+    [SerializeField] public float danoGolpe;
     [SerializeField] public float tiempoEntreAtaques;
     [SerializeField] public float tiempoSiguienteAtaque;
     private Animator animator;
     public bool attacking;
     public bool canAttack;
 
-    [SerializeField] private float initialHealth = 100f;
+    [SerializeField] public float initialHealth = 100f;
 
     private void Start()
     {
@@ -41,6 +41,8 @@ public class AttackController : MonoBehaviour
         {
             tiempoSiguienteAtaque -= Time.deltaTime;
         }
+
+        Debug.Log($"<color=red>Player Damage: </color>" + danoGolpe);
     }
 
     public void TakeDamage(float damage)
