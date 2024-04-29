@@ -148,7 +148,8 @@ public class Hambre_Boss_Controller : MonoBehaviour
     {
         Destroy(gameObject);
 
-        MovimientoJugador.THIS.dashUnlocked = true;
+        carlos.GetComponent<BoxCollider2D>().enabled = true;
+        finishPoints.GetComponent<BoxCollider2D>().enabled = true;
     }
 
     public void Dash()

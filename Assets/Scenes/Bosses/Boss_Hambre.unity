@@ -574,7 +574,7 @@ MonoBehaviour:
     m_Bits: 512
   onGround: 0
   onWall: 0
-  life: 2000
+  life: 150
   attackController: {fileID: 2117334885}
   attackRadius: 0.42
   attackDamage: 20

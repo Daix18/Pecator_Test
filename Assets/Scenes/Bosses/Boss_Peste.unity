@@ -8875,7 +8875,7 @@ MonoBehaviour:
   facingRight: 1
   carlos: {fileID: 0}
   finishPoints: {fileID: 0}
-  life: 100
+  life: 150
   attackController: {fileID: 841371831}
   attackRadius: 0.29
   attackDamage: 10
@@ -8945,7 +8945,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1396095270
 GameObject:
   m_ObjectHideFlags: 0

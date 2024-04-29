@@ -95392,7 +95392,7 @@ MonoBehaviour:
   fillImage: {fileID: 1249662607}
   health: 100
   radioGolpe: 0.3
-  danoGolpe: 0
+  danoGolpe: 20
   tiempoEntreAtaques: 0.3
   tiempoSiguienteAtaque: 0
   attacking: 0

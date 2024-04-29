@@ -209,7 +209,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 9a256bbf4580fbb4485c9e32a6722997, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7474,7 +7474,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: e81d58f38760dd34db0c0118db0e4722, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8208,6 +8208,7 @@ GameObject:
   - component: {fileID: 1824252334}
   - component: {fileID: 1824252333}
   - component: {fileID: 1824252335}
+  - component: {fileID: 1824252336}
   m_Layer: 0
   m_Name: DoubleJumpUnlock
   m_TagString: Untagged
@@ -8255,7 +8256,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 25d11c35a2f21f643a71b6737e461453, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8294,6 +8295,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc74be6d09553e64f9e0f86437c17397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1824252336
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824252332}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.56}
+    newSize: {x: 2.56, y: 2.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.56, y: 2.56}
+  m_EdgeRadius: 0
 --- !u!1 &1901099312
 GameObject:
   m_ObjectHideFlags: 0
@@ -14510,7 +14537,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: b6947f7adc5fa5a4398aaaa4ba43bbe7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14555,8 +14582,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPointAt: 23
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 3146ed7f8f4aac54f99a8cce5c16873f, type: 3}
-    _sceneName: Boss_Peste
+    _sceneAsset: {fileID: 102900000, guid: 061110905e1f5ce438498775bb1d6720, type: 3}
+    _sceneName: Cueva_4
   CurrentFinishPointPosition: 24
 --- !u!61 &2114971868
 BoxCollider2D:

@@ -28278,6 +28278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 200
+  playerDetected: 0
 --- !u!1 &771233544
 GameObject:
   m_ObjectHideFlags: 0

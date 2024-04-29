@@ -15543,7 +15543,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   onGround: 0
-  life: 200
+  life: 150
   attackController: {fileID: 110124467}
   attackRadius: 0.7
   attackDamage: 20

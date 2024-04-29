@@ -116,8 +116,8 @@ public class GameController : MonoBehaviour
     IEnumerator LoadPesteScene()
     {
         yield return new WaitForSeconds(0.3f);
-        Peste_Boss_Controller.THIS.carlos.SetActive(false);
-        Peste_Boss_Controller.THIS.finishPoints.SetActive(false);
+        Peste_Boss_Controller.THIS.carlos.GetComponent<BoxCollider2D>().enabled = false;
+        Peste_Boss_Controller.THIS.finishPoints.GetComponent<BoxCollider2D>().enabled = false;
         pesteLoaded = true;
     }
 
@@ -125,15 +125,15 @@ public class GameController : MonoBehaviour
     IEnumerator LoadHambreScene()
     {
         yield return new WaitForSeconds(0.3f);
-        Hambre_Boss_Controller.THIS.carlos.SetActive(false);
-        Hambre_Boss_Controller.THIS.finishPoints.SetActive(false);
+        Hambre_Boss_Controller.THIS.carlos.GetComponent<BoxCollider2D>().enabled = false;
+        Hambre_Boss_Controller.THIS.finishPoints.GetComponent<BoxCollider2D>().enabled = false;
         hambreLoaded = true;
     }
 
     IEnumerator LoadGuerraScene()
     {
         yield return new WaitForSeconds(0.3f);
-        GuerraBossController.THIS.carlos.SetActive(false);
+        GuerraBossController.THIS.carlos.GetComponent<BoxCollider2D>().enabled = false;
         guerraLoaded = true;
     }
 }

@@ -88,8 +88,8 @@ public class Peste_Boss_Controller : MonoBehaviour
         Destroy(gameObject);
 
         //Reactivamos las puertas para poder salir de la escnea.
-        carlos.SetActive(true);
-        finishPoints.SetActive(true);
+        carlos.GetComponent<Collider2D>().enabled = true;
+        finishPoints.GetComponent<Collider2D>().enabled = true;
     }
 
     public void TakeDamage(float damage)
@@ -150,8 +150,6 @@ public class Peste_Boss_Controller : MonoBehaviour
     {
         // Detener el movimiento horizontal del jefe
         rb.velocity = Vector2.zero;
-
-        rb.gravityScale = 100f;
 
         // Aplicar una fuerza hacia abajo para una caída rápida
         rb.AddForce(Vector2.down * jumpForce * fallMultiplier, ForceMode2D.Impulse);

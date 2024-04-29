@@ -42,12 +42,36 @@ EditorBuildSettings:
     path: Assets/Scenes/Cueva/Cueva_4.unity
     guid: 061110905e1f5ce438498775bb1d6720
   - enabled: 1
+    path: Assets/Scenes/Cueva/Cueva_5.unity
+    guid: 6d6401f74d277c349afee49313378425
+  - enabled: 1
     path: Assets/Scenes/Cueva/Cueva_6.unity
     guid: 9acfcc7d612fcb24a9e77809cd9538a3
   - enabled: 1
     path: Assets/Scenes/Cueva/HABILIDAD 1.unity
     guid: 059b6757c169d774385733967126922b
   - enabled: 1
+    path: Assets/Scenes/Cueva/HABILIDAD 2.unity
+    guid: 5ae33bf2e18719e409f789b482810e33
+  - enabled: 1
+    path: "Assets/Scenes/MONTA\xD1A/HABILIDAD 3.unity"
+    guid: d7f34046ed73add4ca4cf6bfb187997d
+  - enabled: 1
+    path: "Assets/Scenes/MONTA\xD1A/monta\xF1a_1.unity"
+    guid: d8d5d4786d57f7d49bf767e938d29c5d
+  - enabled: 1
+    path: "Assets/Scenes/MONTA\xD1A/monta\xF1a_2.unity"
+    guid: 9fa18c1eada347f46b3ff123ea22cd16
+  - enabled: 1
+    path: "Assets/Scenes/MONTA\xD1A/monta\xF1a_3.unity"
+    guid: 0c91b5581a06f35499325807debde211
+  - enabled: 1
+    path: Assets/Scenes/Bosses/Boss_Hambre.unity
+    guid: 671435f2c1e89f94d92078efff1e1ce3
+  - enabled: 1
     path: Assets/Scenes/catedral/Catedral.unity
     guid: d0b21695662186444bb09004104a597c
+  - enabled: 1
+    path: Assets/Scenes/Bosses/Boss_Guerra.unity
+    guid: fc4c2413653e2df498efd6b3948860bf
   m_configObjects: {}
