@@ -4,7 +4,7 @@ public class RespawnSystem : MonoBehaviour
 {
     public static RespawnSystem THIS;
 
-    private Vector2 lastSpawnPoint;
+    [HideInInspector] public Vector3 lastSpawnPoint;
 
     private void Awake()
     {
@@ -18,20 +18,4 @@ public class RespawnSystem : MonoBehaviour
     {
         Debug.Log(lastSpawnPoint);
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("PlayerCollider"))
-        {
-            Debug.Log("Checkpoint Actualizado!");
-
-            lastSpawnPoint = transform.position;
-        }
-    }
-
-    public Vector2 GetLastSpawnPoint()
-    {
-        return lastSpawnPoint;
-    }
-
 }

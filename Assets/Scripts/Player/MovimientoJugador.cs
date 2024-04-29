@@ -77,6 +77,7 @@ public class MovimientoJugador : MonoBehaviour
     [SerializeField] private GameObject knifePrefab;
     [SerializeField] private Transform lanzamientoPosicion;
     [SerializeField] private float fuerzaLanzamiento = 10f;
+    [SerializeField] private float knifeLife;
     public bool knifeUnlocked;
 
     private void Start()
@@ -306,8 +307,16 @@ public class MovimientoJugador : MonoBehaviour
     {
         GameObject projectile = Instantiate(knifePrefab, lanzamientoPosicion.position, Quaternion.identity);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        // Asumiendo que el personaje mira hacia la derecha. Si no, necesitar�s ajustar la direcci�n bas�ndote en la orientaci�n del personaje.
-        rb.velocity = new Vector2(transform.localScale.x * fuerzaLanzamiento, 0);
+        // Obtener la rotación del jugador en radianes
+        float angulo = transform.rotation.eulerAngles.y * Mathf.Deg2Rad;
+
+        // Calcular la dirección del lanzamiento usando trigonometría
+        Vector2 direccionLanzamiento = new Vector2(Mathf.Cos(angulo), Mathf.Sin(angulo));
+
+        // Aplicar la fuerza de lanzamiento a la dirección correcta
+        rb.velocity = direccionLanzamiento * fuerzaLanzamiento;
+
+        StartCoroutine(DestroyKnife(projectile));
     }
 
     //Estas funciones son llamadas desde el componente de player input, el cual lo contiene el player.
@@ -391,6 +400,10 @@ public class MovimientoJugador : MonoBehaviour
             rbPlatform = collision.GetComponent<Rigidbody2D>(); // Obtener referencia al Rigidbody de la plataforma
             onPlatform = true; // Establecer la bandera enPlataformaMovil a true
         }
+        else if (collision.tag == "Respawn")
+        {
+            RespawnSystem.THIS.lastSpawnPoint = transform.position;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -428,5 +441,17 @@ public class MovimientoJugador : MonoBehaviour
         yield return new WaitForSeconds(wallJumpTime);
         wallJumping = false;
         //canMoveSideways = true;
+    }
+
+    //Corrutina para destuir el cuchillo
+    IEnumerator DestroyKnife(GameObject knife) 
+    {
+        yield return new WaitForSeconds(knifeLife);
+
+        // Si el cuchillo todavía existe (no ha colisionado), destruirlo
+        if (knife != null)
+        {
+            Destroy(knife);
+        }
     }
 }

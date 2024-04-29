@@ -56,7 +56,7 @@ public class AttackController : MonoBehaviour
     }
     private void RespawnPlayer()
     {
-        transform.position = RespawnSystem.THIS.GetLastSpawnPoint();
+        transform.position = RespawnSystem.THIS.lastSpawnPoint;
         health = initialHealth;
         fillImage.fillAmount = 1f;        
     }
