@@ -139,9 +139,9 @@ public class Peste_Boss_Controller : MonoBehaviour
 
         foreach (Collider2D collision in objects)
         {
-            if (collision.CompareTag("Player"))
+            if (collision.CompareTag("PlayerCollider"))
             {
-                collision.GetComponent<AttackController>().TakeDamage(attackDamage);
+                collision.GetComponentInParent<AttackController>().TakeDamage(attackDamage);
             }
         }
     }

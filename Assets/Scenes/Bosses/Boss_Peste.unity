@@ -735,7 +735,7 @@ GameObject:
   - component: {fileID: 858382242}
   m_Layer: 0
   m_Name: BodyCollider
-  m_TagString: Enemigo
+  m_TagString: Boss_Peste
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8774,7 +8774,7 @@ GameObject:
   - component: {fileID: 1194393908}
   m_Layer: 0
   m_Name: Peste
-  m_TagString: Enemigo
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23289,7 +23289,7 @@ GameObject:
   - component: {fileID: 2019834986}
   m_Layer: 0
   m_Name: HeadCollider
-  m_TagString: Enemigo
+  m_TagString: Boss_Peste
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

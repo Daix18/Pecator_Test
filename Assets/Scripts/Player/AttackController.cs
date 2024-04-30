@@ -70,7 +70,7 @@ public class AttackController : MonoBehaviour
     {
         // Comprobar si el golpe ya está activo, si no, activarlo
         if (canAttack)
-        {
+        {   
             if (!attacking)
             {
                 MovimientoJugador.THIS.enabled = false;
@@ -84,9 +84,14 @@ public class AttackController : MonoBehaviour
 
         foreach (Collider2D colisionador in objetos)
         {
-            if (colisionador.CompareTag("Enemigo"))
+            if (colisionador.CompareTag("Boss_Peste"))
             {
-                colisionador.transform.GetComponent<Peste_Boss_Controller>().TakeDamage(danoGolpe);
+                colisionador.transform.GetComponentInParent<Peste_Boss_Controller>().TakeDamage(danoGolpe);
+            }
+
+            if (colisionador.CompareTag("Boss_Hambre"))
+            {
+
             }
         }
     }
