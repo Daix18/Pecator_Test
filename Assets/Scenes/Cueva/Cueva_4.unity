@@ -5469,11 +5469,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94753bf7a9ce61648b5b187d17b37c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointAt: 16
+  spawnPointAt: 18
   _sceneToLoad:
     _sceneAsset: {fileID: 102900000, guid: 3146ed7f8f4aac54f99a8cce5c16873f, type: 3}
     _sceneName: Boss_Peste
-  CurrentFinishPointPosition: 17
+  CurrentFinishPointPosition: 19
 --- !u!61 &524905538
 BoxCollider2D:
   m_ObjectHideFlags: 0
