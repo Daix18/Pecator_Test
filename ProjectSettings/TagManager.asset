@@ -17,6 +17,7 @@ TagManager:
   - Event
   - Boss_Peste
   - Boss_Hambre
+  - Boss_Guerra
   layers:
   - Default
   - TransparentFX

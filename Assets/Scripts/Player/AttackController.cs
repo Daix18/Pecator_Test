@@ -41,8 +41,6 @@ public class AttackController : MonoBehaviour
         {
             tiempoSiguienteAtaque -= Time.deltaTime;
         }
-
-
     }
 
     public void TakeDamage(float damage)
@@ -66,6 +64,7 @@ public class AttackController : MonoBehaviour
     {
         return health;
     }
+
     public void Golpe()
     {
         // Comprobar si el golpe ya está activo, si no, activarlo
@@ -92,7 +91,12 @@ public class AttackController : MonoBehaviour
 
             if (colisionador.CompareTag("Boss_Hambre"))
             {
+                colisionador.transform.GetComponent<Hambre_Boss_Controller>().TakeDamage(danoGolpe);
+            }
 
+            if (colisionador.CompareTag("Boss_Guerra"))
+            {
+                colisionador.transform.GetComponent<GuerraBossController>().TakeDamage(danoGolpe);
             }
         }
     }

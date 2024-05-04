@@ -15420,7 +15420,7 @@ GameObject:
   - component: {fileID: 1391881740}
   m_Layer: 0
   m_Name: Guerra
-  m_TagString: Untagged
+  m_TagString: Boss_Guerra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
