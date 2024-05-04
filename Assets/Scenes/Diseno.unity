@@ -1664,9 +1664,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60e9da93fdf4dd34b804679889b3d3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionAnim: {fileID: 0}
+  timeScale: 0
   mapa: {fileID: 119011025}
-  playerIcon: {fileID: 0}
+  pesteBossKilled: 0
+  hambreBossKilled: 0
+  guerraBossKilled: 0
+  bossCanvas: {fileID: 0}
+  cantidadMonedas: 0
 --- !u!114 &500985492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3704,7 +3708,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8080,7 +8084,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8200,7 +8204,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -104784,7 +104788,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -106126,7 +106130,7 @@ SpriteRenderer:
   m_Size: {x: 1.98, y: 2.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1009624700688384292
@@ -106145,9 +106149,11 @@ MonoBehaviour:
   fillImage: {fileID: 790316859}
   health: 100
   radioGolpe: 0.3
-  "da\xF1oGolpe": 20
+  danoGolpe: 0
   tiempoEntreAtaques: 0.3
   tiempoSiguienteAtaque: 0
+  attacking: 0
+  canAttack: 0
   initialHealth: 100
 --- !u!114 &1009624700688384294
 MonoBehaviour:
@@ -106161,27 +106167,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8b5e42b2eba134497ad8484303c9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 1
   speedMovement: 8
   speedGroundMovement: 6
   speedAirMovement: 6
   suavizadoDeMovimiento: 0
+  mirandoDerecha: 1
+  _camera: {fileID: 0}
   _jumpsLeft: 0
   maxJumps: 2
   jumpingForce: 5.5
   _maxFallSpeed: 500
   fallMultiplier: 3
   lowJumpMultiplier: 3
-  jumpBufferTime: 0.6
   queEsSuelo:
     serializedVersion: 2
     m_Bits: 64
   groundChecker: {fileID: 1009624701026742011}
   dimensionesCaja: {x: 0.6, y: -0.1, z: 0}
   onGround: 0
+  doubleJumpUnlocked: 0
   wallSlideSpeed: 1.5
   onWall: 0
   wallSliding: 0
+  wallSlideUnlocked: 0
   jumpForceWallX: 6
   jumpForceWallY: 6
   wallJumpTime: 0.2
@@ -106190,15 +106198,16 @@ MonoBehaviour:
   wallBoxDimensions: {x: 0.1, y: 0.35, z: 0}
   maxDashes: 1
   dashingPower: 20
-  dashingTime: 0.2
   dashingCooldown: 1
   dashGravity: 0
   _dashesLeft: 0
+  isDashing: 0
+  dashUnlocked: 0
   knifePrefab: {fileID: 4170110281044481596, guid: 66b4af45dc90fa84398b7d285ebce0e7, type: 3}
   lanzamientoPosicion: {fileID: 1009624700933871209}
   fuerzaLanzamiento: 10
-  coyoteTime: 0.061
-  jumpInputBufferTime: 0.06
+  knifeLife: 0
+  knifeUnlocked: 0
 --- !u!95 &1009624700688384298
 Animator:
   serializedVersion: 5

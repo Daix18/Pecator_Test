@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class KnifeUnlocked : MonoBehaviour
 {
+    [Header("Ink JSON")]
+    [SerializeField] private TextAsset inkJson;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("PlayerCollider"))
@@ -11,6 +14,8 @@ public class KnifeUnlocked : MonoBehaviour
             MovimientoJugador.THIS.knifeUnlocked = true;
 
             Destroy(gameObject);
+
+            DialogueController.GetInstance().EnterDialogueMode(inkJson);
         }
     }
 }

@@ -82,15 +82,16 @@ public class GuerraBossController : MonoBehaviour
             rb.mass = 1f;
         }
 
+        if (!cooldown && !readyToAttack)
+        {
+            MoveBeforeAttack();
+        }
+
         if (life <= 0)
         {
             Death();
         }
 
-        if (!cooldown && !readyToAttack)
-        {
-            MoveBeforeAttack();
-        }
     }
 
     private void Death()

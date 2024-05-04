@@ -81,6 +81,13 @@ public class Peste_Boss_Controller : MonoBehaviour
         {
             Death();
         }
+
+        if (GameController.THIS.pesteBossKilled)
+        {
+            Destroy(gameObject);
+
+            GameController.THIS.bossCanvas.SetActive(false);
+        }
     }
 
     private void Death()
@@ -90,6 +97,10 @@ public class Peste_Boss_Controller : MonoBehaviour
         //Reactivamos las puertas para poder salir de la escnea.
         carlos.SetActive(true);
         finishPoints.SetActive(true);
+
+        GameController.THIS.pesteBossKilled = true;
+
+        GameController.THIS.bossCanvas.SetActive(false);
     }
 
     public void TakeDamage(float damage)

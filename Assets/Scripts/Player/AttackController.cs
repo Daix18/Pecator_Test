@@ -74,6 +74,7 @@ public class AttackController : MonoBehaviour
             if (!attacking)
             {
                 MovimientoJugador.THIS.enabled = false;
+                MovimientoJugador.THIS.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                 attacking = true;
                 canAttack = false;
                 animator.SetTrigger("Golpe");

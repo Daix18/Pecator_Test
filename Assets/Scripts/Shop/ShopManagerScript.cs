@@ -10,6 +10,9 @@ public class ShopManagerScript : MonoBehaviour
     public int[,] shopItems = new int[5, 5];
     public TextMeshProUGUI CoinsTXT;
 
+    public Sprite mapaSimple;
+    public Sprite mapaComplejo;
+
     // Variable para controlar si los ítems con ID 1 y 2 han sido comprados
     private bool[] itemPurchased = new bool[5];
 
@@ -85,8 +88,7 @@ public class ShopManagerScript : MonoBehaviour
     {
         // Implementa la lógica de compra para el mapa 1
         // Aquí puedes mostrar la imagen del mapa 1 en la UI
-        //GameController.THIS.mapa.sprite = 
-        //Aqui tienes que poner el sprite del mapa que has comprado.
+        GameController.THIS.mapa.sprite = mapaSimple;
     }
 
     // Método para comprar un objeto de tipo 2 (mapa)
@@ -94,6 +96,7 @@ public class ShopManagerScript : MonoBehaviour
     {
         // Implementa la lógica de compra para el mapa 2
         // Aquí puedes mostrar la imagen del mapa 2 en la UI
+        GameController.THIS.mapa.sprite = mapaComplejo;
     }
 
     // Método para comprar un objeto de tipo 3 (daño)

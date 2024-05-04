@@ -1,0 +1,1 @@
+﻿Has desbloqueado el cuchillo, utiliza la tecla F.

@@ -27,18 +27,17 @@ public class ObstaculeController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Si se choca contra el jugador se resetea instaneamente.
         if (collision.gameObject.CompareTag("PlayerCollider") && !obstacleResetting) // Verifica si el obstáculo no se está reiniciando actualmente
         {
-            StartCoroutine(ResetObstacleAfterDelay());
+            StartCoroutine(ResetInstant());
             AttackController.THIS.TakeDamage(damageAmount);
-            Debug.Log("oliwis");
         }
-    }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
+        //Si choca contra el suelo, el delay del reset es mayor.
         if (collision.gameObject.layer == LayerMask.NameToLayer("Suelo"))
         {
+            StartCoroutine(ResetObstacleAfterDelay());
             rb.velocity = Vector2.zero;
             rb.gravityScale = 0f;
         }
@@ -50,6 +49,12 @@ public class ObstaculeController : MonoBehaviour
         yield return new WaitForSeconds(6f);
         ResetObstacle();
         obstacleResetting = false; // Marca que el reinicio del obstáculo ha terminado
+    }
+
+    IEnumerator ResetInstant()
+    {
+        yield return null;
+        ResetObstacle();
     }
 
     private void ResetObstacle()

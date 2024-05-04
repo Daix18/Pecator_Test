@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Cinemachine;
+using Unity.VisualScripting;
 
 public class GameController : MonoBehaviour
 {
@@ -14,7 +15,14 @@ public class GameController : MonoBehaviour
     [Header("Image Components.")]
     public Image mapa;
 
+    [Header("Boss Control")]
+    public bool pesteBossKilled;
+    public bool hambreBossKilled;
+    public bool guerraBossKilled;
+    [HideInInspector] public GameObject bossCanvas;
+
     public int PuntosTotales { get { return puntosTotales; } }
+    public int cantidadMonedas = 0;
     private int puntosTotales;
 
     private bool pesteLoaded;
@@ -37,9 +45,6 @@ public class GameController : MonoBehaviour
     {
         THIS = this;
     }
-    public int cantidadMonedas = 0;
-
-    // Otros métodos y variables del GameController...
 
     private void Start()
     {
@@ -57,14 +62,11 @@ public class GameController : MonoBehaviour
     public void SumarPuntos(int puntos)
     {
         cantidadMonedas += puntos;
-        // Aquí puedes agregar cualquier otra lógica relacionada con sumar puntos.
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(pesteLoaded);
-
         Time.timeScale = timeScale;
 
         if (Input.GetKeyDown(KeyCode.M))
@@ -79,6 +81,8 @@ public class GameController : MonoBehaviour
             Time.timeScale = 1f;
             mapa.enabled = false;
         }
+
+        bossCanvas = GameObject.Find("BossCanvas");
     }
     public void SumarPuntosOtros(int puntosASumar)
     {

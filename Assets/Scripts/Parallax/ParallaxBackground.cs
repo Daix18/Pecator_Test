@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [ExecuteInEditMode]
 public class ParallaxBackground : MonoBehaviour
@@ -15,8 +16,25 @@ public class ParallaxBackground : MonoBehaviour
         if (parallaxCamera != null)
             parallaxCamera.onCameraTranslate += Move;
 
+        FindLayers();
+
         SetLayers();
     }
+
+    void FindLayers()
+    {
+        parallaxLayers.Clear();
+
+        // Busca todos los objetos en la escena con el componente ParallaxLayer
+        ParallaxLayer[] layersInScene = FindObjectsOfType<ParallaxLayer>();
+
+        // Agrega las capas encontradas a la lista
+        foreach (ParallaxLayer layer in layersInScene)
+        {
+            parallaxLayers.Add(layer);
+        }
+    }
+
 
     void SetLayers()
     {
@@ -39,6 +57,7 @@ public class ParallaxBackground : MonoBehaviour
         foreach (ParallaxLayer layer in parallaxLayers)
         {
             layer.Move(delta);
+            Debug.Log(layer.name);
         }
     }
 }

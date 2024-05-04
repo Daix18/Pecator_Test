@@ -117,6 +117,12 @@ public class Hambre_Boss_Controller : MonoBehaviour
         {
             Death();
         }
+
+        if (GameController.THIS.hambreBossKilled)
+        {
+            Destroy(gameObject);
+            GameController.THIS.bossCanvas.SetActive(false);
+        }
     }
 
     private void Awake()
@@ -150,6 +156,9 @@ public class Hambre_Boss_Controller : MonoBehaviour
 
         carlos.SetActive(true);
         finishPoints.SetActive(true);
+
+        GameController.THIS.hambreBossKilled = true;
+        GameController.THIS.bossCanvas.SetActive(false);
     }
 
     public void Dash()
