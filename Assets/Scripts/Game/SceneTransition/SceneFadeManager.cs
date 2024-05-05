@@ -56,7 +56,6 @@ public class SceneFadeManager : MonoBehaviour
 
     public void StartFadeOut()
     {
-        Debug.Log("FadeOut");
         _fadeOutImage.color = _fadeOutStartColor;
         IsFadingOut = true;
     }

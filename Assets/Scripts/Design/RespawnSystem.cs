@@ -13,9 +13,4 @@ public class RespawnSystem : MonoBehaviour
             THIS = this;
         }
     }
-
-    private void Update()
-    {
-        Debug.Log(lastSpawnPoint);
-    }
 }

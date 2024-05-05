@@ -13,7 +13,7 @@ public class KnifeUnlocked : MonoBehaviour
         {
             MovimientoJugador.THIS.knifeUnlocked = true;
 
-            Destroy(gameObject);
+            gameObject.SetActive(false);
 
             DialogueController.GetInstance().EnterDialogueMode(inkJson);
         }

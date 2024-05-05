@@ -19,7 +19,6 @@ public class GameController : MonoBehaviour
     public bool pesteBossKilled;
     public bool hambreBossKilled;
     public bool guerraBossKilled;
-    [HideInInspector] public GameObject bossCanvas;
 
     public int PuntosTotales { get { return puntosTotales; } }
     public int cantidadMonedas = 0;
@@ -81,8 +80,6 @@ public class GameController : MonoBehaviour
             Time.timeScale = 1f;
             mapa.enabled = false;
         }
-
-        bossCanvas = GameObject.Find("BossCanvas");
     }
     public void SumarPuntosOtros(int puntosASumar)
     {

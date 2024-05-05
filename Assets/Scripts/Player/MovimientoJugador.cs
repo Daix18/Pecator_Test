@@ -422,13 +422,13 @@ public class MovimientoJugador : MonoBehaviour
     {
         if (collision.tag == "MovingPlatform")
         {
+            onPlatform = false; 
             collision.transform.parent = null;
             GameObject platforms = GameObject.Find("Platforms");
             Transform temp = transform.parent;
             transform.parent = oldParent;
             temp.parent = PersistController.THIS.transform.parent;
             collision.transform.parent = platforms.transform;
-            onPlatform = false; 
         }
     }
 

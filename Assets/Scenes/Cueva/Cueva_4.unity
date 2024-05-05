@@ -150,7 +150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72456785}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55.059998, y: 34.260002, z: 0}
+  m_LocalPosition: {x: -53.63, y: 34.260002, z: 0}
   m_LocalScale: {x: 0.2706, y: 0.2706, z: 0.2706}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -170,7 +170,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -6.21, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -262,7 +262,6 @@ GameObject:
   m_Component:
   - component: {fileID: 167000278}
   - component: {fileID: 167000280}
-  - component: {fileID: 167000279}
   m_Layer: 0
   m_Name: Layer-2
   m_TagString: Untagged
@@ -285,19 +284,6 @@ Transform:
   m_Father: {fileID: 1103321332}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &167000279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167000277}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42337981fd620574f8e9417dafd6afad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parallaxFactor: 0.1
 --- !u!212 &167000280
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -360,7 +346,6 @@ GameObject:
   m_Component:
   - component: {fileID: 203941851}
   - component: {fileID: 203941853}
-  - component: {fileID: 203941852}
   m_Layer: 0
   m_Name: Layer-1
   m_TagString: Untagged
@@ -383,19 +368,6 @@ Transform:
   m_Father: {fileID: 1103321332}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &203941852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 203941850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42337981fd620574f8e9417dafd6afad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parallaxFactor: 0.2
 --- !u!212 &203941853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -458,7 +430,6 @@ GameObject:
   m_Component:
   - component: {fileID: 258183748}
   - component: {fileID: 258183750}
-  - component: {fileID: 258183749}
   m_Layer: 0
   m_Name: Layer-0
   m_TagString: Untagged
@@ -481,19 +452,6 @@ Transform:
   m_Father: {fileID: 1103321332}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &258183749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 258183747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42337981fd620574f8e9417dafd6afad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parallaxFactor: 0.3
 --- !u!212 &258183750
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -578,7 +536,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -6.5, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -668,7 +626,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354946534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55.059998, y: 27.74, z: 0}
+  m_LocalPosition: {x: -53.54, y: 27.74, z: 0}
   m_LocalScale: {x: 0.2706, y: 0.2706, z: 0.2706}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5754,7 +5712,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1103321332}
-  - component: {fileID: 1103321331}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -5762,19 +5719,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1103321331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1103321330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48e3cd888f471f443a7f0b25f8216d9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parallaxCamera: {fileID: 0}
 --- !u!4 &1103321332
 Transform:
   m_ObjectHideFlags: 0

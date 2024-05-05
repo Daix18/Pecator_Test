@@ -15,6 +15,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
     public Transform player;
     public GameObject carlos;
     public GameObject finishPoints;
+    [SerializeField] private GameObject HPCanvas;
     [SerializeField] private Transform groundChecker;
     [SerializeField] private Transform wallChecker;
     [SerializeField] private Transform stopwallRight;
@@ -121,7 +122,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
         if (GameController.THIS.hambreBossKilled)
         {
             Destroy(gameObject);
-            GameController.THIS.bossCanvas.SetActive(false);
+            HPCanvas.SetActive(false);
         }
     }
 
@@ -158,7 +159,7 @@ public class Hambre_Boss_Controller : MonoBehaviour
         finishPoints.SetActive(true);
 
         GameController.THIS.hambreBossKilled = true;
-        GameController.THIS.bossCanvas.SetActive(false);
+        HPCanvas.SetActive(false);
     }
 
     public void Dash()

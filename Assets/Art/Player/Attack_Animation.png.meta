@@ -101,6 +101,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -110,7 +122,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 384
-        width: 384
+        width: 576
         height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -119,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1bbdc6350c9c684ab814514d86d8750
-      internalID: -1484895227
+      spriteID: 61b596d5fb5fa964b9a976ad25a84955
+      internalID: -1767365396
       vertices: []
       indices: 
       edges: []
@@ -129,9 +141,9 @@ TextureImporter:
       name: Attack_Animation_1
       rect:
         serializedVersion: 2
-        x: 384
+        x: 576
         y: 384
-        width: 384
+        width: 576
         height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03db10ec3a35cfc46a7c3bc7c9d28675
-      internalID: -1282359999
+      spriteID: 617084f9cd5f31e4a9cd60915e01934f
+      internalID: -1950016603
       vertices: []
       indices: 
       edges: []
@@ -150,9 +162,9 @@ TextureImporter:
       name: Attack_Animation_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 384
+        x: 1152
+        y: 384
+        width: 576
         height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -161,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 123a11317219a364ebb59ff7fca4992d
-      internalID: -1429703485
+      spriteID: 70970d0695f000d4a8201273ef3a717b
+      internalID: 479011886
       vertices: []
       indices: 
       edges: []
@@ -171,9 +183,9 @@ TextureImporter:
       name: Attack_Animation_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 0
         y: 0
-        width: 384
+        width: 576
         height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -182,8 +194,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c61f9cd1fe494d248a8ce38ae3790276
-      internalID: -1240291987
+      spriteID: 9300c80ea8440bf42ac6f243732aaa7c
+      internalID: -2046449222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attack_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 576
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750570c9b18146049b6e7c73f6381ad6
+      internalID: 1965830938
       vertices: []
       indices: 
       edges: []
@@ -199,10 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Attack_Animation_0: -1484895227
-      Attack_Animation_1: -1282359999
-      Attack_Animation_2: -1429703485
-      Attack_Animation_3: -1240291987
+      Attack_Animation_0: -1767365396
+      Attack_Animation_1: -1950016603
+      Attack_Animation_2: 479011886
+      Attack_Animation_3: -2046449222
+      Attack_Animation_4: 1965830938
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

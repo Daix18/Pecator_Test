@@ -14,6 +14,7 @@ public class Peste_Boss_Controller : MonoBehaviour
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private LayerMask queEsSuelo;
     [SerializeField] private Image fillImage;
+    [SerializeField] private GameObject HPCanvas;
     [SerializeField] private bool onGround;
     public bool facingRight = true;
     public GameObject carlos;
@@ -86,7 +87,7 @@ public class Peste_Boss_Controller : MonoBehaviour
         {
             Destroy(gameObject);
 
-            GameController.THIS.bossCanvas.SetActive(false);
+            HPCanvas.SetActive(false);
         }
     }
 
@@ -100,7 +101,7 @@ public class Peste_Boss_Controller : MonoBehaviour
 
         GameController.THIS.pesteBossKilled = true;
 
-        GameController.THIS.bossCanvas.SetActive(false);
+        HPCanvas.SetActive(false);
     }
 
     public void TakeDamage(float damage)
