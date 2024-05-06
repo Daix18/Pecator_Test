@@ -10375,11 +10375,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94753bf7a9ce61648b5b187d17b37c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointAt: 39
+  spawnPointAt: 38
   _sceneToLoad:
     _sceneAsset: {fileID: 102900000, guid: d7f34046ed73add4ca4cf6bfb187997d, type: 3}
     _sceneName: HABILIDAD 3
-  CurrentFinishPointPosition: 38
+  CurrentFinishPointPosition: 39
 --- !u!61 &978360667
 BoxCollider2D:
   m_ObjectHideFlags: 0

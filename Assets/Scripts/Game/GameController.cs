@@ -76,6 +76,20 @@ public class GameController : MonoBehaviour
             Peste_Boss_Controller.THIS.gameObject.SetActive(false);
         }
 
+        if (hambreBossKilled)
+        {
+            Hambre_Boss_Controller.THIS.HPCanvas.SetActive(false);
+
+            Hambre_Boss_Controller.THIS.gameObject.SetActive(false);
+        }
+
+        if (guerraBossKilled)
+        {
+            GuerraBossController.THIS.HPCanvas.SetActive(false);
+
+            GuerraBossController.THIS.gameObject.SetActive(false);
+        }
+
         Debug.Log(pesteLoaded);
     }
 

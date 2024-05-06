@@ -15,6 +15,7 @@ public class GuerraBossController : MonoBehaviour
     [HideInInspector] public bool facingRight = true;
     public Transform player;
     public GameObject carlos;
+    public GameObject HPCanvas;
     Transform targetPosition;
     public float attackRange = 3f;
     public float speedMovement;
@@ -96,7 +97,11 @@ public class GuerraBossController : MonoBehaviour
 
     private void Death()
     {
-        Destroy(gameObject);
+        HPCanvas.SetActive(false);
+
+        gameObject.SetActive(false);
+
+        GameController.THIS.guerraBossKilled = true;
 
         carlos.SetActive(true);
     }

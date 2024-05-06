@@ -4,14 +4,27 @@ using UnityEngine;
 
 public class ShopTrigger : MonoBehaviour
 {
+
+    [Header("Visual Cue")]
+    [SerializeField] private GameObject visualCue;
+
     public GameObject shopUI;
     private bool isPlayerNearby = false;
 
     void Update()
     {
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
+        if (isPlayerNearby)
         {
-            shopUI.SetActive(true); // Alternar la visibilidad de la tienda
+            visualCue.SetActive(true);
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                shopUI.SetActive(true); // Alternar la visibilidad de la tienda
+            }
+        }
+        else
+        {
+            visualCue.SetActive(false);
         }
     }
 

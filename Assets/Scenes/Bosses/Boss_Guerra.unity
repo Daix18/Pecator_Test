@@ -15532,6 +15532,7 @@ MonoBehaviour:
   facingRight: 1
   player: {fileID: 0}
   carlos: {fileID: 1624932074}
+  HPCanvas: {fileID: 211052502}
   attackRange: 3
   speedMovement: 1
   groundChecker: {fileID: 35694789}
