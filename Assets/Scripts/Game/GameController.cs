@@ -40,27 +40,15 @@ public class GameController : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    private void Awake()
-    {
-        THIS = this;
-    }
 
     private void Start()
     {
         // Establece la cantidad inicial de monedas a 0 al inicio del juego
         cantidadMonedas = 0;
     }
-
-    // Método para obtener la cantidad de monedas
-    public int GetCantidadMonedas()
+    private void Awake()
     {
-        return cantidadMonedas;
-    }
-
-    // Método para sumar puntos (en este caso, monedas)
-    public void SumarPuntos(int puntos)
-    {
-        cantidadMonedas += puntos;
+        THIS = this;
     }
 
     // Update is called once per frame
@@ -80,7 +68,29 @@ public class GameController : MonoBehaviour
             Time.timeScale = 1f;
             mapa.enabled = false;
         }
+
+        if (pesteBossKilled)
+        {
+            Peste_Boss_Controller.THIS.HPCanvas.SetActive(false);
+
+            Peste_Boss_Controller.THIS.gameObject.SetActive(false);
+        }
+
+        Debug.Log(pesteLoaded);
     }
+
+    // Método para obtener la cantidad de monedas
+    public int GetCantidadMonedas()
+    {
+        return cantidadMonedas;
+    }
+
+    // Método para sumar puntos (en este caso, monedas)
+    public void SumarPuntos(int puntos)
+    {
+        cantidadMonedas += puntos;
+    }
+
     public void SumarPuntosOtros(int puntosASumar)
     {
         puntosTotales += puntosASumar;

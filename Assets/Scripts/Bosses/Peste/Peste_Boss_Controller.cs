@@ -14,11 +14,11 @@ public class Peste_Boss_Controller : MonoBehaviour
     [SerializeField] private Vector3 dimensionesCaja;
     [SerializeField] private LayerMask queEsSuelo;
     [SerializeField] private Image fillImage;
-    [SerializeField] private GameObject HPCanvas;
     [SerializeField] private bool onGround;
     public bool facingRight = true;
     public GameObject carlos;
     public GameObject finishPoints;
+    public GameObject HPCanvas;
 
     [Header("Vida")]
     [SerializeField] private float life;
@@ -82,26 +82,19 @@ public class Peste_Boss_Controller : MonoBehaviour
         {
             Death();
         }
-
-        if (GameController.THIS.pesteBossKilled)
-        {
-            Destroy(gameObject);
-
-            HPCanvas.SetActive(false);
-        }
     }
 
     private void Death()
     {
-        Destroy(gameObject);
+        HPCanvas.SetActive(false);
+
+        gameObject.SetActive(false);
+
+        GameController.THIS.pesteBossKilled = true;
 
         //Reactivamos las puertas para poder salir de la escnea.
         carlos.SetActive(true);
         finishPoints.SetActive(true);
-
-        GameController.THIS.pesteBossKilled = true;
-
-        HPCanvas.SetActive(false);
     }
 
     public void TakeDamage(float damage)

@@ -760,11 +760,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94753bf7a9ce61648b5b187d17b37c9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointAt: 41
+  spawnPointAt: 40
   _sceneToLoad:
     _sceneAsset: {fileID: 102900000, guid: 0c91b5581a06f35499325807debde211, type: 3}
     _sceneName: "monta\xF1a_3"
-  CurrentFinishPointPosition: 40
+  CurrentFinishPointPosition: 41
 --- !u!61 &444107510
 BoxCollider2D:
   m_ObjectHideFlags: 0
